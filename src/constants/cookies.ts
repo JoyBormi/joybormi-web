@@ -1,4 +1,4 @@
 export const COOKIE_KEYS = {
-  LANGUAGE: "Exmatch_Locale",
-  CHAT_SESSION: "Exmatch_Chat_Session",
+  LANGUAGE: "JoyBormi_Locale",
+  CHAT_SESSION: "JoyBormi_Chat_Session",
 }

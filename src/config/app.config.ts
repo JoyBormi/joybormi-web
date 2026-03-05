@@ -17,7 +17,7 @@ const getApiBaseUrl = (): string => {
     url = process.env.NEXT_PUBLIC_API_ENDPOINT
   } else {
     // Production default
-    url = "http://13.125.203.85"
+    url = "https://api.joybormiapp.uz"
   }
 
   return url
@@ -32,30 +32,19 @@ export const appConfig = {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
     },
-    NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
-    NEXT_PUBLIC_GA_MEASUREMENT_ID: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
-    NEXT_PUBLIC_CHANNEL_TALK_PLUGIN_KEY: process.env.NEXT_PUBLIC_CHANNEL_TALK_PLUGIN_KEY,
+    NEXT_PUBLIC_VERCEL_ID: process.env.NEXT_PUBLIC_VERCEL_ID,
   },
 
   // App Information
   app: {
     name: "JoyBormi",
     version: "1.0.0",
-    email: "hi@joybormi.co.kr",
-    phone: ["02-565-1847", "070-8882-5579"],
-    address_ko: "서울시 강남구 논현로 105길 11-3",
-    address_en: "11-3, Nonhyeon-ro 105-gil, Gangnam-gu, Seoul, Republic of Korea",
-    company_profile: "/pdf/JoyBormi-Profile.pdf",
+    email: "joybormiapp@gmail.com",
+    phone: ["998 93 455 25 65", "99 566 76 86"],
     social: {
       facebook: "https://www.facebook.com/joybormi",
       instagram: "https://www.instagram.com/joybormi",
       blog: "https://blog.naver.com/joybormi",
     },
-  },
-
-  // Feature Flags
-  features: {
-    enableAnalytics: true,
-    enablePushNotifications: true,
   },
 } as const

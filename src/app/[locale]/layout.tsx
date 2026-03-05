@@ -3,24 +3,27 @@ import { notFound } from "next/navigation"
 import { hasLocale } from "next-intl"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 
-import { GoogleAnalytics } from "@/components/shared/google-analytics"
-import { appConfig } from "@/config/app.config"
 import { Locale } from "@/i18n/config"
 import { routing } from "@/i18n/routing"
-import { generateOrganizationSchema, generateWebsiteSchema, meta } from "@/lib/seo"
+
+import { meta } from "@/lib/seo"
 import { cn } from "@/lib/utils"
 import RootProvider from "@/providers/root"
-import { PropsWithChildren } from "@/types/global.types"
 import { pretendard } from "../font"
 
-import "@styles/tailwind.css"
+import "@styles/globals.css"
+
+type LayoutProps = {
+  children: React.ReactNode
+  params: { locale: string }
+}
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  themeColor: "var(--white)",
+  themeColor: "#ffffff",
   colorScheme: "light",
 }
 
@@ -28,13 +31,15 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params
-  const t = await getTranslations()
+export async function generateMetadata({ params }: LayoutProps): Promise<Metadata> {
+  const locale = params.locale as Locale
+
+  const t = await getTranslations({ locale })
+
   const keywords = t.raw("meta.keywords") as string[]
 
   return meta({
-    locale: locale as Locale,
+    locale,
     pathname: "/",
     title: t("meta.title"),
     description: t("meta.description"),
@@ -42,31 +47,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   })
 }
 
-export default async function RootLayout({ children, params }: PropsWithChildren) {
-  const { locale } = await params
+export default async function RootLayout({ children, params }: LayoutProps) {
+  const locale = params.locale as Locale
 
   if (!hasLocale(routing.locales, locale)) {
     notFound()
   }
 
-  // Enable static rendering
   setRequestLocale(locale)
-
-  // Generate organization schema
-  const organizationSchema = generateOrganizationSchema(locale as Locale)
-  // Generate website schema
-  const websiteSchema = generateWebsiteSchema(locale as Locale)
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
-      </head>
       <body className={cn(pretendard.variable)}>
-        {appConfig.api.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
-          <GoogleAnalytics measurementId={appConfig.api.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
-        )}
         <RootProvider locale={locale}>{children}</RootProvider>
       </body>
     </html>

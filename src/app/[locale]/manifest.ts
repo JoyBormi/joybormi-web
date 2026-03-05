@@ -15,13 +15,13 @@ export default async function manifest(): Promise<MetadataRoute.Manifest> {
     lang: "en",
     icons: [
       {
-        src: "/logo/icon-192.png",
+        src: "/images/icon.png",
         sizes: "192x192",
         type: "image/png",
         purpose: "maskable",
       },
       {
-        src: "/logo/icon-512.png",
+        src: "/images/adaptive-icon.png",
         sizes: "512x512",
         type: "image/png",
       },

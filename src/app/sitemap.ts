@@ -28,21 +28,6 @@ const staticRoutes: Route[] = [
     changeFrequency: "monthly",
     priority: 0.9,
   },
-  {
-    path: "/request",
-    changeFrequency: "monthly",
-    priority: 0.8,
-  },
-  {
-    path: "/work",
-    changeFrequency: "weekly",
-    priority: 0.9,
-  },
-  {
-    path: "/story",
-    changeFrequency: "weekly",
-    priority: 0.8,
-  },
 ]
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -61,7 +46,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         alternates: {
           languages: {
             ko: `${baseUrl}/ko${route.path}`,
-            en: `${baseUrl}/en${route.path}`,
+            en: `${baseUrl}/uz${route.path}`,
+            ru: `${baseUrl}/ru${route.path}`,
           },
         },
       })

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/admin/"],
     },
-    sitemap: "https://joybormi.uz/sitemap.xml",
+    sitemap: "https://joybormiapp.uz/sitemap.xml",
   }
 }

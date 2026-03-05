@@ -1,6 +1,6 @@
-const defaultLocale = "ko"
-const locales = ["ko", "en"]
+const defaultLocale = "ru"
+const locales = ["ru", "en", "uz"]
 
-type Locale = "ko" | "en"
+type Locale = "ru" | "en" | "uz"
 
 export { defaultLocale, locales, type Locale }
