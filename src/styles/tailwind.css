@@ -1,0 +1,198 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadows.css";
+@import "fonts.css";
+/*
+  ---break---
+*/
+@custom-variant dark (&:is(.dark *));
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+/*
+  ---break---
+*/
+@theme inline {
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* Fonts */
+  --font-pretendard: var(--pretendard);
+
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-red-200: var(--red-200);
+  --color-red-300: var(--red-300);
+  --color-red-500: var(--red-500);
+  --color-blue-500: var(--blue-500);
+  --color-navy-300: var(--navy-300);
+  --color-navy-500: var(--navy-500);
+  --color-yellow-500: var(--yellow-500);
+
+  --color-gray-200: var(--gray-200);
+  --color-gray-300: var(--gray-300);
+  --color-gray-400: var(--gray-400);
+
+  /* Breakpoint */
+  --breakpoint-xs: 360px;
+  --breakpoint-sm: 480px;
+
+  /* Spacing */
+  --spacing-13: 52px;
+  --spacing-15: 60px;
+  --spacing-17: 68px;
+  --spacing-18: 72px;
+  --spacing-25: 100px;
+  --spacing-95: 380px;
+  --spacing-120: 480px;
+
+  /* Transitions */
+  --ease-circle: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Animations */
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  --animate-dot: dotPulseScale 1.2s ease-in-out infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+
+  @keyframes dotPulseScale {
+    0%,
+    100% {
+      opacity: 0.4;
+      transform: scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+}
+/*
+  ---break---
+*/
+:root {
+  --radius: 4px;
+
+  --background: oklch(0.9791 0 0);
+  --foreground: oklch(0.2435 0 0);
+
+  --red-300: rgba(230, 0, 18, 0.04);
+  --blue-500: oklch(0.5202 0.2679 263.21);
+  --red-200: #ce0f1e;
+  --red-500: oklch(0.5814 0.2375 27.86);
+  --navy-300: rgba(4, 39, 119, 0.06);
+  --navy-500: oklch(0.3127 0.1418 262.82);
+  --yellow-500: oklch(0.8405 0.1705 83.72);
+
+  --gray-200: oklch(0.9067 0 0);
+  --gray-300: oklch(0.7699 0 0);
+  --gray-400: oklch(0.6133 0 0);
+}
+
+/*
+  ---break---
+*/
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  body[data-scroll-locked] {
+    margin-right: 0px !important; /* For LTR layout */
+    margin-left: 0px !important; /* For RTL layout */
+    overflow: visible !important;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: var(--gray-100);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--gray-200);
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+  }
+
+  /*
+   * Flex utils
+   */
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-center-center {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .flex-col-between {
+    @apply flex flex-col items-center justify-between;
+  }
+
+  .header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 16px;
+    padding-top: 8px;
+    background: #f8f8f8;
+  }
+
+  /* gradient extension */
+  .header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px; /* how far it extends */
+    height: 30px; /* fade length */
+    background: linear-gradient(180deg, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
+    pointer-events: none;
+  }
+}

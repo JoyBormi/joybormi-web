@@ -1,0 +1,55 @@
+{
+  "manifest": {
+    "name": "JoyBormi",
+    "short_name": "JoyBormi",
+    "description": "JoyBormi"
+  },
+  "common": {
+    "request": "Request",
+    "contactUs": "contact us",
+    "portfolio": "Portfolio",
+    "noData": "No data found",
+    "companyProfile": "Co. Brief",
+    "requestDescription": "Momenty is a website/application production company. <br>Fill out the project and consult. </br>",
+    "address": "{address}",
+    "copyToClipboard": "Copied to clipboard",
+    "goToHome": "Go to Home",
+    "fillRequired": "Please fill required inputs."
+  },
+  "notfound": "Sorry, we couldn’t find the page.<br>You may have entered an incorrect address,</br><br> or the page you requested has been moved or deleted.</br>",
+  "meta": {
+    "title": "JoyBormi",
+    "description": "JoyBormi is a creative agency crafting innovative digital experiences. We specialize in web development, mobile apps, UI/UX design, and brand strategy to drive business growth.",
+    "keywords": ["portfolio", "projects", "digital agency", "case studies"],
+    "home": {
+      "title": "Home",
+      "description": "JoyBormi is a creative agency crafting innovative digital experiences. We specialize in web development, mobile apps, UI/UX design, and brand strategy to drive business growth.",
+      "keywords": ["portfolio", "projects", "digital agency", "case studies"]
+    },
+    "about": {
+      "title": "About Us",
+      "description": "JoyBormi creates business value through creative solutions and innovative design. Learn about our vision, team, and how we work.",
+      "keywords": ["about us", "team", "vision", "mission", "company culture"]
+    },
+    "service": {
+      "title": "Services",
+      "description": "Explore JoyBormi's comprehensive digital services. We offer web development, mobile apps, UI/UX design, brand strategy, and digital marketing solutions.",
+      "keywords": ["services", "web development", "app development", "design services", "branding"]
+    },
+    "request": {
+      "title": "Request a Project",
+      "description": "Tell us about your project. Get started with JoyBormi today and create something amazing together.",
+      "keywords": ["project inquiry", "quote request", "consultation", "project request"]
+    },
+    "work": {
+      "title": "Our Works",
+      "description": "Explore JoyBormi's portfolio of innovative projects and creative solutions. From web and mobile applications to comprehensive digital services.",
+      "keywords": ["portfolio", "projects", "case studies", "success stories"]
+    },
+    "story": {
+      "title": "Stories & Insights",
+      "description": "Explore JoyBormi's latest news, insights, and stories. Stay updated with our thoughts on design, technology, and innovation.",
+      "keywords": ["blog", "news", "insights", "stories", "updates"]
+    }
+  }
+}
