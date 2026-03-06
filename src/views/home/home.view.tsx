@@ -124,17 +124,15 @@ const HomeView = () => {
 
             <h1 className="jb-headline jb-fade-up jb-fade-up-2">
               {t("headlineTop")}
-              <br />
-              <em>{t("headlineAccent")}</em>
-              <br />
+              <em className="inline px-2 md:block md:px-0"> {t("headlineAccent")}</em>
               {t("headlineBottom")}
             </h1>
 
             <p className="jb-description jb-fade-up jb-fade-up-3">{t("description")}</p>
 
             <div className="jb-download-row jb-fade-up jb-fade-up-4">
-              <AppStore href={app.urls.appStore} className="jb-store-badge jb-store-badge-primary" />
-              <GooglePlay href={app.urls.googlePlay} className="jb-store-badge jb-store-badge-secondary" />
+              <AppStore href={app.urls.appStore} />
+              <GooglePlay href={app.urls.googlePlay} />
             </div>
 
             <div className="jb-qr-row jb-fade-up jb-fade-up-5">
