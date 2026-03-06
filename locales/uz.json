@@ -1,0 +1,26 @@
+{
+  "manifest": {
+    "name": "JoyBormi",
+    "short_name": "JoyBormi",
+    "description": "JoyBormi"
+  },
+  "common": {
+    "goToHome": "Bosh sahifa"
+  },
+  "notfound": "Kechirasiz, sahifa topilmadi.<br>Siz noto‘g‘ri manzil kiritgan bo‘lishingiz mumkin</br><br>yoki sahifa ko‘chirilgan yoki o‘chirilgan.</br>",
+  "meta": {
+    "title": "JoyBormi",
+    "description": "JoyBormi — restoranlar, kafelar, salonlar va boshqa joylarni onlayn bron qilish platformasi.",
+    "keywords": ["bron qilish", "restoran", "kafe", "onlayn bron", "JoyBormi"],
+    "home": {
+      "title": "Bosh sahifa",
+      "description": "JoyBormi orqali restoranlar, kafelar va xizmatlarni oson toping va bron qiling.",
+      "keywords": ["bron", "restoran", "kafe", "joy band qilish"]
+    },
+    "about": {
+      "title": "Biz haqimizda",
+      "description": "JoyBormi foydalanuvchilarga eng yaxshi joylarni topish va bron qilishni osonlashtiradi.",
+      "keywords": ["kompaniya", "platforma", "JoyBormi", "xizmat"]
+    }
+  }
+}

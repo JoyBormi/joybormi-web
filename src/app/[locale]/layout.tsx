@@ -15,7 +15,7 @@ import "@styles/globals.css"
 
 type LayoutProps = {
   children: React.ReactNode
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }
 
 export const viewport: Viewport = {
@@ -31,7 +31,8 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
 }
 
-export async function generateMetadata({ params }: LayoutProps): Promise<Metadata> {
+export async function generateMetadata(props: LayoutProps): Promise<Metadata> {
+  const params = await props.params;
   const locale = params.locale as Locale
 
   const t = await getTranslations({ locale })
@@ -47,7 +48,13 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
   })
 }
 
-export default async function RootLayout({ children, params }: LayoutProps) {
+export default async function RootLayout(props: LayoutProps) {
+  const params = await props.params;
+
+  const {
+    children
+  } = props;
+
   const locale = params.locale as Locale
 
   if (!hasLocale(routing.locales, locale)) {

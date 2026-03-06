@@ -3,10 +3,10 @@ import { COOKIE_KEYS } from "@/constants/cookies"
 
 export const routing = defineRouting({
   // A list of all locales that are supported
-  locales: ["en", "ko"],
+  locales: ["en", "uz", "ru"],
 
   // Used when no locale matches
-  defaultLocale: "ko",
+  defaultLocale: "ru",
 
   localePrefix: "never",
 
