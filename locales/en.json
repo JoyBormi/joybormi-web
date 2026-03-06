@@ -11,16 +11,184 @@
   "meta": {
     "title": "JoyBormi",
     "description": "JoyBormi is an online booking platform where you can easily reserve restaurants, cafés, salons, and other venues.",
-    "keywords": ["booking", "reservation", "restaurants", "cafes", "services"],
+    "keywords": [
+      "booking",
+      "reservation",
+      "restaurants",
+      "cafes",
+      "services"
+    ],
     "home": {
       "title": "Home",
       "description": "Discover and book restaurants, cafés, and services easily with JoyBormi.",
-      "keywords": ["booking", "restaurants", "cafes", "reservation"]
+      "keywords": [
+        "booking",
+        "restaurants",
+        "cafes",
+        "reservation"
+      ]
     },
     "about": {
       "title": "About Us",
       "description": "JoyBormi helps people easily find and reserve the best places. Learn more about our mission and platform.",
-      "keywords": ["about", "company", "platform", "JoyBormi"]
+      "keywords": [
+        "about",
+        "company",
+        "platform",
+        "JoyBormi"
+      ]
+    }
+  },
+  "link": {
+    "metaTitleBrand": "JoyBormi brand",
+    "metaTitleWorker": "JoyBormi specialist",
+    "metaDescription": "Open in JoyBormi",
+    "openingTitle": "Opening JoyBormi...",
+    "openingDescription": "If the app did not open, continue with one of the links below.",
+    "openInApp": "Open in app",
+    "openWebsite": "Open website"
+  },
+  "landing": {
+    "brand": "JoyBormi",
+    "tagline": "One app, every reservation",
+    "nav": {
+      "about": "About us",
+      "reviews": "Reviews",
+      "blog": "Our blog"
+    },
+    "downloadApp": "Download App",
+    "headline": "Reserve the right place in seconds",
+    "description": "JoyBormi helps you discover trusted brands and specialists with instant booking slots.",
+    "primaryCta": "Start booking",
+    "secondaryCta": "Explore brands",
+    "statRatingLabel": "Average rating",
+    "statRatingValue": "4.9",
+    "statResponseLabel": "Avg. response time",
+    "statResponseValue": "< 3 min",
+    "phoneTitle": "Plan your next booking",
+    "searchPlaceholder": "Where to?",
+    "quickFilters": [
+      "Restaurants",
+      "Beauty",
+      "Health",
+      "Events"
+    ],
+    "experienceLabel": "Best experience",
+    "experienceTitle": "Premium local experiences, one tap away",
+    "experienceBody": "Join people using JoyBormi daily to book beauty, dining, and lifestyle services without calls.",
+    "communityLabel": "+12k active users",
+    "proofUsers": "Trusted by thousands of users",
+    "proofProfiles": "Only verified brand and worker profiles",
+    "destinations": [
+      {
+        "title": "Aroma Bistro",
+        "meta": "Dining • 24 seats left",
+        "price": "from $19"
+      },
+      {
+        "title": "Kiva Salon",
+        "meta": "Beauty • 6 slots today",
+        "price": "from $14"
+      },
+      {
+        "title": "Pulse Clinic",
+        "meta": "Health • Next in 30 min",
+        "price": "from $25"
+      },
+      {
+        "title": "Skyline Venue",
+        "meta": "Events • Weekend packages",
+        "price": "from $39"
+      }
+    ],
+    "blogTeaser": "New ideas and booking tips from JoyBormi updates.",
+    "blogCta": "Read latest posts"
+  },
+  "landingCompact": {
+    "logoAlt": "JoyBormi logo",
+    "about": "About",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "headline": "Download the app and find exactly what you need",
+    "description": "Point your camera at the QR code to install JoyBormi and start booking instantly.",
+    "telegram": "@joybormi",
+    "primaryMockAlt": "JoyBormi store screen",
+    "secondaryMockAlt": "JoyBormi map screen",
+    "footerSocialTitle": "Our social channels",
+    "footerSupportTitle": "Support",
+    "newsletterTitle": "Newsletter",
+    "newsletterPlaceholder": "Enter your email",
+    "newsletterCta": "Subscribe",
+    "language": "Language",
+    "downloadApp": "Download App",
+    "cta": "Get Started",
+    "availability": "The mobile app is available now"
+  },
+  "landingModern": {
+    "logoAlt": "JoyBormi logo",
+    "brand": "JoyBormi",
+    "menu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    },
+    "nav": {
+      "about": "About",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "download": "Download"
+    },
+    "badge": "Available on iOS & Android",
+    "headlineTop": "Find Your",
+    "headlineAccent": "Joy,",
+    "headlineBottom": "Anytime",
+    "description": "JoyBormi brings everything you need into one clean mobile experience. Discover trusted places, reserve faster, and manage plans without friction.",
+    "store": {
+      "downloadOn": "Download on the",
+      "appStore": "App Store",
+      "getItOn": "Get it on",
+      "googlePlay": "Google Play"
+    },
+    "qr": {
+      "title": "Scan to download",
+      "description": "Point your camera at the QR code to install JoyBormi instantly."
+    },
+    "phone": {
+      "primaryAlt": "JoyBormi app listing screen",
+      "secondaryAlt": "JoyBormi map screen"
+    },
+    "stats": {
+      "activeUsers": {
+        "value": "50",
+        "suffix": "K+",
+        "label": "Active users"
+      },
+      "rating": {
+        "value": "4.9",
+        "suffix": "★",
+        "label": "Store rating"
+      },
+      "downloads": {
+        "value": "200",
+        "suffix": "K+",
+        "label": "Downloads"
+      },
+      "satisfaction": {
+        "value": "99",
+        "suffix": "%",
+        "label": "Satisfaction"
+      }
+    },
+    "footer": {
+      "brandDescription": "A premium booking experience for modern users on iOS and Android.",
+      "companyTitle": "Company",
+      "contactTitle": "Contact",
+      "newsletterTitle": "Newsletter",
+      "newsletterDescription": "Get product updates and release notes.",
+      "newsletterPlaceholder": "your@email.com",
+      "newsletterButton": "Join",
+      "joinedMessage": "You're subscribed",
+      "copyright": "© {year} JoyBormi. All rights reserved.",
+      "contactTelegram": "Telegram"
     }
   }
 }

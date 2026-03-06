@@ -1,6 +1,6 @@
 // lib/seo.ts
 import type { Metadata } from "next"
-import { Locale } from "@/i18n/config"
+import { defaultLocale, Locale, locales } from "@/i18n/config"
 
 const SITE_URL = "https://joybormiapp.uz"
 
@@ -37,7 +37,7 @@ function abs(path: string) {
 }
 
 export function meta(opts: {
-  locale: Locale
+  locale: Locale | string
   pathname: string
   title: string
   description?: string
@@ -63,13 +63,15 @@ export function meta(opts: {
     modifiedTime,
   } = opts
 
-  const canonicalPath = canonicalOverride ? abs(canonicalOverride) : abs(`/${locale}${pathname}`)
+  const resolvedLocale: Locale = locales.includes(locale as Locale) ? (locale as Locale) : defaultLocale
 
-  const fullTitle = `${title} | ${APP_NAME[locale]}`
+  const canonicalPath = canonicalOverride ? abs(canonicalOverride) : abs(`/${resolvedLocale}${pathname}`)
 
-  const desc = description ?? DEFAULT_DESCRIPTION[locale]
+  const fullTitle = `${title} | ${APP_NAME[resolvedLocale]}`
 
-  const baseKeywords = DEFAULT_KEYWORDS[locale]
+  const desc = description ?? DEFAULT_DESCRIPTION[resolvedLocale]
+
+  const baseKeywords = DEFAULT_KEYWORDS[resolvedLocale] ?? []
   const allKeywords = Array.from(new Set([...baseKeywords, ...(keywords ?? [])]))
 
   const ogImage = image ? abs(image) : abs("/og-image.png")
@@ -113,10 +115,10 @@ export function meta(opts: {
       type,
       title: fullTitle,
       description: desc,
-      siteName: APP_NAME[locale],
+      siteName: APP_NAME[resolvedLocale],
       url: canonicalPath,
-      locale: HREFLANG[locale],
-      alternateLocale: Object.values(HREFLANG).filter((lang) => lang !== HREFLANG[locale]),
+      locale: HREFLANG[resolvedLocale],
+      alternateLocale: Object.values(HREFLANG).filter((lang) => lang !== HREFLANG[resolvedLocale]),
       images: [
         {
           url: ogImage,

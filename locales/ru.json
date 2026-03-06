@@ -1,26 +1,194 @@
 {
-    "manifest": {
-      "name": "JoyBormi",
-      "short_name": "JoyBormi",
-      "description": "JoyBormi"
+  "manifest": {
+    "name": "JoyBormi",
+    "short_name": "JoyBormi",
+    "description": "JoyBormi"
+  },
+  "common": {
+    "goToHome": "Главная"
+  },
+  "notfound": "К сожалению, страница не найдена.<br>Возможно, вы ввели неверный адрес</br><br>или страница была перемещена или удалена.</br>",
+  "meta": {
+    "title": "JoyBormi",
+    "description": "JoyBormi — онлайн-платформа для бронирования ресторанов, кафе, салонов и других заведений.",
+    "keywords": [
+      "бронирование",
+      "рестораны",
+      "кафе",
+      "онлайн бронь",
+      "JoyBormi"
+    ],
+    "home": {
+      "title": "Главная",
+      "description": "Находите и бронируйте рестораны, кафе и услуги легко с JoyBormi.",
+      "keywords": [
+        "бронирование",
+        "рестораны",
+        "кафе",
+        "бронь"
+      ]
     },
-    "common": {
-        "goToHome": "Главная"
+    "about": {
+      "title": "О нас",
+      "description": "JoyBormi помогает людям быстро находить и бронировать лучшие места. Узнайте больше о нашей платформе.",
+      "keywords": [
+        "о компании",
+        "платформа",
+        "JoyBormi",
+        "сервис"
+      ]
+    }
+  },
+  "link": {
+    "metaTitleBrand": "Бренд JoyBormi",
+    "metaTitleWorker": "Специалист JoyBormi",
+    "metaDescription": "Открыть в JoyBormi",
+    "openingTitle": "Открываем JoyBormi...",
+    "openingDescription": "Если приложение не открылось, продолжите по одной из ссылок ниже.",
+    "openInApp": "Открыть в приложении",
+    "openWebsite": "Открыть сайт"
+  },
+  "landing": {
+    "brand": "JoyBormi",
+    "tagline": "Одно приложение, все бронирования",
+    "nav": {
+      "about": "О нас",
+      "reviews": "Отзывы",
+      "blog": "Блог"
     },
-    "notfound": "К сожалению, страница не найдена.<br>Возможно, вы ввели неверный адрес</br><br>или страница была перемещена или удалена.</br>",
-    "meta": {
-      "title": "JoyBormi",
-      "description": "JoyBormi — онлайн-платформа для бронирования ресторанов, кафе, салонов и других заведений.",
-      "keywords": ["бронирование", "рестораны", "кафе", "онлайн бронь", "JoyBormi"],
-      "home": {
-        "title": "Главная",
-        "description": "Находите и бронируйте рестораны, кафе и услуги легко с JoyBormi.",
-        "keywords": ["бронирование", "рестораны", "кафе", "бронь"]
+    "downloadApp": "Скачать приложение",
+    "headline": "Бронируйте нужное место за секунды",
+    "description": "JoyBormi помогает находить проверенные бренды и специалистов с быстрыми слотами бронирования.",
+    "primaryCta": "Начать бронирование",
+    "secondaryCta": "Смотреть бренды",
+    "statRatingLabel": "Средний рейтинг",
+    "statRatingValue": "4.9",
+    "statResponseLabel": "Среднее время ответа",
+    "statResponseValue": "< 3 мин",
+    "phoneTitle": "Планируйте следующее бронирование",
+    "searchPlaceholder": "Куда пойдём?",
+    "quickFilters": [
+      "Рестораны",
+      "Красота",
+      "Здоровье",
+      "События"
+    ],
+    "experienceLabel": "Лучший опыт",
+    "experienceTitle": "Премиальные локальные сервисы в одно касание",
+    "experienceBody": "Тысячи пользователей ежедневно выбирают JoyBormi для брони beauty, dining и lifestyle услуг без звонков.",
+    "communityLabel": "+12k активных пользователей",
+    "proofUsers": "Нам доверяют тысячи пользователей",
+    "proofProfiles": "Только проверенные профили брендов и специалистов",
+    "destinations": [
+      {
+        "title": "Aroma Bistro",
+        "meta": "Рестораны • 24 места",
+        "price": "от $19"
       },
-      "about": {
-        "title": "О нас",
-        "description": "JoyBormi помогает людям быстро находить и бронировать лучшие места. Узнайте больше о нашей платформе.",
-        "keywords": ["о компании", "платформа", "JoyBormi", "сервис"]
+      {
+        "title": "Kiva Salon",
+        "meta": "Красота • 6 слотов сегодня",
+        "price": "от $14"
+      },
+      {
+        "title": "Pulse Clinic",
+        "meta": "Здоровье • Приём через 30 мин",
+        "price": "от $25"
+      },
+      {
+        "title": "Skyline Venue",
+        "meta": "События • Пакеты на выходные",
+        "price": "от $39"
       }
+    ],
+    "blogTeaser": "Новые идеи и советы по бронированию в обновлениях JoyBormi.",
+    "blogCta": "Читать новые статьи"
+  },
+  "landingCompact": {
+    "logoAlt": "Логотип JoyBormi",
+    "about": "О нас",
+    "privacy": "Конфиденциальность",
+    "terms": "Условия",
+    "headline": "Скачайте приложение и быстро найдите то, что вам нужно",
+    "description": "Наведите камеру на QR-код, чтобы установить JoyBormi и сразу начать бронирование.",
+    "telegram": "@joybormi",
+    "primaryMockAlt": "Экран магазина JoyBormi",
+    "secondaryMockAlt": "Экран карты JoyBormi",
+    "footerSocialTitle": "Наши соцсети",
+    "footerSupportTitle": "Поддержка",
+    "newsletterTitle": "Рассылка",
+    "newsletterPlaceholder": "Введите email",
+    "newsletterCta": "Подписаться",
+    "language": "Язык",
+    "downloadApp": "Скачать приложение",
+    "cta": "Начать",
+    "availability": "Мобильное приложение уже доступно"
+  },
+  "landingModern": {
+    "logoAlt": "Логотип JoyBormi",
+    "brand": "JoyBormi",
+    "menu": {
+      "open": "Открыть меню",
+      "close": "Закрыть меню"
+    },
+    "nav": {
+      "about": "О нас",
+      "privacy": "Конфиденциальность",
+      "terms": "Условия",
+      "download": "Скачать"
+    },
+    "badge": "Доступно на iOS и Android",
+    "headlineTop": "Найдите свою",
+    "headlineAccent": "Радость,",
+    "headlineBottom": "в любое время",
+    "description": "JoyBormi объединяет всё нужное в одном аккуратном мобильном интерфейсе. Находите проверенные места, бронируйте быстрее и управляйте планами без лишних шагов.",
+    "store": {
+      "downloadOn": "Скачать в",
+      "appStore": "App Store",
+      "getItOn": "Доступно в",
+      "googlePlay": "Google Play"
+    },
+    "qr": {
+      "title": "Сканируйте для загрузки",
+      "description": "Наведите камеру на QR-код, чтобы сразу установить JoyBormi."
+    },
+    "phone": {
+      "primaryAlt": "Экран страницы приложения JoyBormi",
+      "secondaryAlt": "Экран карты JoyBormi"
+    },
+    "stats": {
+      "activeUsers": {
+        "value": "50",
+        "suffix": "K+",
+        "label": "Активных пользователей"
+      },
+      "rating": {
+        "value": "4.9",
+        "suffix": "★",
+        "label": "Рейтинг в сторах"
+      },
+      "downloads": {
+        "value": "200",
+        "suffix": "K+",
+        "label": "Загрузок"
+      },
+      "satisfaction": {
+        "value": "99",
+        "suffix": "%",
+        "label": "Удовлетворённость"
+      }
+    },
+    "footer": {
+      "brandDescription": "Премиальный сервис бронирования для современных пользователей iOS и Android.",
+      "companyTitle": "Компания",
+      "contactTitle": "Контакты",
+      "newsletterTitle": "Рассылка",
+      "newsletterDescription": "Получайте обновления продукта и новости релизов.",
+      "newsletterPlaceholder": "your@email.com",
+      "newsletterButton": "Подписаться",
+      "joinedMessage": "Вы подписаны",
+      "copyright": "© {year} JoyBormi. Все права защищены.",
+      "contactTelegram": "Telegram"
     }
   }
+}

@@ -1,13 +1,22 @@
+import Link from "next/link"
 import React from "react"
 import { cn } from "@/lib/utils"
 
-type GooglePlayProps = { className?: string }
+type GooglePlayProps = {
+  className?: string
+  href?: string
+}
 
-const GooglePlay: React.FC<GooglePlayProps> = ({ className }) => {
-  return (
-    <div className={cn("mt-3 flex h-14 w-48 items-center justify-center rounded-lg bg-black text-white", className)}>
-      <div className="mr-3">
-        <svg viewBox="30 336.7 120.9 129.2" width="30">
+const GooglePlay: React.FC<GooglePlayProps> = ({ className, href }) => {
+  const content = (
+    <div
+      className={cn(
+        "bg-foreground text-background border-border/20 flex h-11 w-[162px] items-center justify-center rounded-[9px] border px-2.5",
+        className
+      )}
+    >
+      <div className="mr-2">
+        <svg viewBox="30 336.7 120.9 129.2" width="22" aria-hidden="true">
           <path
             fill="#FFD400"
             d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7  c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z"
@@ -24,11 +33,21 @@ const GooglePlay: React.FC<GooglePlayProps> = ({ className }) => {
         </svg>
       </div>
       <div>
-        <div className="text-xs">GET IT ON</div>
-        <div className="-mt-1 font-sans text-xl font-semibold">Google Play</div>
+        <div className="text-[9px] leading-none tracking-[0.04em] uppercase">Get it on</div>
+        <div className="mt-0.5 text-lg leading-none font-semibold">Google Play</div>
       </div>
     </div>
   )
+
+  if (href) {
+    return (
+      <Link href={href} target="_blank" rel="noreferrer noopener" aria-label="Get it on Google Play">
+        {content}
+      </Link>
+    )
+  }
+
+  return content
 }
 
 export { GooglePlay }

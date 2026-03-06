@@ -33,7 +33,9 @@ export function generateStaticParams() {
 
 export async function generateMetadata(props: LayoutProps): Promise<Metadata> {
   const params = await props.params;
-  const locale = params.locale as Locale
+  const locale = hasLocale(routing.locales, params.locale)
+    ? params.locale
+    : routing.defaultLocale
 
   const t = await getTranslations({ locale })
 

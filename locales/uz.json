@@ -11,16 +11,184 @@
   "meta": {
     "title": "JoyBormi",
     "description": "JoyBormi — restoranlar, kafelar, salonlar va boshqa joylarni onlayn bron qilish platformasi.",
-    "keywords": ["bron qilish", "restoran", "kafe", "onlayn bron", "JoyBormi"],
+    "keywords": [
+      "bron qilish",
+      "restoran",
+      "kafe",
+      "onlayn bron",
+      "JoyBormi"
+    ],
     "home": {
       "title": "Bosh sahifa",
       "description": "JoyBormi orqali restoranlar, kafelar va xizmatlarni oson toping va bron qiling.",
-      "keywords": ["bron", "restoran", "kafe", "joy band qilish"]
+      "keywords": [
+        "bron",
+        "restoran",
+        "kafe",
+        "joy band qilish"
+      ]
     },
     "about": {
       "title": "Biz haqimizda",
       "description": "JoyBormi foydalanuvchilarga eng yaxshi joylarni topish va bron qilishni osonlashtiradi.",
-      "keywords": ["kompaniya", "platforma", "JoyBormi", "xizmat"]
+      "keywords": [
+        "kompaniya",
+        "platforma",
+        "JoyBormi",
+        "xizmat"
+      ]
+    }
+  },
+  "link": {
+    "metaTitleBrand": "JoyBormi brendi",
+    "metaTitleWorker": "JoyBormi mutaxassisi",
+    "metaDescription": "JoyBormi ilovasida ochish",
+    "openingTitle": "JoyBormi ochilmoqda...",
+    "openingDescription": "Agar ilova ochilmasa, quyidagi havolalardan birini tanlang.",
+    "openInApp": "Ilovada ochish",
+    "openWebsite": "Veb-saytni ochish"
+  },
+  "landing": {
+    "brand": "JoyBormi",
+    "tagline": "Bitta ilova, barcha bronlar",
+    "nav": {
+      "about": "Biz haqimizda",
+      "reviews": "Sharhlar",
+      "blog": "Blog"
+    },
+    "downloadApp": "Ilovani yuklash",
+    "headline": "Kerakli joyni bir necha soniyada bron qiling",
+    "description": "JoyBormi sizga ishonchli brendlar va mutaxassislarni topib, bo‘sh vaqtlarni darhol bron qilishga yordam beradi.",
+    "primaryCta": "Bron qilishni boshlash",
+    "secondaryCta": "Brendlarni ko‘rish",
+    "statRatingLabel": "O‘rtacha reyting",
+    "statRatingValue": "4.9",
+    "statResponseLabel": "O‘rtacha javob vaqti",
+    "statResponseValue": "< 3 daqiqa",
+    "phoneTitle": "Keyingi broningizni rejalang",
+    "searchPlaceholder": "Qayerga boramiz?",
+    "quickFilters": [
+      "Restoranlar",
+      "Go‘zallik",
+      "Sog‘liq",
+      "Tadbirlar"
+    ],
+    "experienceLabel": "Eng yaxshi tajriba",
+    "experienceTitle": "Premium mahalliy xizmatlar birgina teginishda",
+    "experienceBody": "Minglab foydalanuvchilar JoyBormi orqali beauty, dining va lifestyle xizmatlarini qo‘ng‘iroqsiz bron qilmoqda.",
+    "communityLabel": "+12k faol foydalanuvchi",
+    "proofUsers": "Minglab foydalanuvchilar bizga ishonadi",
+    "proofProfiles": "Faqat tasdiqlangan brend va mutaxassis profillari",
+    "destinations": [
+      {
+        "title": "Aroma Bistro",
+        "meta": "Restoran • 24 ta joy qolgan",
+        "price": "$19 dan"
+      },
+      {
+        "title": "Kiva Salon",
+        "meta": "Go‘zallik • Bugun 6 ta vaqt",
+        "price": "$14 dan"
+      },
+      {
+        "title": "Pulse Clinic",
+        "meta": "Sog‘liq • 30 daqiqada qabul",
+        "price": "$25 dan"
+      },
+      {
+        "title": "Skyline Venue",
+        "meta": "Tadbirlar • Dam olish paketlari",
+        "price": "$39 dan"
+      }
+    ],
+    "blogTeaser": "JoyBormi yangiliklaridan foydali g‘oyalar va bron bo‘yicha tavsiyalar.",
+    "blogCta": "So‘nggi maqolalarni o‘qish"
+  },
+  "landingCompact": {
+    "logoAlt": "JoyBormi logotipi",
+    "about": "Biz haqimizda",
+    "privacy": "Maxfiylik",
+    "terms": "Shartlar",
+    "headline": "Ilovani yuklab oling va kerakli narsani tez toping",
+    "description": "JoyBormi ilovasini o‘rnatish uchun kamerani QR kodga yo‘naltiring va darhol bron qiling.",
+    "telegram": "@joybormi",
+    "primaryMockAlt": "JoyBormi do‘kon sahifasi",
+    "secondaryMockAlt": "JoyBormi xarita sahifasi",
+    "footerSocialTitle": "Ijtimoiy tarmoqlarimiz",
+    "footerSupportTitle": "Qo‘llab-quvvatlash",
+    "newsletterTitle": "Yangiliklar",
+    "newsletterPlaceholder": "Email kiriting",
+    "newsletterCta": "Obuna bo‘lish",
+    "language": "Til",
+    "downloadApp": "Ilovani yuklash",
+    "cta": "Boshlash",
+    "availability": "Mobil ilova hozir mavjud"
+  },
+  "landingModern": {
+    "logoAlt": "JoyBormi logotipi",
+    "brand": "JoyBormi",
+    "menu": {
+      "open": "Menyuni ochish",
+      "close": "Menyuni yopish"
+    },
+    "nav": {
+      "about": "Biz haqimizda",
+      "privacy": "Maxfiylik",
+      "terms": "Shartlar",
+      "download": "Yuklab olish"
+    },
+    "badge": "iOS va Android uchun mavjud",
+    "headlineTop": "Ozingizning",
+    "headlineAccent": "quvonchingizni,",
+    "headlineBottom": "har doim toping",
+    "description": "JoyBormi sizga kerakli narsalarni bitta toza mobil tajribada jamlaydi. Ishonchli joylarni toping, tez bron qiling va rejalarni qulay boshqaring.",
+    "store": {
+      "downloadOn": "Yuklab oling",
+      "appStore": "App Store",
+      "getItOn": "Mavjud",
+      "googlePlay": "Google Play"
+    },
+    "qr": {
+      "title": "Yuklab olish uchun skaner qiling",
+      "description": "JoyBormi ilovasini darhol o‘rnatish uchun QR kodni kamerada oching."
+    },
+    "phone": {
+      "primaryAlt": "JoyBormi ilova sahifasi ekrani",
+      "secondaryAlt": "JoyBormi xarita ekrani"
+    },
+    "stats": {
+      "activeUsers": {
+        "value": "50",
+        "suffix": "K+",
+        "label": "Faol foydalanuvchilar"
+      },
+      "rating": {
+        "value": "4.9",
+        "suffix": "★",
+        "label": "Store reytingi"
+      },
+      "downloads": {
+        "value": "200",
+        "suffix": "K+",
+        "label": "Yuklab olishlar"
+      },
+      "satisfaction": {
+        "value": "99",
+        "suffix": "%",
+        "label": "Mamnunlik darajasi"
+      }
+    },
+    "footer": {
+      "brandDescription": "iOS va Android foydalanuvchilari uchun premium bron qilish tajribasi.",
+      "companyTitle": "Kompaniya",
+      "contactTitle": "Aloqa",
+      "newsletterTitle": "Yangiliklar",
+      "newsletterDescription": "Yangi funksiyalar va relizlar haqida birinchi bo‘lib biling.",
+      "newsletterPlaceholder": "your@email.com",
+      "newsletterButton": "Qo‘shilish",
+      "joinedMessage": "Siz obuna bo‘ldingiz",
+      "copyright": "© {year} JoyBormi. Barcha huquqlar himoyalangan.",
+      "contactTelegram": "Telegram"
     }
   }
 }
