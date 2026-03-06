@@ -74,7 +74,7 @@ export function meta(opts: {
   const baseKeywords = DEFAULT_KEYWORDS[resolvedLocale] ?? []
   const allKeywords = Array.from(new Set([...baseKeywords, ...(keywords ?? [])]))
 
-  const ogImage = image ? abs(image) : abs("/og-image.png")
+  const ogImage = image ? abs(image) : abs("/images/og-image.png")
 
   const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),

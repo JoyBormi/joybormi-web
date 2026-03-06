@@ -24,7 +24,6 @@ export async function generateMetadata({ params }: MetadataParam): Promise<Metad
     title: t("meta.home.title"),
     description: t("meta.home.description"),
     keywords,
-    image: "/og-image.png",
   })
 }
 
