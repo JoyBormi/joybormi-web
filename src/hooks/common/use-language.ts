@@ -1,8 +1,8 @@
 import { useParams } from "next/navigation"
 import { useTransition } from "react"
 
+import { COOKIE_KEYS } from "@/constants/cookies"
 import { Locale } from "@/i18n/config"
-import { setUserLocale } from "@/i18n/locale"
 import { usePathname, useRouter } from "@/i18n/navigation"
 
 const useLanguage = () => {
@@ -16,13 +16,14 @@ const useLanguage = () => {
     const locale = value as Locale
 
     startTransition(() => {
-      setUserLocale(locale)
+      document.cookie = `${COOKIE_KEYS.LANGUAGE}=${locale}; path=/; max-age=${60 * 60 * 24 * 30}; samesite=lax`
+      router.replace(
+        // @ts-expect-error next-intl types
+        { pathname, params },
+        { locale }
+      )
+      router.refresh()
     })
-    router.replace(
-      // @ts-expect-error next-intl types
-      { pathname, params },
-      { locale }
-    )
   }
 
   return { onChangeLanguage, isPending }

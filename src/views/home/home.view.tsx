@@ -50,7 +50,7 @@ const HomeView = () => {
   }
 
   return (
-    <div className="jb-landing">
+    <div className="jb-landing overflow-x-hidden">
       <div className={cn("jb-mobile-menu", { open: menuOpen })}>
         <div className="jb-mobile-header">
           <Link href="/" className="jb-logo" onClick={() => setMenuOpen(false)}>
@@ -150,7 +150,6 @@ const HomeView = () => {
 
           <div className="jb-hero-right">
             <div className="jb-glow-orb jb-glow-orb-main" />
-
             <div className="jb-phone-primary">
               <IPhoneMockup
                 className="jb-mockup-iphone"

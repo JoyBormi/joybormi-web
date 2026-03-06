@@ -10,7 +10,12 @@ async function getUserLocale() {
 }
 
 async function setUserLocale(locale: Locale) {
-  ;(await cookies()).set(COOKIE_KEYS.LANGUAGE, locale)
+  ;(await cookies()).set(COOKIE_KEYS.LANGUAGE, locale, {
+    maxAge: 60 * 60 * 24 * 30,
+    path: "/",
+    sameSite: "lax",
+    secure: process.env.NODE_ENV === "production",
+  })
 }
 
 export { getUserLocale, setUserLocale }
