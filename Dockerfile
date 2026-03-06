@@ -1,15 +1,17 @@
 # syntax=docker/dockerfile:1.7
 
-FROM oven/bun:1.3.2 AS deps
+FROM oven/bun:1.3.2-alpine AS deps
 WORKDIR /app
 COPY package.json bun.lock ./
 RUN bun install --frozen-lockfile
 
-FROM oven/bun:1.3.2 AS builder
+FROM node:20-alpine AS builder
 WORKDIR /app
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN bun run build
+RUN ./node_modules/.bin/next build --webpack
 
 FROM node:20-alpine AS runner
 WORKDIR /app
