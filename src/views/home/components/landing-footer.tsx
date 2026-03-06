@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { useState, type FormEvent } from "react"
+import { type FormEvent, useState } from "react"
 
 import { Link } from "@/i18n/navigation"
 

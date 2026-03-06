@@ -1,22 +1,52 @@
+import Image from "next/image"
 import React from "react"
+
 import { cn } from "@/lib/utils"
 
-type AndroidMockupProps = { className?: string }
+type AndroidMockupProps = {
+  className?: string
+  imageSrc?: string
+  imageAlt?: string
+  priority?: boolean
+}
 
-const AndroidMockup: React.FC<AndroidMockupProps> = ({ className }) => {
+const AndroidMockup: React.FC<AndroidMockupProps> = ({
+  className,
+  imageSrc,
+  imageAlt = "Mobile app preview",
+  priority = false,
+}) => {
   return (
     <div
       className={cn(
-        "relative flex h-[520px] w-[250px] justify-center rounded-2xl border-4 border-black bg-gray-50",
+        "border-foreground bg-card relative h-[520px] w-[250px] overflow-hidden rounded-[36px] border-[6px] shadow-[0_24px_40px_-32px_rgba(0,0,0,0.75)]",
         className
       )}
-      style={{ boxShadow: "10px 10px 5px 12px rgb(209, 218, 218)" }}
     >
-      {/* notch */}
-      <span className="h-5 w-28 rounded-br-xl rounded-bl-xl border border-black bg-black"></span>
-      {/* right top buttons */}
-      <span className="absolute top-20 -right-2 h-10 rounded-md border-4 border-black"></span>
-      <span className="absolute top-44 -right-2 h-24 rounded-md border-4 border-black"></span>
+      <div className="bg-foreground absolute top-2 left-1/2 z-20 h-[18px] w-[78px] -translate-x-1/2 rounded-b-xl" />
+
+      <div className="border-foreground/45 pointer-events-none absolute inset-[2px] rounded-[30px] border-2" />
+
+      <div className="bg-muted absolute inset-[6px] overflow-hidden rounded-[28px]">
+        {imageSrc ? (
+          <Image
+            src={imageSrc}
+            alt={imageAlt}
+            fill
+            sizes="250px"
+            className="object-cover object-top"
+            priority={priority}
+          />
+        ) : (
+          <div className="from-secondary to-accent flex h-full items-center justify-center bg-gradient-to-br">
+            <span className="text-muted-foreground text-sm font-semibold">JoyBormi</span>
+          </div>
+        )}
+      </div>
+
+      <div className="bg-foreground absolute top-20 left-[-10px] h-10 w-[5px] rounded-l-md" />
+      <div className="bg-foreground absolute top-44 left-[-10px] h-20 w-[5px] rounded-l-md" />
+      <div className="bg-foreground absolute top-36 right-[-10px] h-16 w-[5px] rounded-r-md" />
     </div>
   )
 }

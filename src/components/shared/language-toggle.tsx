@@ -30,12 +30,12 @@ const LanguageToggle: React.FC<{ className?: string }> = ({ className }) => {
           className={cn("bg-background text-foreground border-border h-10 rounded-full px-3 shadow-none", className)}
         >
           <Languages className="size-4" />
-          <span className="text-base leading-none">{current.emoji}</span>
-          <span className="text-xs font-semibold tracking-wide">{current.name}</span>
+          <span className="text-base leading-none">{current?.emoji}</span>
+          <span className="text-xs font-semibold tracking-wide">{current?.name}</span>
         </Button>
       </PopoverTrigger>
 
-      <PopoverContent align="end" className="w-52 p-1.5">
+      <PopoverContent align="end" className="z-99999999 w-52 p-1.5">
         <div className="grid gap-1">
           {locales.map((cur) => {
             const active = locale === cur.id

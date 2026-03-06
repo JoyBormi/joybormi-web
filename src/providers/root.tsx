@@ -3,7 +3,6 @@ import { FC, PropsWithChildren } from "react"
 import { Toaster } from "@/components/ui/sonner"
 import { TailwindIndicator } from "./breakpoint-indicator"
 import { QueryProvider } from "./query"
-import { ZodLocaleProvider } from "./zod-provider"
 
 const RootProvider: FC<PropsWithChildren & { locale: string }> = ({ children, locale }) => {
   return (
@@ -11,7 +10,6 @@ const RootProvider: FC<PropsWithChildren & { locale: string }> = ({ children, lo
       <QueryProvider>{children}</QueryProvider>
       <Toaster />
       <TailwindIndicator />
-      <ZodLocaleProvider locale={locale} />
     </NextIntlClientProvider>
   )
 }

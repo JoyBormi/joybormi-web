@@ -1,7 +1,3 @@
-
-import { appConfig } from "@/config/app.config"
-import { COOKIE_KEYS } from "@/constants/cookies"
-import { SessionMode } from "@/hooks/chat"
 import { Agent, agent } from "@/lib/agent"
 
 export class ExampleService {
@@ -18,14 +14,10 @@ export class ExampleService {
    * - Creates a new session if the previous session expired (~24h)
    */
   async bootstrapSession(): Promise<unknown> {
-    const response = await this.agent.post(
-      "/chat/v2/session/bootstrap",
-{}
-    )
+    const response = await this.agent.post("/chat/v2/session/bootstrap", {})
 
     return response
   }
-
 }
 
 export const chatService = new ExampleService()
