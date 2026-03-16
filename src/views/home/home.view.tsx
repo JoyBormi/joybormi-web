@@ -1,6 +1,6 @@
 "use client"
 
-import { ChevronRight, Instagram, Menu, Phone, Send, Sparkles, X } from "lucide-react"
+import { ChevronRight, Instagram, Menu, Phone, Send, Sparkles } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 import { type FormEvent, useEffect, useState } from "react"
@@ -8,6 +8,7 @@ import { type FormEvent, useEffect, useState } from "react"
 import { AndroidMockup } from "@/components/shared/android-mockup"
 import { AppStore } from "@/components/shared/app-store"
 import { GooglePlay } from "@/components/shared/google-play"
+import { Header } from "@/components/shared/header"
 import { IPhoneMockup } from "@/components/shared/iphone-mockup"
 import { LanguageToggle } from "@/components/shared/language-toggle"
 import { QrCode } from "@/components/shared/qr-code"
@@ -51,42 +52,7 @@ const HomeView = () => {
 
   return (
     <div className="jb-landing overflow-x-hidden">
-      <div className={cn("jb-mobile-menu", { open: menuOpen })}>
-        <div className="jb-mobile-header">
-          <Link href="/" className="jb-logo" onClick={() => setMenuOpen(false)}>
-            <div className="jb-logo-icon">
-              <Image src={app.assets.logoIcon} alt={t("logoAlt")} width={20} height={20} className="jb-logo-image" />
-            </div>
-            <span className="jb-logo-text">{t("brand")}</span>
-          </Link>
-          <button className="jb-menu-btn" onClick={() => setMenuOpen(false)} aria-label={t("menu.close")}>
-            <X size={20} />
-          </button>
-        </div>
-
-        <nav>
-          <Link href="/about" onClick={() => setMenuOpen(false)}>
-            {t("nav.about")} <ChevronRight size={14} />
-          </Link>
-          <Link href="/privacy" onClick={() => setMenuOpen(false)}>
-            {t("nav.privacy")} <ChevronRight size={14} />
-          </Link>
-          <Link href="/terms" onClick={() => setMenuOpen(false)}>
-            {t("nav.terms")} <ChevronRight size={14} />
-          </Link>
-        </nav>
-
-        <div className="jb-mobile-actions">
-          <div className="flex items-center justify-center">
-            <LanguageToggle />
-          </div>
-          <AppStore href={app.urls.appStore} className="jb-store-badge jb-store-badge-primary jb-store-badge-center" />
-          <GooglePlay
-            href={app.urls.googlePlay}
-            className="jb-store-badge jb-store-badge-secondary jb-store-badge-center"
-          />
-        </div>
-      </div>
+      <Header app={app} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
       <header className={cn("jb-header", { scrolled })}>
         <div className="jb-header-inner">

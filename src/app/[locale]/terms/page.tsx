@@ -1,162 +1,76 @@
-export const metadata = {
-    title: 'Terms of Service',
-    description: 'Terms of Service for JoyBormi',
-}
+"use client"
+
+import { useLocale } from "next-intl"
+import { useMemo, useState } from "react"
+
+import { Header } from "@/components/shared/header"
+import { RichContent } from "@/components/shared/rich-content"
+import { appConfig } from "@/config/app.config"
+import { useGetPublicLegal } from "@/hooks/legal/use-get-public-legal"
+import { Locale } from "@/i18n/config"
 
 export default function TermsPage() {
-    return (
-        <main className="mx-auto max-w-3xl px-6 py-16">
-            <article className="prose prose-neutral max-w-none">
-                <h1>Terms of Service</h1>
+  const locale = useLocale()
+  const [menuOpen, setMenuOpen] = useState(false)
 
-                <p>
-                    <strong>Last updated:</strong> March 7, 2026
-                </p>
+  const language = useMemo(() => locale?.toUpperCase() as Locale, [locale])
 
-                <p>
-                    Welcome to <strong>JoyBormi</strong>. These Terms of Service govern
-                    your use of the JoyBormi mobile application and related services.
-                    By accessing or using the application, you agree to be bound by
-                    these Terms.
-                </p>
+  const { data, isLoading, error } = useGetPublicLegal({
+    type: "TERMS",
+    language,
+  })
 
-                <h2>1. Overview of the Service</h2>
+  return (
+    <main className="relative mx-auto max-w-3xl px-6 py-16">
+      <Header app={appConfig.app} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-                <p>
-                    JoyBormi provides a platform that allows users to discover, book,
-                    and manage reservations for various services and locations,
-                    including but not limited to salons, tutors, restaurants,
-                    cafés, and other businesses.
-                </p>
+      <section className="mt-10">
+        {isLoading && <LoadingSkeleton />}
 
-                <p>
-                    JoyBormi acts as a technology platform connecting users and
-                    service providers. JoyBormi does not directly provide the
-                    services offered by businesses listed in the application.
-                </p>
+        {!isLoading && (error || !data) && <ErrorState />}
 
-                <h2>2. User Accounts</h2>
+        {!isLoading && data && (
+          <article className="space-y-6">
+            <header className="space-y-2">
+              <h1 className="text-3xl font-semibold tracking-tight">{data.title}</h1>
 
-                <p>To use certain features of the application, you may be required to create an account.</p>
+              {data.createdAt && (
+                <p className="text-muted-foreground text-sm">Last updated: {formatDate(data.createdAt)}</p>
+              )}
+            </header>
 
-                <p>You agree to:</p>
+            <RichContent content={data.content} />
+          </article>
+        )}
+      </section>
+    </main>
+  )
+}
 
-                <ul>
-                    <li>Provide accurate and complete information</li>
-                    <li>Maintain the security of your account credentials</li>
-                    <li>Be responsible for all activities under your account</li>
-                </ul>
+/* ----------------------------- */
+/* UI States */
+/* ----------------------------- */
 
-                <p>
-                    JoyBormi reserves the right to suspend or terminate accounts that
-                    violate these Terms.
-                </p>
+function LoadingSkeleton() {
+  return (
+    <div className="animate-pulse space-y-4">
+      <div className="bg-muted h-8 w-2/3 rounded" />
+      <div className="bg-muted h-4 w-1/3 rounded" />
+      <div className="bg-muted h-4 w-full rounded" />
+      <div className="bg-muted h-4 w-full rounded" />
+      <div className="bg-muted h-4 w-5/6 rounded" />
+    </div>
+  )
+}
 
-                <h2>3. Bookings and Reservations</h2>
+function ErrorState() {
+  return <p className="text-muted-foreground">Failed to load terms of service.</p>
+}
 
-                <p>
-                    The JoyBormi platform allows users to make reservations with
-                    third-party businesses.
-                </p>
+/* ----------------------------- */
+/* Utils */
+/* ----------------------------- */
 
-                <p>By making a reservation, you agree that:</p>
-
-                <ul>
-                    <li>The booking information provided is accurate</li>
-                    <li>You will arrive on time for the scheduled appointment</li>
-                    <li>You will comply with the business's policies</li>
-                </ul>
-
-                <p>
-                    Service providers are responsible for delivering the services
-                    booked through the platform.
-                </p>
-
-                <h2>4. Cancellations and Changes</h2>
-
-                <p>
-                    Cancellation policies may vary depending on the service provider.
-                </p>
-
-                <p>
-                    Users should review the cancellation terms shown during the booking
-                    process. Late cancellations or missed appointments may result in
-                    penalties determined by the service provider.
-                </p>
-
-                <h2>5. Payments</h2>
-
-                <p>
-                    Some bookings may require payment through the application.
-                    Payments may be processed by third-party payment providers.
-                </p>
-
-                <p>
-                    JoyBormi does not store full payment card details.
-                </p>
-
-                <h2>6. Acceptable Use</h2>
-
-                <p>You agree not to:</p>
-
-                <ul>
-                    <li>Use the platform for unlawful activities</li>
-                    <li>Provide false or misleading information</li>
-                    <li>Attempt to disrupt or interfere with the platform</li>
-                    <li>Use automated systems to access the service</li>
-                </ul>
-
-                <h2>7. Intellectual Property</h2>
-
-                <p>
-                    All content, branding, and technology associated with JoyBormi
-                    are owned by or licensed to JoyBormi and are protected by
-                    intellectual property laws.
-                </p>
-
-                <p>
-                    You may not copy, modify, distribute, or reproduce any part of the
-                    platform without prior permission.
-                </p>
-
-                <h2>8. Limitation of Liability</h2>
-
-                <p>
-                    JoyBormi provides the platform on an "as is" and "as available"
-                    basis.
-                </p>
-
-                <p>
-                    JoyBormi is not responsible for the quality, safety, or delivery
-                    of services provided by third-party businesses listed in the
-                    application.
-                </p>
-
-                <h2>9. Termination</h2>
-
-                <p>
-                    JoyBormi may suspend or terminate access to the application if
-                    users violate these Terms or misuse the platform.
-                </p>
-
-                <h2>10. Changes to These Terms</h2>
-
-                <p>
-                    We may update these Terms periodically. Continued use of the
-                    application after updates indicates acceptance of the revised
-                    Terms.
-                </p>
-
-                <h2>11. Contact</h2>
-
-                <p>
-                    If you have questions about these Terms, please contact:
-                    <br />
-                    <strong>JoyBormi</strong>
-                    <br />
-                    Email: support@joybormi.com
-                </p>
-            </article>
-        </main>
-    )
+function formatDate(date: string | Date) {
+  return new Date(date).toLocaleDateString()
 }

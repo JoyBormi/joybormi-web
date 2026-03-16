@@ -1,121 +1,80 @@
-export const metadata = {
-    title: 'Privacy Policy',
-    description: 'Privacy policy for JoyBormi',
-}
+"use client"
+
+import { useLocale } from "next-intl"
+import { useMemo, useState } from "react"
+
+import { Header } from "@/components/shared/header"
+import { RichContent } from "@/components/shared/rich-content"
+import { appConfig } from "@/config/app.config"
+import { useGetPublicLegal } from "@/hooks/legal/use-get-public-legal"
+import { Locale } from "@/i18n/config"
 
 export default function PrivacyPage() {
-    return (
-        <main className="mx-auto max-w-3xl px-6 py-16">
-            <article className="prose prose-neutral max-w-none">
-                <h1>Privacy Policy</h1>
+  const locale = useLocale()
+  const [menuOpen, setMenuOpen] = useState(false)
 
-                <p>
-                    <strong>Last updated:</strong> March 7, 2026
-                </p>
+  const language = useMemo(() => locale?.toUpperCase() as Locale, [locale])
 
-                <p>
-                    This Privacy Policy explains how <strong>APP_NAME</strong> ("we", "our",
-                    or "us") collects, uses, and protects your information when you use
-                    our mobile application and related services.
-                </p>
+  const { data, isLoading, error } = useGetPublicLegal({
+    type: "PRIVACY",
+    language,
+  })
 
-                <h2>Information We Collect</h2>
+  return (
+    <main className="relative mx-auto max-w-3xl px-6 py-16">
+      <Header app={appConfig.app} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-                <h3>Personal Information</h3>
-                <p>When you create an account or interact with the application, we may collect:</p>
+      <section className="mt-10">
+        {isLoading && <LoadingSkeleton />}
 
-                <ul>
-                    <li>Name</li>
-                    <li>Email address</li>
-                    <li>Phone number</li>
-                    <li>Profile information</li>
-                    <li>Account credentials</li>
-                </ul>
+        {!isLoading && (error || !data) && <ErrorState />}
 
-                <h3>Usage Information</h3>
+        {!isLoading && data && (
+          <article className="space-y-6">
+            <header className="space-y-2">
+              <h1 className="text-3xl font-semibold tracking-tight">{data.title}</h1>
 
-                <p>We may automatically collect information about how the app is used:</p>
+              {data.createdAt && (
+                <p className="text-muted-foreground text-sm">Last updated: {formatDate(data.createdAt)}</p>
+              )}
+            </header>
 
-                <ul>
-                    <li>Device type</li>
-                    <li>Operating system</li>
-                    <li>App version</li>
-                    <li>Log data</li>
-                    <li>Interaction events</li>
-                </ul>
+            <RichContent content={data.content} />
+          </article>
+        )}
+      </section>
+    </main>
+  )
+}
 
-                <h2>How We Use Information</h2>
+/* ---------------------------------- */
+/* Loading */
+/* ---------------------------------- */
 
-                <ul>
-                    <li>Provide and maintain the service</li>
-                    <li>Process bookings or reservations</li>
-                    <li>Improve application functionality</li>
-                    <li>Personalize user experience</li>
-                    <li>Send service-related notifications</li>
-                    <li>Prevent fraud and abuse</li>
-                </ul>
+function LoadingSkeleton() {
+  return (
+    <div className="animate-pulse space-y-4">
+      <div className="bg-muted h-8 w-2/3 rounded" />
+      <div className="bg-muted h-4 w-1/3 rounded" />
+      <div className="bg-muted h-4 w-full rounded" />
+      <div className="bg-muted h-4 w-full rounded" />
+      <div className="bg-muted h-4 w-5/6 rounded" />
+    </div>
+  )
+}
 
-                <h2>Sharing of Information</h2>
+/* ---------------------------------- */
+/* Error */
+/* ---------------------------------- */
 
-                <p>We do not sell personal information.</p>
+function ErrorState() {
+  return <p className="text-muted-foreground">Failed to load privacy policy.</p>
+}
 
-                <p>Information may be shared only with:</p>
+/* ---------------------------------- */
+/* Utils */
+/* ---------------------------------- */
 
-                <ul>
-                    <li>Trusted service providers</li>
-                    <li>Payment processors</li>
-                    <li>Analytics services</li>
-                    <li>Legal authorities if required by law</li>
-                </ul>
-
-                <h2>Data Security</h2>
-
-                <p>
-                    We implement reasonable technical and organizational measures to
-                    protect user information. However, no system is completely secure.
-                </p>
-
-                <h2>Data Retention</h2>
-
-                <p>
-                    We retain personal data only as long as necessary to provide services
-                    and comply with legal obligations.
-                </p>
-
-                <h2>User Rights</h2>
-
-                <p>Users may request:</p>
-
-                <ul>
-                    <li>Access to their personal data</li>
-                    <li>Correction of inaccurate data</li>
-                    <li>Deletion of personal information</li>
-                </ul>
-
-                <h2>Children's Privacy</h2>
-
-                <p>
-                    Our services are not intended for users under the age of 13. We do not
-                    knowingly collect information from children.
-                </p>
-
-                <h2>Changes to This Policy</h2>
-
-                <p>
-                    We may update this Privacy Policy periodically. Updates will be posted
-                    on this page with a revised date.
-                </p>
-
-                <h2>Contact</h2>
-
-                <p>
-                    If you have questions about this Privacy Policy, contact:
-                    <br />
-                    <strong>COMPANY_NAME</strong>
-                    <br />
-                    CONTACT_EMAIL
-                </p>
-            </article>
-        </main>
-    )
+function formatDate(date: string | Date) {
+  return new Date(date).toLocaleDateString()
 }
