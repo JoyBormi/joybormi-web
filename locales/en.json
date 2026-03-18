@@ -189,6 +189,35 @@
       "joinedMessage": "You're subscribed",
       "copyright": "© {year} JoyBormi. All rights reserved.",
       "contactTelegram": "Telegram"
+    },
+    "legal": {
+      "lastUpdated": "Last updated",
+      "errorLoading": "Failed to load document.",
+      "retry": "Please try again later or contact support."
+    },
+    "about": {
+      "journeyBadge": "Our Journey",
+      "headline": "Building the future of {accent}",
+      "headlineAccent": "digital connection",
+      "description": "We are a passionate team of creators, engineers, and dreamers dedicated to making technology that empowers people to do their best work.",
+      "mission": {
+        "title": "Our Mission",
+        "body": "Our goal is simple: eliminate friction in daily tasks. We believe that software should be intuitive, fast, and beautiful. Every line of code we write and every pixel we push is aimed at giving you back your most valuable resource—time.",
+        "footer": "Empowering humans through design"
+      },
+      "team": {
+        "title": "Meet the Team",
+        "subtitle": "The talented people behind the scenes making the magic happen.",
+        "founderRole": "Founder & CEO",
+        "productRole": "Head of Product",
+        "engineerRole": "Lead Engineer",
+        "designRole": "Design Director"
+      },
+      "cta": {
+        "title": "Want to join us?",
+        "description": "We are always looking for talented individuals to join our growing team.",
+        "button": "View Open Positions"
+      }
     }
   }
 }

@@ -3,122 +3,96 @@ import ReactMarkdown, { defaultUrlTransform } from "react-markdown"
 import type { Components } from "react-markdown"
 import remarkGfm from "remark-gfm"
 
+import { cn } from "@/lib/utils"
+
 type RichContentProps = {
   content: string
+  className?: string
 }
-
-const PHONE_REGEX = /\b(?:\+?\d{1,3}[-.\s]?)?\d{2,4}[-.\s]\d{3,4}[-.\s]\d{4}\b/g
-
-const UTM_PATTERN = /utm/i
-
-const normalizeExternalHref = (href?: string): string => {
-  const value = (href || "").trim()
-  if (!value) return "#"
-
-  if (/^(?:[a-z][a-z\d+\-.]*:|#|\/)/i.test(value)) {
-    return value
-  }
-
-  return `https://${value}`
-}
-
-const isPhoneHref = (href: string): boolean => href.startsWith("tel:")
-
-const linkifyPhoneNumbers = (text: string): string =>
-  text.replace(PHONE_REGEX, (phone) => {
-    const tel = phone.replace(/[^\d+]/g, "")
-    return `[${phone}](tel:${tel})`
-  })
-
-const getSoftHiddenUrlParts = (text: string) => {
-  const matchIndex = text.search(UTM_PATTERN)
-
-  if (matchIndex === -1) return null
-
-  const visibleEnd = matchIndex > 0 && text[matchIndex - 1] === "?" ? matchIndex - 1 : matchIndex
-
-  return {
-    visible: text.slice(0, visibleEnd),
-    hidden: text.slice(visibleEnd),
-  }
-}
-
-const getPlainText = (children: React.ReactNode): string =>
-  React.Children.toArray(children)
-    .filter((child): child is string | number => typeof child === "string" || typeof child === "number")
-    .join("")
-    .trim()
 
 const MarkdownComponents: Components = {
-  p: ({ children }) => <p className="body-1 wrap-break-word whitespace-pre-line">{children}</p>,
+  p: ({ children }) => <p className="mb-2 leading-relaxed last:mb-0">{children}</p>,
 
-  h1: ({ children }) => <h1 className="title">{children}</h1>,
+  h1: ({ children }) => <h1 className="mb-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">{children}</h1>,
 
-  h2: ({ children }) => <h2 className="subtitle">{children}</h2>,
+  h2: ({ children }) => <h2 className="mt-4 mb-2 text-2xl font-semibold tracking-tight text-foreground">{children}</h2>,
 
-  h3: ({ children }) => <h3 className="subtitle">{children}</h3>,
+  h3: ({ children }) => <h3 className="mt-4 mb-2 text-xl font-semibold tracking-tight text-foreground">{children}</h3>,
 
-  ul: ({ children }) => <ul className="body-1 ml-4 list-disc">{children}</ul>,
+  ul: ({ children }) => <ul className="mb-6 ml-6 list-disc space-y-2">{children}</ul>,
 
-  ol: ({ children }) => <ol className="body-1 ml-4 list-decimal">{children}</ol>,
+  ol: ({ children }) => <ol className="mb-6 ml-6 list-decimal space-y-2">{children}</ol>,
 
-  li: ({ children }) => <li className="body-1 wrap-break-word">{children}</li>,
+  li: ({ children }) => <li className="pl-1">{children}</li>,
 
   blockquote: ({ children }) => (
-    <blockquote className="body-1 border-l-4 border-gray-300 pl-3 text-gray-500">{children}</blockquote>
+    <blockquote className="my-8 border-l-4 border-primary/30 bg-primary/5 px-6 py-4 italic text-foreground/80 rounded-r-lg">
+      {children}
+    </blockquote>
   ),
 
   table: ({ children }) => (
-    <div className="my-2 w-full overflow-x-auto">
-      <table className="w-full border-collapse border border-gray-200 text-left">{children}</table>
+    <div className="my-8 w-full overflow-hidden rounded-xl border border-border">
+      <div className="overflow-x-auto">
+        <table className="w-full border-collapse text-left text-sm">{children}</table>
+      </div>
     </div>
   ),
 
-  thead: ({ children }) => <thead className="bg-gray-100">{children}</thead>,
+  thead: ({ children }) => <thead className="bg-muted/50 border-b border-border">{children}</thead>,
 
-  tbody: ({ children }) => <tbody>{children}</tbody>,
+  tr: ({ children }) => <tr className="border-b border-border last:border-0">{children}</tr>,
 
-  tr: ({ children }) => <tr className="border-b border-gray-200">{children}</tr>,
+  th: ({ children }) => <th className="px-4 py-3 font-semibold text-foreground">{children}</th>,
 
-  th: ({ children }) => <th className="body-2 border border-gray-200 px-3 py-2 font-semibold">{children}</th>,
+  td: ({ children }) => <td className="px-4 py-3 text-muted-foreground">{children}</td>,
 
-  td: ({ children }) => <td className="body-2 border border-gray-200 px-3 py-2">{children}</td>,
-
-  strong: ({ children }) => <strong className="font-bold">{children}</strong>,
+  strong: ({ children }) => <strong className="font-bold text-foreground">{children}</strong>,
 
   em: ({ children }) => <em className="italic">{children}</em>,
 
-  hr: () => <hr className="my-3 border-gray-200" />,
+  hr: () => <hr className="my-12 border-border" />,
 
-  code: ({ children }) => <code className="caption-1 rounded bg-gray-100 px-1 py-0.5">{children}</code>,
+  code: ({ children }) => (
+    <code className="rounded-md bg-muted px-1.5 py-0.5 font-mono text-sm font-medium text-foreground">{children}</code>
+  ),
 
-  pre: ({ children }) => <pre className="caption-1 overflow-x-auto rounded bg-gray-100 p-2">{children}</pre>,
+  pre: ({ children }) => (
+    <pre className="my-8 overflow-x-auto rounded-xl bg-muted p-6 font-mono text-sm leading-relaxed">{children}</pre>
+  ),
 
   a: ({ children, href }) => {
-    const normalizedHref = normalizeExternalHref(href)
-    const telLink = isPhoneHref(normalizedHref)
-
-    const childText = getPlainText(children)
-    const softHiddenUrlParts = childText ? getSoftHiddenUrlParts(childText) : null
-
+    const isExternal = href?.startsWith("http")
     return (
       <a
-        href={normalizedHref}
-        target={telLink ? undefined : "_blank"}
-        rel={telLink ? undefined : "noreferrer"}
-        className="break-all text-blue-600 underline"
+        href={href}
+        target={isExternal ? "_blank" : undefined}
+        rel={isExternal ? "noreferrer" : undefined}
+        className="font-medium text-primary underline underline-offset-4 transition-colors hover:text-primary/80 decoration-primary/30 hover:decoration-primary"
       >
-        {softHiddenUrlParts ? softHiddenUrlParts.visible : children}
+        {children}
       </a>
     )
   },
 }
 
-export const RichContent: React.FC<RichContentProps> = ({ content }) => {
-  const parsedContent = linkifyPhoneNumbers(content)
+export const RichContent: React.FC<RichContentProps> = ({ content, className }) => {
+  if (!content) return null
+
+  // Detect if the content is likely HTML
+  const isHtml = /<[a-z][\s\S]*>/i.test(content)
+
+  if (isHtml) {
+    return (
+      <div
+        className={cn("jb-rich-content", className)}
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
+    )
+  }
 
   return (
-    <div className="body-1 text-foreground prose prose-sm mt-2.5 max-w-none wrap-break-word">
+    <div className={cn("text-muted-foreground text-lg", className)}>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={MarkdownComponents}
@@ -127,7 +101,7 @@ export const RichContent: React.FC<RichContentProps> = ({ content }) => {
           return defaultUrlTransform(url)
         }}
       >
-        {parsedContent}
+        {content}
       </ReactMarkdown>
     </div>
   )

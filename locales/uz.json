@@ -189,6 +189,35 @@
       "joinedMessage": "Siz obuna bo‘ldingiz",
       "copyright": "© {year} JoyBormi. Barcha huquqlar himoyalangan.",
       "contactTelegram": "Telegram"
+    },
+    "legal": {
+      "errorLoading": "Hujjat yuklanmadi.",
+      "lastUpdated": "Oxirgi yangilanish",
+      "retry": "Iltimos, keyinroq qayta urinib ko'ring yoki qo'llab-quvvatlash xizmatiga murojaat qiling."
+    },
+    "about": {
+      "journeyBadge": "Bizning Yo'limiz",
+      "headline": "{accent} kelajagini quryapmiz",
+      "headlineAccent": "raqamli aloqa",
+      "description": "Biz odamlarga o'z ishlarini eng yaxshi tarzda bajarishga yordam beradigan texnologiyalarni yaratishga sodiq bo'lgan yaratuvchilar, muhandislar va xayolparastlar jamoasimiz.",
+      "mission": {
+        "title": "Bizning Missiyamiz",
+        "body": "Bizning maqsadimiz oddiy: kundalik vazifalardagi qiyinchiliklarni bartaraf etish. Biz dasturiy ta'minot intuitiv, tezkor va chiroyli bo'lishi kerak deb hisoblaymiz. Har bir qator kod va piksellar sizning eng qimmatli resurslaringizdan biri — vaqtingizni o'zingizga qaytarishga qaratilgan.",
+        "footer": "Dizayn orqali insonlar imkoniyatlarini kengaytirish"
+      },
+      "team": {
+        "title": "Jamoamiz bilan tanishing",
+        "subtitle": "Sahna ortida sehrni amalga oshirayotgan iqtidorli insonlar.",
+        "founderRole": "Asoschi va CEO",
+        "productRole": "Mahsulot bo'yicha direktor",
+        "engineerRole": "Yetakchi muhandis",
+        "designRole": "Dizayn bo'yicha direktor"
+      },
+      "cta": {
+        "title": "Bizga qo'shilishni xohlaysizmi?",
+        "description": "Biz doimo o'sib borayotgan jamoamizga iqtidorli insonlarni qidiramiz.",
+        "button": "Bo'sh ish o'rinlarini ko'rish"
+      }
     }
   }
 }
