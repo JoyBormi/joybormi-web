@@ -58,7 +58,7 @@ const HomeView = () => {
 
             <div className="relative flex h-[clamp(460px,54vw,760px)] items-end justify-center pt-7 pb-10 max-[560px]:h-[clamp(470px,122vw,610px)] max-lg:h-[clamp(480px,82vw,620px)] max-md:h-[clamp(500px,108vw,640px)] xl:h-[clamp(560px,46vw,820px)]">
               <div className="jb-glow-orb jb-glow-orb-main" />
-              <div className="jb-phone-primary absolute bottom-0 left-1/2 z-2 transform-[translateX(-65%)_rotate(-8deg)] animate-[jb-float-left_5s_ease-in-out_infinite] [--jb-iphone-scale:0.86] max-[560px]:transform-[translateX(-67%)_rotate(-14deg)] max-[560px]:animate-[jb-float-left-mobile-small_5.6s_ease-in-out_infinite] max-[560px]:[--jb-iphone-scale:0.8] max-lg:[--jb-iphone-scale:0.82] max-md:transform-[translateX(-58%)_rotate(-15deg)] max-md:animate-[jb-float-left-mobile_5.4s_ease-in-out_infinite] max-md:[--jb-iphone-scale:0.84] min-[1536px]:[--jb-iphone-scale:1.08] xl:[--jb-iphone-scale:1]">
+              <div className="jb-phone-primary absolute bottom-0 left-[40%] z-2 transform-[translateX(-65%)_rotate(-8deg)] animate-[jb-float-left_5s_ease-in-out_infinite] [--jb-iphone-scale:0.86] max-[560px]:transform-[translateX(-67%)_rotate(-14deg)] max-[560px]:animate-[jb-float-left-mobile-small_5.6s_ease-in-out_infinite] max-[560px]:[--jb-iphone-scale:0.72] max-lg:[--jb-iphone-scale:0.82] max-md:transform-[translateX(-58%)_rotate(-15deg)] max-md:animate-[jb-float-left-mobile_5.4s_ease-in-out_infinite] max-md:[--jb-iphone-scale:0.76] min-[1536px]:[--jb-iphone-scale:1.08] xl:[--jb-iphone-scale:1]">
                 <IPhoneMockup
                   className="origin-[bottom_center] transform-[scale(var(--jb-iphone-scale))]"
                   imageSrc={app.assets.primaryScreen}
@@ -66,7 +66,7 @@ const HomeView = () => {
                   priority
                 />
               </div>
-              <div className="jb-phone-secondary absolute bottom-0 left-1/2 z-2 transform-[translateX(-10%)_rotate(10deg)] animate-[jb-float-right_5s_ease-in-out_infinite] [--jb-android-scale:0.82] [animation-delay:0.5s] max-[560px]:transform-[translateX(-10%)_rotate(11deg)] max-[560px]:animate-[jb-float-right-mobile-small_5.6s_ease-in-out_infinite] max-[560px]:[--jb-android-scale:0.76] max-[560px]:[animation-delay:0.4s] max-lg:[--jb-android-scale:0.76] max-md:transform-[translateX(-6%)_rotate(12deg)] max-md:animate-[jb-float-right-mobile_5.4s_ease-in-out_infinite] max-md:[--jb-android-scale:0.8] max-md:[animation-delay:0.45s] min-[1536px]:[--jb-android-scale:1.02] xl:[--jb-android-scale:0.95]">
+              <div className="jb-phone-secondary absolute bottom-0 left-[45%] z-2 transform-[translateX(-10%)_rotate(10deg)] animate-[jb-float-right_5s_ease-in-out_infinite] [--jb-android-scale:0.82] [animation-delay:0.5s] max-[560px]:transform-[translateX(-10%)_rotate(11deg)] max-[560px]:animate-[jb-float-right-mobile-small_5.6s_ease-in-out_infinite] max-[560px]:[--jb-android-scale:0.68] max-[560px]:[animation-delay:0.4s] max-lg:[--jb-android-scale:0.76] max-md:transform-[translateX(-6%)_rotate(12deg)] max-md:animate-[jb-float-right-mobile_5.4s_ease-in-out_infinite] max-md:[--jb-android-scale:0.72] max-md:[animation-delay:0.45s] min-[1536px]:[--jb-android-scale:1.02] xl:[--jb-android-scale:0.95]">
                 <AndroidMockup
                   className="transform-origin-[bottom_center] transform-[scale(var(--jb-android-scale))]"
                   imageSrc={app.assets.secondaryScreen}

@@ -18,9 +18,9 @@ const IPhoneMockup: React.FC<IPhoneMockupProps> = ({
   return (
     <div className={cn("flex items-center justify-center", className)}>
       <div className="border-foreground relative h-[560px] w-[276px] rounded-[45px] border-8 shadow-[0_24px_40px_-32px_rgba(0,0,0,0.8)]">
-        <div className="bg-foreground absolute top-2 left-1/2 z-20 h-[22px] w-[90px] -translate-x-1/2 transform rounded-full" />
+        <div className="bg-foreground absolute top-1 left-1/2 z-20 h-[22px] w-[90px] -translate-x-1/2 transform rounded-full" />
 
-        <div className="border-foreground/55 pointer-events-none absolute -inset-px rounded-[37px] border-[3px]"></div>
+        <div className="border-foreground/55 pointer-events-none absolute -inset-px rounded-[37px] border-[3px]" />
 
         <div className="bg-foreground/10 relative h-full w-full overflow-hidden rounded-[37px]">
           {imageSrc ? (

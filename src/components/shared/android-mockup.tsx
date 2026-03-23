@@ -23,11 +23,9 @@ const AndroidMockup: React.FC<AndroidMockupProps> = ({
         className
       )}
     >
-      <div className="bg-foreground absolute top-2 left-1/2 z-20 h-[18px] w-[78px] -translate-x-1/2 rounded-b-xl" />
+      <div className="bg-foreground absolute top-0 left-1/2 z-20 h-[18px] w-[78px] -translate-x-1/2 rounded-b-xl" />
 
-      <div className="border-foreground/45 pointer-events-none absolute inset-[2px] rounded-[30px] border-2" />
-
-      <div className="bg-muted absolute inset-[6px] overflow-hidden rounded-[28px]">
+      <div className="bg-muted absolute inset-[2px] overflow-hidden rounded-[28px]">
         {imageSrc ? (
           <Image
             src={imageSrc}

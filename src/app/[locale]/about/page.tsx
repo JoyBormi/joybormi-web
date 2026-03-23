@@ -51,7 +51,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
   }
 
   return (
-    <main className="jb-landing min-h-screen">
+    <main className="jb-landing bg-background text-foreground flex min-h-screen flex-col [font-family:var(--font-pretendard),var(--font-sans),sans-serif]">
       <Header />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -59,18 +59,18 @@ export default async function AboutPage({ params }: AboutPageProps) {
         <div className="jb-glow-orb jb-glow-orb-main absolute -top-24 left-1/2 -translate-x-1/2 opacity-50" />
 
         <div className="relative mx-auto max-w-3xl text-center">
-          <div className="jb-badge animate-in fade-in slide-in-from-bottom-2 mx-auto mb-8 duration-700">
-            <div className="jb-badge-dot" />
-            <span>{t("journeyBadge")}</span>
+          <div className="animate-in fade-in slide-in-from-bottom-2 mx-auto mb-8 inline-flex w-fit items-center gap-2 rounded-full border border-[color-mix(in_srgb,var(--primary)_30%,transparent)] bg-[color-mix(in_srgb,var(--primary)_14%,transparent)] px-[14px] py-[6px] pl-2 duration-700">
+            <div className="bg-primary h-5 w-5 rounded-full" />
+            <span className="text-primary text-[13px] font-semibold">{t("journeyBadge")}</span>
           </div>
 
-          <h1 className="jb-headline animate-in fade-in slide-in-from-bottom-4 mb-8 delay-100 duration-700">
+          <h1 className="animate-in fade-in slide-in-from-bottom-4 mb-8 text-[clamp(2.6rem,5vw,4.9rem)] leading-[0.98] font-extrabold tracking-[-0.04em] uppercase delay-100 duration-700 max-md:text-[clamp(2.2rem,10vw,2.8rem)]">
             {t.rich("headline", {
-              accent: () => <em className="block sm:inline">{t("headlineAccent")}</em>,
+              accent: () => <em className="text-primary block not-italic sm:inline">{t("headlineAccent")}</em>,
             })}
           </h1>
 
-          <p className="jb-description animate-in fade-in slide-in-from-bottom-6 mx-auto delay-200 duration-700">
+          <p className="text-muted-foreground animate-in fade-in slide-in-from-bottom-6 mx-auto max-w-[560px] text-[clamp(1rem,1.5vw,1.15rem)] leading-[1.72] delay-200 duration-700 max-md:max-w-full">
             {t("description")}
           </p>
         </div>
@@ -103,15 +103,15 @@ export default async function AboutPage({ params }: AboutPageProps) {
 
       <section className="mx-auto max-w-5xl px-6 pb-24 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="jb-badge mx-auto mb-8">
-            <div className="jb-badge-dot" />
-            <span>{t("faq.badge")}</span>
+          <div className="mx-auto mb-8 inline-flex w-fit items-center gap-2 rounded-full border border-[color-mix(in_srgb,var(--primary)_30%,transparent)] bg-[color-mix(in_srgb,var(--primary)_14%,transparent)] px-[14px] py-[6px] pl-2">
+            <div className="bg-primary h-5 w-5 rounded-full" />
+            <span className="text-primary text-[13px] font-semibold">{t("faq.badge")}</span>
           </div>
           <h2 className="text-foreground text-3xl font-bold tracking-tight sm:text-4xl">{t("faq.title")}</h2>
           <p className="text-muted-foreground mt-4 text-lg leading-8">{t("faq.description")}</p>
         </div>
 
-        <div className="mx-auto mt-14 grid gap-4 md:w-3xl">
+        <div className="mx-auto mt-14 grid max-w-4xl gap-4">
           {faqItems.map((item) => (
             <details
               key={item.question}
