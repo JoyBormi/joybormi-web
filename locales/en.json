@@ -11,31 +11,21 @@
   "meta": {
     "title": "JoyBormi",
     "description": "JoyBormi is an online booking platform where you can easily reserve restaurants, cafés, salons, and other venues.",
-    "keywords": [
-      "booking",
-      "reservation",
-      "restaurants",
-      "cafes",
-      "services"
-    ],
+    "keywords": ["booking", "reservation", "restaurants", "cafes", "services"],
     "home": {
       "title": "Home",
       "description": "Discover and book restaurants, cafés, and services easily with JoyBormi.",
-      "keywords": [
-        "booking",
-        "restaurants",
-        "cafes",
-        "reservation"
-      ]
+      "keywords": ["booking", "restaurants", "cafes", "reservation"]
     },
     "about": {
       "title": "About Us",
-      "description": "JoyBormi helps people easily find and reserve the best places. Learn more about our mission and platform.",
+      "description": "Learn how JoyBormi helps people discover places, book faster, and manage reservations with a smoother mobile experience.",
       "keywords": [
-        "about",
-        "company",
-        "platform",
-        "JoyBormi"
+        "JoyBormi about",
+        "booking platform",
+        "restaurant reservation app",
+        "Uzbekistan booking app",
+        "place discovery"
       ]
     }
   },
@@ -67,12 +57,7 @@
     "statResponseValue": "< 3 min",
     "phoneTitle": "Plan your next booking",
     "searchPlaceholder": "Where to?",
-    "quickFilters": [
-      "Restaurants",
-      "Beauty",
-      "Health",
-      "Events"
-    ],
+    "quickFilters": ["Restaurants", "Beauty", "Health", "Events"],
     "experienceLabel": "Best experience",
     "experienceTitle": "Premium local experiences, one tap away",
     "experienceBody": "Join people using JoyBormi daily to book beauty, dining, and lifestyle services without calls.",
@@ -138,9 +123,8 @@
       "download": "Download"
     },
     "badge": "Available on iOS & Android",
-    "headlineTop": "Find Your",
-    "headlineAccent": "Joy,",
-    "headlineBottom": "Anytime",
+    "headline": "Find your <accent>Joy</accent>, anytime",
+    "headlineAccent": "Joy",
     "description": "JoyBormi brings everything you need into one clean mobile experience. Discover trusted places, reserve faster, and manage plans without friction.",
     "store": {
       "downloadOn": "Download on the",
@@ -197,26 +181,42 @@
     },
     "about": {
       "journeyBadge": "Our Journey",
-      "headline": "Building the future of {accent}",
-      "headlineAccent": "digital connection",
-      "description": "We are a passionate team of creators, engineers, and dreamers dedicated to making technology that empowers people to do their best work.",
+      "headline": "Building the future of finding your <accent>Joy</accent>",
+      "headlineAccent": "Joy",
+      "description": "JoyBormi is building a faster way to discover trusted places, book in seconds, and keep everyday plans organized in one mobile experience.",
       "mission": {
         "title": "Our Mission",
-        "body": "Our goal is simple: eliminate friction in daily tasks. We believe that software should be intuitive, fast, and beautiful. Every line of code we write and every pixel we push is aimed at giving you back your most valuable resource—time.",
-        "footer": "Empowering humans through design"
-      },
-      "team": {
-        "title": "Meet the Team",
-        "subtitle": "The talented people behind the scenes making the magic happen.",
-        "founderRole": "Founder & CEO",
-        "productRole": "Head of Product",
-        "engineerRole": "Lead Engineer",
-        "designRole": "Design Director"
+        "body": "Our mission is to remove friction from finding the right place at the right time. We help people discover restaurants, cafés, salons, and services they can trust, then book them instantly without unnecessary steps.",
+        "footer": "Helping people find the right place faster"
       },
       "cta": {
         "title": "Want to join us?",
         "description": "We are always looking for talented individuals to join our growing team.",
-        "button": "View Open Positions"
+        "button": "View Open Positions",
+        "comingSoon": "Careers page coming soon"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Frequently asked questions about JoyBormi",
+        "description": "Quick answers about how JoyBormi helps users discover places and book with confidence.",
+        "items": [
+          {
+            "question": "What is JoyBormi?",
+            "answer": "JoyBormi is a mobile booking platform that helps people discover trusted places and reserve restaurants, cafés, salons, and other services quickly."
+          },
+          {
+            "question": "How does JoyBormi help users save time?",
+            "answer": "JoyBormi reduces the steps between discovery and booking. Users can browse places, compare options, and confirm reservations in one flow instead of calling or messaging manually."
+          },
+          {
+            "question": "Which kinds of places can users find on JoyBormi?",
+            "answer": "Users can explore restaurants, cafés, beauty services, and other bookable places that are presented in a clean, mobile-first experience."
+          },
+          {
+            "question": "Why is JoyBormi focused on mobile booking?",
+            "answer": "Most booking decisions happen on the go. JoyBormi is designed for fast mobile discovery so users can find their Joy and reserve the right place anytime."
+          }
+        ]
       }
     }
   }

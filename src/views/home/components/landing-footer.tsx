@@ -69,8 +69,12 @@ function LandingFooter({ texts, telegramUrl, instagramUrl, phoneHref, phoneRaw }
             <h3 className="jl-footer-col-title">{texts.companyTitle}</h3>
             <nav className="jl-footer-links">
               <Link href="/about">{texts.companyAbout}</Link>
-              <Link href="/privacy">{texts.companyPrivacy}</Link>
-              <Link href="/terms">{texts.companyTerms}</Link>
+              <Link href="/privacy" prefetch={false}>
+                {texts.companyPrivacy}
+              </Link>
+              <Link href="/terms" prefetch={false}>
+                {texts.companyTerms}
+              </Link>
             </nav>
           </section>
 
@@ -113,8 +117,12 @@ function LandingFooter({ texts, telegramUrl, instagramUrl, phoneHref, phoneRaw }
         <div className="jl-footer-bottom">
           <p className="jl-footer-copy">{texts.copyright}</p>
           <div className="jl-footer-links-row">
-            <Link href="/privacy">{texts.companyPrivacy}</Link>
-            <Link href="/terms">{texts.companyTerms}</Link>
+            <Link href="/privacy" prefetch={false}>
+              {texts.companyPrivacy}
+            </Link>
+            <Link href="/terms" prefetch={false}>
+              {texts.companyTerms}
+            </Link>
           </div>
         </div>
       </div>

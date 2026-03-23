@@ -11,31 +11,21 @@
   "meta": {
     "title": "JoyBormi",
     "description": "JoyBormi — restoranlar, kafelar, salonlar va boshqa joylarni onlayn bron qilish platformasi.",
-    "keywords": [
-      "bron qilish",
-      "restoran",
-      "kafe",
-      "onlayn bron",
-      "JoyBormi"
-    ],
+    "keywords": ["bron qilish", "restoran", "kafe", "onlayn bron", "JoyBormi"],
     "home": {
       "title": "Bosh sahifa",
       "description": "JoyBormi orqali restoranlar, kafelar va xizmatlarni oson toping va bron qiling.",
-      "keywords": [
-        "bron",
-        "restoran",
-        "kafe",
-        "joy band qilish"
-      ]
+      "keywords": ["bron", "restoran", "kafe", "joy band qilish"]
     },
     "about": {
       "title": "Biz haqimizda",
-      "description": "JoyBormi foydalanuvchilarga eng yaxshi joylarni topish va bron qilishni osonlashtiradi.",
+      "description": "JoyBormi foydalanuvchilarga mos joylarni topish, tezroq bron qilish va kundalik rejalari ustidan qulay nazorat qilishga yordam beradi.",
       "keywords": [
-        "kompaniya",
-        "platforma",
-        "JoyBormi",
-        "xizmat"
+        "JoyBormi haqida",
+        "bron platformasi",
+        "joy topish ilovasi",
+        "mobil bron qilish",
+        "xizmat bron qilish"
       ]
     }
   },
@@ -67,12 +57,7 @@
     "statResponseValue": "< 3 daqiqa",
     "phoneTitle": "Keyingi broningizni rejalang",
     "searchPlaceholder": "Qayerga boramiz?",
-    "quickFilters": [
-      "Restoranlar",
-      "Go‘zallik",
-      "Sog‘liq",
-      "Tadbirlar"
-    ],
+    "quickFilters": ["Restoranlar", "Go‘zallik", "Sog‘liq", "Tadbirlar"],
     "experienceLabel": "Eng yaxshi tajriba",
     "experienceTitle": "Premium mahalliy xizmatlar birgina teginishda",
     "experienceBody": "Minglab foydalanuvchilar JoyBormi orqali beauty, dining va lifestyle xizmatlarini qo‘ng‘iroqsiz bron qilmoqda.",
@@ -138,9 +123,8 @@
       "download": "Yuklab olish"
     },
     "badge": "iOS va Android uchun mavjud",
-    "headlineTop": "Ozingizning",
-    "headlineAccent": "quvonchingizni,",
-    "headlineBottom": "har doim toping",
+    "headline": "Har doim <accent>Joy</accent> toping",
+    "headlineAccent": "Joy",
     "description": "JoyBormi sizga kerakli narsalarni bitta toza mobil tajribada jamlaydi. Ishonchli joylarni toping, tez bron qiling va rejalarni qulay boshqaring.",
     "store": {
       "downloadOn": "Yuklab oling",
@@ -197,26 +181,42 @@
     },
     "about": {
       "journeyBadge": "Bizning Yo'limiz",
-      "headline": "{accent} kelajagini quryapmiz",
-      "headlineAccent": "raqamli aloqa",
-      "description": "Biz odamlarga o'z ishlarini eng yaxshi tarzda bajarishga yordam beradigan texnologiyalarni yaratishga sodiq bo'lgan yaratuvchilar, muhandislar va xayolparastlar jamoasimiz.",
+      "headline": "O'z <accent>Joy</accent>ingizni topish kelajagini quryapmiz",
+      "headlineAccent": "Joy",
+      "description": "JoyBormi foydalanuvchilarga ishonchli joylarni topish, soniyalar ichida bron qilish va kundalik rejalarni bitta mobil tajribada boshqarishning tezroq usulini yaratmoqda.",
       "mission": {
         "title": "Bizning Missiyamiz",
-        "body": "Bizning maqsadimiz oddiy: kundalik vazifalardagi qiyinchiliklarni bartaraf etish. Biz dasturiy ta'minot intuitiv, tezkor va chiroyli bo'lishi kerak deb hisoblaymiz. Har bir qator kod va piksellar sizning eng qimmatli resurslaringizdan biri — vaqtingizni o'zingizga qaytarishga qaratilgan.",
-        "footer": "Dizayn orqali insonlar imkoniyatlarini kengaytirish"
-      },
-      "team": {
-        "title": "Jamoamiz bilan tanishing",
-        "subtitle": "Sahna ortida sehrni amalga oshirayotgan iqtidorli insonlar.",
-        "founderRole": "Asoschi va CEO",
-        "productRole": "Mahsulot bo'yicha direktor",
-        "engineerRole": "Yetakchi muhandis",
-        "designRole": "Dizayn bo'yicha direktor"
+        "body": "Bizning maqsadimiz oddiy: to'g'ri joyni to'g'ri paytda topish jarayonidagi ortiqcha qadamlarni kamaytirish. Biz foydalanuvchilarga restoranlar, kafelar, salonlar va boshqa xizmatlarni ishonch bilan topish hamda ularni tez bron qilish imkonini beramiz.",
+        "footer": "Kerakli joyni tezroq topishga yordam beramiz"
       },
       "cta": {
         "title": "Bizga qo'shilishni xohlaysizmi?",
         "description": "Biz doimo o'sib borayotgan jamoamizga iqtidorli insonlarni qidiramiz.",
-        "button": "Bo'sh ish o'rinlarini ko'rish"
+        "button": "Bo'sh ish o'rinlarini ko'rish",
+        "comingSoon": "Vakansiyalar sahifasi tez orada qo'shiladi"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "JoyBormi haqida ko'p so'raladigan savollar",
+        "description": "JoyBormi foydalanuvchilarga joy topish va ishonch bilan bron qilishda qanday yordam berishi haqida qisqa javoblar.",
+        "items": [
+          {
+            "question": "JoyBormi nima?",
+            "answer": "JoyBormi ishonchli joylarni topish va restoranlar, kafelar, salonlar hamda boshqa xizmatlarni tez bron qilishga yordam beradigan mobil bron platformasidir."
+          },
+          {
+            "question": "JoyBormi foydalanuvchilarning vaqtini qanday tejaydi?",
+            "answer": "JoyBormi qidiruvdan bron qilishgacha bo'lgan yo'lni qisqartiradi. Foydalanuvchilar joylarni ko'rib chiqishi, variantlarni solishtirishi va bronni bitta qulay jarayonda tasdiqlashi mumkin."
+          },
+          {
+            "question": "JoyBormi orqali qanday joylarni topish mumkin?",
+            "answer": "JoyBormi orqali restoranlar, kafelar, go'zallik xizmatlari va bron qilish mumkin bo'lgan boshqa joylarni mobil qurilmaga mos qulay ko'rinishda topish mumkin."
+          },
+          {
+            "question": "Nega JoyBormi mobil bron qilishga urg'u beradi?",
+            "answer": "Ko'pchilik bron qarorlari yo'lda qabul qilinadi. Shu sababli JoyBormi foydalanuvchilarga o'z Joyini topish va kerakli joyni istalgan paytda bron qilish uchun tezkor mobil tajriba yaratadi."
+          }
+        ]
       }
     }
   }

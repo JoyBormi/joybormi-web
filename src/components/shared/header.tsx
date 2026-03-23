@@ -49,8 +49,12 @@ const Header: React.FC<HeaderProps> = ({ app = appConfig.app, showNav = true }) 
           {showNav && (
             <nav className="jb-nav">
               <Link href="/about">{t("nav.about")}</Link>
-              <Link href="/privacy">{t("nav.privacy")}</Link>
-              <Link href="/terms">{t("nav.terms")}</Link>
+              <Link href="/privacy" prefetch={false}>
+                {t("nav.privacy")}
+              </Link>
+              <Link href="/terms" prefetch={false}>
+                {t("nav.terms")}
+              </Link>
               <div className="jb-nav-language">
                 <LanguageToggle />
               </div>
@@ -80,10 +84,10 @@ const Header: React.FC<HeaderProps> = ({ app = appConfig.app, showNav = true }) 
           <Link href="/about" onClick={() => setMenuOpen(false)}>
             {t("nav.about")} <ChevronRight size={14} />
           </Link>
-          <Link href="/privacy" onClick={() => setMenuOpen(false)}>
+          <Link href="/privacy" prefetch={false} onClick={() => setMenuOpen(false)}>
             {t("nav.privacy")} <ChevronRight size={14} />
           </Link>
-          <Link href="/terms" onClick={() => setMenuOpen(false)}>
+          <Link href="/terms" prefetch={false} onClick={() => setMenuOpen(false)}>
             {t("nav.terms")} <ChevronRight size={14} />
           </Link>
         </nav>

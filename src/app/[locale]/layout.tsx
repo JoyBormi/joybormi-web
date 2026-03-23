@@ -21,8 +21,6 @@ type LayoutProps = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
   themeColor: "#ffffff",
   colorScheme: "light",
 }
@@ -32,10 +30,8 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata(props: LayoutProps): Promise<Metadata> {
-  const params = await props.params;
-  const locale = hasLocale(routing.locales, params.locale)
-    ? params.locale
-    : routing.defaultLocale
+  const params = await props.params
+  const locale = hasLocale(routing.locales, params.locale) ? params.locale : routing.defaultLocale
 
   const t = await getTranslations({ locale })
 
@@ -51,11 +47,9 @@ export async function generateMetadata(props: LayoutProps): Promise<Metadata> {
 }
 
 export default async function RootLayout(props: LayoutProps) {
-  const params = await props.params;
+  const params = await props.params
 
-  const {
-    children
-  } = props;
+  const { children } = props
 
   const locale = params.locale as Locale
 

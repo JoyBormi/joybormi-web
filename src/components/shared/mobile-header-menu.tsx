@@ -42,10 +42,20 @@ const MobileHeaderMenu = ({ aboutLabel, privacyLabel, termsLabel, languageLabel 
           <Link href="/about" className="hover:bg-accent rounded-md px-2 py-1.5" onClick={() => setOpen(false)}>
             {aboutLabel}
           </Link>
-          <Link href="/privacy" className="hover:bg-accent rounded-md px-2 py-1.5" onClick={() => setOpen(false)}>
+          <Link
+            href="/privacy"
+            prefetch={false}
+            className="hover:bg-accent rounded-md px-2 py-1.5"
+            onClick={() => setOpen(false)}
+          >
             {privacyLabel}
           </Link>
-          <Link href="/terms" className="hover:bg-accent rounded-md px-2 py-1.5" onClick={() => setOpen(false)}>
+          <Link
+            href="/terms"
+            prefetch={false}
+            className="hover:bg-accent rounded-md px-2 py-1.5"
+            onClick={() => setOpen(false)}
+          >
             {termsLabel}
           </Link>
         </nav>
