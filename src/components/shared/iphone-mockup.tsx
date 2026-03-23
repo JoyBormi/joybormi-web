@@ -33,7 +33,7 @@ const IPhoneMockup: React.FC<IPhoneMockupProps> = ({
               priority={priority}
             />
           ) : (
-            <div className="from-secondary to-accent flex h-full items-center justify-center bg-gradient-to-br">
+            <div className="from-secondary to-accent flex h-full items-center justify-center bg-linear-to-br">
               <span className="text-muted-foreground text-sm font-semibold">JoyBormi</span>
             </div>
           )}
