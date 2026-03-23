@@ -65,7 +65,7 @@ export function meta(opts: {
 
   const resolvedLocale: Locale = locales.includes(locale as Locale) ? (locale as Locale) : defaultLocale
 
-  const canonicalPath = canonicalOverride ? abs(canonicalOverride) : abs(`/${resolvedLocale}${pathname}`)
+  const canonicalPath = canonicalOverride ? abs(canonicalOverride) : abs(pathname)
 
   const fullTitle = `${title} | ${APP_NAME[resolvedLocale]}`
 
@@ -103,12 +103,6 @@ export function meta(opts: {
 
     alternates: {
       canonical: canonicalPath,
-      languages: {
-        "ru-RU": abs(`/ru${pathname}`),
-        "en-US": abs(`/en${pathname}`),
-        "uz-UZ": abs(`/uz${pathname}`),
-        "x-default": abs(`/en${pathname}`),
-      },
     },
 
     openGraph: {

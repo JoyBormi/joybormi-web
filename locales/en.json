@@ -26,9 +26,14 @@
       "ДжойБорми"
     ],
     "home": {
-      "title": "Home",
-      "description": "Discover and book restaurants, cafés, and services easily with JoyBormi.",
+      "title": "Booking app for restaurants, salons and services in Uzbekistan",
+      "description": "Book restaurants, barbers, salons and local services in Uzbekistan with JoyBormi. Discover trusted places and reserve faster.",
       "keywords": [
+        "booking app uzbekistan",
+        "restaurant booking uzbekistan",
+        "service booking app",
+        "salon booking",
+        "barber booking",
         "booking",
         "restaurants",
         "cafes",
@@ -155,9 +160,9 @@
       "download": "Download"
     },
     "badge": "Available on iOS & Android",
-    "headline": "Find your <accent>Joy</accent>, anytime",
+    "headline": "Book any service with <accent>JoyBormi</accent>",
     "headlineAccent": "Joy",
-    "description": "JoyBormi brings everything you need into one clean mobile experience. Discover trusted places, reserve faster, and manage plans without friction.",
+    "description": "JoyBormi helps people in Uzbekistan discover trusted restaurants, barbers, salons and local services, then book them faster in one mobile experience.",
     "store": {
       "downloadOn": "Download on the",
       "appStore": "App Store",
@@ -249,6 +254,71 @@
             "answer": "Most booking decisions happen on the go. JoyBormi is designed for fast mobile discovery so users can find their Joy and reserve the right place anytime."
           }
         ]
+      }
+    },
+    "searchSeo": {
+      "popularBadge": "Popular Searches",
+      "popularTitle": "Search-intent pages for booking in Uzbekistan",
+      "popularDescription": "Browse location and category pages built around how people actually search for restaurants, salons, barbers and services.",
+      "popularLinkTitle": "{category} in {city}",
+      "popularLinkDescription": "Find trusted {category} in {city} and book faster with JoyBormi.",
+      "faqTitle": "Booking FAQ for Uzbekistan users",
+      "faqDescription": "Answers to common booking questions users search for before choosing a restaurant, salon or service.",
+      "faq": {
+        "items": [
+          {
+            "question": "How can I book restaurants and services online in Uzbekistan?",
+            "answer": "JoyBormi helps users discover restaurants, salons, barbers and other services, compare options, and book online faster without unnecessary calls or messaging."
+          },
+          {
+            "question": "Can I find booking options for different cities like Tashkent and Samarkand?",
+            "answer": "Yes. JoyBormi is building city and category pages so users can find relevant restaurants and services in places like Tashkent, Samarkand and Bukhara more easily."
+          },
+          {
+            "question": "What kinds of places can I book with JoyBormi?",
+            "answer": "Users can explore restaurants, beauty salons, barbers and other local services through a mobile-first booking experience."
+          }
+        ]
+      },
+      "page": {
+        "badge": "{category} in {city}",
+        "title": "{category} in {city}",
+        "description": "Discover trusted {category} in {city}, compare options and book faster with JoyBormi.",
+        "highlights": {
+          "discovery": "Search local categories the way people actually look for them in Uzbekistan.",
+          "booking": "Move from discovery to booking in fewer steps.",
+          "local": "Built around city and category intent, not only brand searches."
+        },
+        "whyTitle": "Why search for {category} in {city} with JoyBormi?",
+        "whyDescription": "These pages are designed for city and category intent, helping users who search for local services find relevant options faster. JoyBormi focuses on trusted discovery, clearer comparison and easier booking.",
+        "cards": {
+          "one": {
+            "title": "Built for local intent",
+            "body": "Users often search by city and service type first. These pages match that behavior."
+          },
+          "two": {
+            "title": "Better discovery flow",
+            "body": "JoyBormi makes it easier to compare options, decide faster and complete a booking with less friction."
+          }
+        },
+        "relatedTitle": "Related booking pages",
+        "relatedLink": "{category} in {city}",
+        "faqTitle": "Questions users ask before booking",
+        "faqDescription": "Helpful answers for searchers comparing local services and reservation options.",
+        "faq": {
+          "one": {
+            "question": "How do I find {category} in {city}?",
+            "answer": "JoyBormi helps users browse {category} in {city}, compare options and move toward booking more quickly."
+          },
+          "two": {
+            "question": "Can I book {category} online in {city}?",
+            "answer": "JoyBormi is designed to make online booking easier by organizing local options into clear city and category pages."
+          },
+          "three": {
+            "question": "Why use JoyBormi for {category} in {city}?",
+            "answer": "JoyBormi reduces friction between discovering a place and reserving it, which is especially useful for local service searches in {city}."
+          }
+        }
       }
     }
   }

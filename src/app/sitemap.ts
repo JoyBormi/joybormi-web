@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next"
+import { getAllMarketPages } from "@/lib/market-pages"
 
-const baseUrl = "https://joybormi.uz"
-const locales = ["ko", "en"] as const
+const baseUrl = "https://joybormiapp.uz"
 
 type Route = {
   path: string
@@ -24,35 +24,33 @@ const staticRoutes: Route[] = [
     priority: 0.9,
   },
   {
-    path: "/service",
+    path: "/privacy",
     changeFrequency: "monthly",
-    priority: 0.9,
+    priority: 0.4,
+  },
+  {
+    path: "/terms",
+    changeFrequency: "monthly",
+    priority: 0.4,
   },
 ]
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const currentDate = new Date()
 
-  // Generate URLs for all static routes in both languages
-  const staticUrls: MetadataRoute.Sitemap = []
+  const staticUrls: MetadataRoute.Sitemap = staticRoutes.map((route) => ({
+    url: `${baseUrl}${route.path}`,
+    lastModified: currentDate,
+    changeFrequency: route.changeFrequency,
+    priority: route.priority,
+  }))
 
-  for (const locale of locales) {
-    for (const route of staticRoutes) {
-      staticUrls.push({
-        url: `${baseUrl}/${locale}${route.path}`,
-        lastModified: currentDate,
-        changeFrequency: route.changeFrequency,
-        priority: route.priority,
-        alternates: {
-          languages: {
-            ko: `${baseUrl}/ko${route.path}`,
-            en: `${baseUrl}/uz${route.path}`,
-            ru: `${baseUrl}/ru${route.path}`,
-          },
-        },
-      })
-    }
-  }
+  const marketUrls: MetadataRoute.Sitemap = getAllMarketPages().map(({ city, category }) => ({
+    url: `${baseUrl}/services/${city.slug}/${category.slug}`,
+    lastModified: currentDate,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }))
 
   // // Fetch dynamic works data
   // let workUrls: MetadataRoute.Sitemap = []
@@ -77,5 +75,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   //   console.error("Error fetching works for sitemap:", error)
   // }
 
-  return [...staticUrls]
+  return [...staticUrls, ...marketUrls]
 }

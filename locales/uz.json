@@ -26,9 +26,14 @@
       "джой борми"
     ],
     "home": {
-      "title": "Bosh sahifa",
-      "description": "JoyBormi orqali restoranlar, kafelar va xizmatlarni oson toping va bron qiling.",
+      "title": "O'zbekistonda restoran, salon va xizmatlarni bron qilish ilovasi",
+      "description": "JoyBormi orqali O'zbekistondagi restoranlar, barberlar, salonlar va mahalliy xizmatlarni toping va tezroq bron qiling.",
       "keywords": [
+        "booking app uzbekistan",
+        "service booking app uzbekistan",
+        "restoran toshkent",
+        "barbershop toshkent",
+        "salon toshkent",
         "bron",
         "restoran",
         "kafe",
@@ -157,9 +162,9 @@
       "download": "Yuklab olish"
     },
     "badge": "iOS va Android uchun mavjud",
-    "headline": "Har doim <accent>Joy</accent> toping",
+    "headline": "Hammasini <accent>JoyBormi</accent> bilan band qiling",
     "headlineAccent": "Joy",
-    "description": "JoyBormi sizga kerakli narsalarni bitta toza mobil tajribada jamlaydi. Ishonchli joylarni toping, tez bron qiling va rejalarni qulay boshqaring.",
+    "description": "JoyBormi O'zbekistonda restoranlar, barberlar, salonlar va mahalliy xizmatlarni topish hamda ularni bitta mobil tajribada tezroq bron qilishga yordam beradi.",
     "store": {
       "downloadOn": "Yuklab oling",
       "appStore": "App Store",
@@ -251,6 +256,71 @@
             "answer": "Ko'pchilik bron qarorlari yo'lda qabul qilinadi. Shu sababli JoyBormi foydalanuvchilarga o'z Joyini topish va kerakli joyni istalgan paytda bron qilish uchun tezkor mobil tajriba yaratadi."
           }
         ]
+      }
+    },
+    "searchSeo": {
+      "popularBadge": "Mashhur qidiruvlar",
+      "popularTitle": "O'zbekistondagi haqiqiy qidiruv odatlariga mos SEO sahifalar",
+      "popularDescription": "Foydalanuvchilar restoran, salon, barbershop va xizmatlarni qanday qidirsa, shunga mos shahar va kategoriya sahifalari.",
+      "popularLinkTitle": "{city}dagi {category}",
+      "popularLinkDescription": "{city}dagi {category}ni toping va JoyBormi bilan tezroq bron qiling.",
+      "faqTitle": "Bron qilish bo'yicha ko'p qidiriladigan savollar",
+      "faqDescription": "Restoran, salon yoki xizmat tanlashdan oldin foydalanuvchilar tez-tez qidiradigan savollarga javoblar.",
+      "faq": {
+        "items": [
+          {
+            "question": "O'zbekistonda restoran va xizmatlarni qanday onlayn bron qilish mumkin?",
+            "answer": "JoyBormi restoranlar, salonlar, barbershoplar va boshqa xizmatlarni topish, variantlarni solishtirish va tezroq onlayn bron qilishga yordam beradi."
+          },
+          {
+            "question": "Toshkent va Samarqand kabi shaharlarda bron qilish variantlarini topsa bo'ladimi?",
+            "answer": "Ha. JoyBormi Toshkent, Samarqand va Buxoro kabi shaharlarda restoranlar va xizmatlarni topishni yengillashtirish uchun shahar va kategoriya sahifalarini kengaytirmoqda."
+          },
+          {
+            "question": "JoyBormi orqali qanday joylar va xizmatlarni topish mumkin?",
+            "answer": "JoyBormi orqali restoranlar, go'zallik salonlari, barbershoplar va boshqa mahalliy xizmatlarni mobil qurilmaga mos qulay tajribada topish mumkin."
+          }
+        ]
+      },
+      "page": {
+        "badge": "{city}dagi {category}",
+        "title": "{city}dagi {category}",
+        "description": "{city}dagi ishonchli {category}ni toping, variantlarni solishtiring va JoyBormi bilan tezroq bron qiling.",
+        "highlights": {
+          "discovery": "Sahifalar O'zbekistondagi shahar va kategoriya bo'yicha qidiruv odatlariga mos tuzilgan.",
+          "booking": "Qidiruvdan bron qilishgacha bo'lgan yo'lni qisqartiradi.",
+          "local": "Faqat brend emas, haqiqiy mahalliy qidiruv intentiga moslashtirilgan."
+        },
+        "whyTitle": "Nega {city}dagi {category}ni JoyBormi orqali qidirish kerak?",
+        "whyDescription": "Bunday sahifalar shahar va kategoriya bo'yicha qidirayotgan foydalanuvchilarga mos variantlarni tezroq topishga yordam beradi. JoyBormi qidiruvni tushunarliroq, taqqoslashni qulayroq va bron jarayonini tezroq qiladi.",
+        "cards": {
+          "one": {
+            "title": "Mahalliy qidiruv intenti",
+            "body": "Foydalanuvchilar ko'pincha shahar va xizmat turi bo'yicha qidiradi. Bu sahifalar aynan shu xulq-atvorga mos."
+          },
+          "two": {
+            "title": "Qulay bron yo'li",
+            "body": "JoyBormi variantlarni tezroq taqqoslash va ortiqcha qadamlarisiz bron qilishga o'tishga yordam beradi."
+          }
+        },
+        "relatedTitle": "O'xshash sahifalar",
+        "relatedLink": "{city}dagi {category}",
+        "faqTitle": "Bron qilishdan oldin foydalanuvchilar nimani so'raydi",
+        "faqDescription": "Mahalliy xizmatlar va bron variantlarini solishtirayotgan foydalanuvchilar uchun foydali javoblar.",
+        "faq": {
+          "one": {
+            "question": "{city}dagi {category}ni qanday topish mumkin?",
+            "answer": "JoyBormi {city}dagi {category}ni ko'rib chiqish, variantlarni solishtirish va bron qilishga tezroq o'tishga yordam beradi."
+          },
+          "two": {
+            "question": "{city}dagi {category}ni onlayn bron qilsa bo'ladimi?",
+            "answer": "JoyBormi shahar va kategoriya sahifalari orqali onlayn bron jarayonini ancha qulay qiladi."
+          },
+          "three": {
+            "question": "Nega {city}dagi {category} uchun JoyBormi ishlatish kerak?",
+            "answer": "JoyBormi mos joyni topish va uni bron qilish orasidagi ortiqcha qadamlarni kamaytiradi, bu esa {city}dagi mahalliy qidiruvlar uchun juda muhim."
+          }
+        }
       }
     }
   }
