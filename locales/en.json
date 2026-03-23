@@ -11,11 +11,36 @@
   "meta": {
     "title": "JoyBormi",
     "description": "JoyBormi is an online booking platform where you can easily reserve restaurants, cafés, salons, and other venues.",
-    "keywords": ["booking", "reservation", "restaurants", "cafes", "services"],
+    "keywords": [
+      "booking",
+      "reservation",
+      "restaurants",
+      "cafes",
+      "services",
+      "JOYBORMI",
+      "JoyBormi",
+      "joybormi",
+      "joy bormi",
+      "joybormi uz",
+      "джойборми",
+      "ДжойБорми"
+    ],
     "home": {
       "title": "Home",
       "description": "Discover and book restaurants, cafés, and services easily with JoyBormi.",
-      "keywords": ["booking", "restaurants", "cafes", "reservation"]
+      "keywords": [
+        "booking",
+        "restaurants",
+        "cafes",
+        "reservation",
+        "JOYBORMI",
+        "JoyBormi",
+        "joybormi",
+        "joy bormi",
+        "joybormi uz",
+        "джойборми",
+        "ДжойБорми"
+      ]
     },
     "about": {
       "title": "About Us",
@@ -25,7 +50,14 @@
         "booking platform",
         "restaurant reservation app",
         "Uzbekistan booking app",
-        "place discovery"
+        "place discovery",
+        "JOYBORMI",
+        "JoyBormi",
+        "joybormi",
+        "joy bormi",
+        "joybormi uz",
+        "джойборми",
+        "ДжойБорми"
       ]
     }
   },

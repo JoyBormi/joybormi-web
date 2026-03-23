@@ -1,3 +1,4 @@
+"use client"
 import { ChevronRight, Instagram, Phone, Send } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"

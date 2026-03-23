@@ -4,7 +4,6 @@ import { useTranslations } from "next-intl"
 
 import { AndroidMockup } from "@/components/shared/android-mockup"
 import { AppStore } from "@/components/shared/app-store"
-import { Footer } from "@/components/shared/footer"
 import { GooglePlay } from "@/components/shared/google-play"
 import { Header } from "@/components/shared/header"
 import { IPhoneMockup } from "@/components/shared/iphone-mockup"
@@ -18,7 +17,6 @@ const HomeView = () => {
   return (
     <div className="jb-landing bg-background text-foreground flex min-h-screen flex-col overflow-x-hidden [font-family:var(--font-pretendard),var(--font-sans),sans-serif]">
       <Header />
-
       <main>
         <section className="flex-1 pt-[72px] pb-12">
           <div className="mx-auto grid min-h-[calc(100dvh-64px)] max-w-[1600px] grid-cols-1 items-center gap-10 px-6 pt-8 max-md:gap-7 max-md:px-4 max-md:pt-2 md:grid-cols-2 lg:gap-11 lg:pb-8 xl:min-h-[calc(100dvh-64px)]">
@@ -77,7 +75,6 @@ const HomeView = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   )
 }

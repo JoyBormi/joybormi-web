@@ -11,11 +11,37 @@
   "meta": {
     "title": "JoyBormi",
     "description": "JoyBormi — restoranlar, kafelar, salonlar va boshqa joylarni onlayn bron qilish platformasi.",
-    "keywords": ["bron qilish", "restoran", "kafe", "onlayn bron", "JoyBormi"],
+    "keywords": [
+      "bron qilish",
+      "restoran",
+      "kafe",
+      "onlayn bron",
+      "JoyBormi",
+      "JOYBORMI",
+      "joybormi",
+      "joy bormi",
+      "joybormi uz",
+      "джойборми",
+      "ДжойБорми",
+      "джой борми"
+    ],
     "home": {
       "title": "Bosh sahifa",
       "description": "JoyBormi orqali restoranlar, kafelar va xizmatlarni oson toping va bron qiling.",
-      "keywords": ["bron", "restoran", "kafe", "joy band qilish"]
+      "keywords": [
+        "bron",
+        "restoran",
+        "kafe",
+        "joy band qilish",
+        "JoyBormi",
+        "JOYBORMI",
+        "joybormi",
+        "joy bormi",
+        "joybormi uz",
+        "джойборми",
+        "ДжойБорми",
+        "джой борми"
+      ]
     },
     "about": {
       "title": "Biz haqimizda",
@@ -25,7 +51,15 @@
         "bron platformasi",
         "joy topish ilovasi",
         "mobil bron qilish",
-        "xizmat bron qilish"
+        "xizmat bron qilish",
+        "JoyBormi",
+        "JOYBORMI",
+        "joybormi",
+        "joy bormi",
+        "joybormi uz",
+        "джойборми",
+        "ДжойБорми",
+        "джой борми"
       ]
     }
   },

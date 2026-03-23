@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import { hasLocale } from "next-intl"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 
+import { Footer } from "@/components/shared/footer"
 import { Locale } from "@/i18n/config"
 import { routing } from "@/i18n/routing"
 
@@ -62,7 +63,10 @@ export default async function RootLayout(props: LayoutProps) {
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={cn(pretendard.variable)}>
-        <RootProvider locale={locale}>{children}</RootProvider>
+        <RootProvider locale={locale}>
+          {children}
+          <Footer />
+        </RootProvider>
       </body>
     </html>
   )
