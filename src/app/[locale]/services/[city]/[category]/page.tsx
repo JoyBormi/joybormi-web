@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 
-import { Footer } from "@/components/shared/footer"
 import { Header } from "@/components/shared/header"
 import { Locale } from "@/i18n/config"
 import { Link } from "@/i18n/navigation"
@@ -195,8 +194,6 @@ export default async function MarketCategoryPage({ params }: MarketPageProps) {
           ))}
         </div>
       </section>
-
-      <Footer />
     </main>
   )
 }

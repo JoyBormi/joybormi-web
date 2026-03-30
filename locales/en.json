@@ -64,6 +64,31 @@
         "джойборми",
         "ДжойБорми"
       ]
+    },
+    "marketing": {
+      "title": "Marketing Solutions for Restaurants, Salons and Local Services",
+      "description": "Explore how JoyBormi helps local businesses present their brand clearly, attract higher-intent bookings, and support customers with a mobile-first experience.",
+      "keywords": [
+        "JoyBormi marketing",
+        "booking platform marketing",
+        "restaurant marketing platform",
+        "salon marketing software",
+        "local business booking",
+        "mobile-first booking page",
+        "JoyBormi"
+      ]
+    },
+    "support": {
+      "title": "Customer Support for JoyBormi",
+      "description": "Get help with JoyBormi through Telegram, email, or phone, and find quick answers about bookings, accounts, and response times.",
+      "keywords": [
+        "JoyBormi support",
+        "booking support",
+        "reservation help",
+        "customer support joybormi",
+        "Telegram support",
+        "JoyBormi contact"
+      ]
     }
   },
   "link": {
@@ -154,7 +179,9 @@
       "close": "Close menu"
     },
     "nav": {
+      "marketing": "Marketing",
       "about": "About",
+      "support": "Support",
       "privacy": "Privacy",
       "terms": "Terms",
       "download": "Download"
@@ -252,6 +279,146 @@
           {
             "question": "Why is JoyBormi focused on mobile booking?",
             "answer": "Most booking decisions happen on the go. JoyBormi is designed for fast mobile discovery so users can find their Joy and reserve the right place anytime."
+          }
+        ]
+      }
+    },
+    "marketing": {
+      "eyebrow": "Growth-ready booking experience",
+      "headline": "Turn discovery into <accent>bookings</accent>",
+      "description": "JoyBormi gives restaurants, salons, and service brands a clean mobile presence that helps people find the right place faster and move from browsing to booking with less friction.",
+      "primaryCta": "Talk to our team",
+      "secondaryCta": "Visit support",
+      "panel": {
+        "label": "What teams get",
+        "title": "A sharper customer journey"
+      },
+      "highlights": {
+        "items": [
+          {
+            "title": "Clearer brand presentation",
+            "body": "Show your venue, services, and booking flow in a format that feels premium on both desktop and mobile."
+          },
+          {
+            "title": "Faster path to reservation",
+            "body": "Reduce drop-off by moving people from discovery to decision with fewer clicks and cleaner information."
+          },
+          {
+            "title": "Built for local trust",
+            "body": "Help new customers feel confident with consistent details, polished visuals, and support-ready contact paths."
+          }
+        ]
+      },
+      "benefits": {
+        "items": [
+          {
+            "title": "Clean pages that convert",
+            "body": "Every section is designed to keep scanning easy, surface the right details, and support stronger booking intent."
+          },
+          {
+            "title": "SEO that matches real searches",
+            "body": "Structured content, focused copy, and strong metadata help pages align with how people search for places and services."
+          },
+          {
+            "title": "Trust signals from the first visit",
+            "body": "Customers see a more credible brand experience through concise messaging, responsive layouts, and clear next steps."
+          }
+        ]
+      },
+      "steps": {
+        "eyebrow": "How it works",
+        "title": "A simpler path from search to booking",
+        "description": "These pages are built to support both acquisition and confidence, so people can understand your value quickly and take action without hesitation.",
+        "items": [
+          {
+            "title": "Capture interest early",
+            "body": "Strong headlines and structured sections explain the offer quickly for first-time visitors."
+          },
+          {
+            "title": "Answer key questions",
+            "body": "Supporting content highlights what makes the experience reliable, mobile-friendly, and easy to trust."
+          },
+          {
+            "title": "Guide people to action",
+            "body": "Each page creates a clear handoff to support or booking-related contact so customers are never left stuck."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "Marketing FAQ",
+        "title": "Questions teams ask before launching",
+        "description": "A few quick answers about how JoyBormi helps brands present themselves better online.",
+        "items": [
+          {
+            "question": "Who are JoyBormi marketing pages for?",
+            "answer": "They are designed for restaurants, salons, barbers, and local service businesses that want a cleaner digital experience around discovery and booking."
+          },
+          {
+            "question": "Why does the layout focus so much on mobile?",
+            "answer": "Most booking decisions happen on phones. JoyBormi prioritizes a mobile-first interface so the path from interest to action stays fast and readable."
+          },
+          {
+            "question": "How do these pages support SEO?",
+            "answer": "They use focused headings, localized copy, metadata, and structured schema so search engines can better understand the page and its intent."
+          }
+        ]
+      }
+    },
+    "support": {
+      "eyebrow": "Help when you need it",
+      "headline": "Support that stays clear and easy",
+      "description": "Reach JoyBormi through the channel that works best for you and get quick direction for booking, account, or general product questions.",
+      "channels": {
+        "items": [
+          {
+            "title": "Telegram support",
+            "description": "Best for fast questions, follow-ups, and general assistance during the day.",
+            "cta": "Open Telegram"
+          },
+          {
+            "title": "Email support",
+            "description": "Useful for detailed issues, account questions, or anything that needs screenshots and context.",
+            "cta": "Send email"
+          },
+          {
+            "title": "Phone support",
+            "description": "Ideal when you need direct help quickly or want to clarify an urgent booking-related issue.",
+            "cta": "Call support"
+          }
+        ]
+      },
+      "resources": {
+        "items": [
+          {
+            "title": "Fast first response",
+            "body": "We aim to keep first-touch support simple so users know what to do next without long back-and-forth."
+          },
+          {
+            "title": "Clear issue handling",
+            "body": "Whether the question is about bookings, contact details, or account access, support paths stay straightforward."
+          },
+          {
+            "title": "Human-centered communication",
+            "body": "Support is designed to feel calm, respectful, and practical so people can solve problems without extra friction."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "Support FAQ",
+        "title": "Common questions",
+        "description": "Quick answers to the topics users ask about most often.",
+        "items": [
+          {
+            "question": "Which support channel should I use first?",
+            "answer": "Telegram is usually the quickest option for general help. Email works best when you need to share more detail, and phone is useful for urgent issues."
+          },
+          {
+            "question": "Can I get help with booking-related questions?",
+            "answer": "Yes. JoyBormi support can guide users with common questions around bookings, contact details, and how to proceed when something feels unclear."
+          },
+          {
+            "question": "Is this page localized for different users?",
+            "answer": "Yes. Support content is available through the site’s language system so people can read the page in the locale they prefer."
           }
         ]
       }

@@ -66,8 +66,14 @@ const Footer = () => {
               {t("footer.companyTitle")}
             </p>
             <div className="flex flex-col gap-2">
+              <Link href="/marketing" className="text-muted-foreground text-sm no-underline">
+                {t("nav.marketing")}
+              </Link>
               <Link href="/about" className="text-muted-foreground text-sm no-underline">
                 {t("nav.about")}
+              </Link>
+              <Link href="/support" className="text-muted-foreground text-sm no-underline">
+                {t("nav.support")}
               </Link>
               <Link href="/privacy" prefetch={false} className="text-muted-foreground text-sm no-underline">
                 {t("nav.privacy")}
@@ -134,6 +140,9 @@ const Footer = () => {
         <div className="flex flex-wrap items-center justify-between gap-4">
           <p className="text-muted-foreground m-0 text-[13px]">{t("footer.copyright", { year: currentYear })}</p>
           <div className="flex gap-5">
+            <Link href="/support" className="text-muted-foreground text-[13px] no-underline">
+              {t("nav.support")}
+            </Link>
             <Link href="/privacy" prefetch={false} className="text-muted-foreground text-[13px] no-underline">
               {t("nav.privacy")}
             </Link>

@@ -66,6 +66,31 @@
         "ДжойБорми",
         "джой борми"
       ]
+    },
+    "marketing": {
+      "title": "Restoranlar, salonlar va mahalliy xizmatlar uchun marketing yechimlari",
+      "description": "JoyBormi mahalliy bizneslarga brendini aniqroq ko‘rsatish, sifatliroq bronlarni jalb qilish va mijozlarga mobile-first tajriba orqali xizmat ko‘rsatishga yordam beradi.",
+      "keywords": [
+        "JoyBormi marketing",
+        "bron platformasi marketingi",
+        "restoran marketingi",
+        "salon marketingi",
+        "mahalliy biznes bron",
+        "mobil bron sahifasi",
+        "JoyBormi"
+      ]
+    },
+    "support": {
+      "title": "JoyBormi qo‘llab-quvvatlash xizmati",
+      "description": "JoyBormi bilan Telegram, email yoki telefon orqali bog‘laning va bron, akkaunt yoki umumiy savollar bo‘yicha tezkor yordam oling.",
+      "keywords": [
+        "JoyBormi support",
+        "bron bo‘yicha yordam",
+        "qo‘llab-quvvatlash",
+        "JoyBormi aloqa",
+        "Telegram support",
+        "JoyBormi contact"
+      ]
     }
   },
   "link": {
@@ -156,7 +181,9 @@
       "close": "Menyuni yopish"
     },
     "nav": {
+      "marketing": "Marketing",
       "about": "Biz haqimizda",
+      "support": "Yordam",
       "privacy": "Maxfiylik",
       "terms": "Shartlar",
       "download": "Yuklab olish"
@@ -254,6 +281,146 @@
           {
             "question": "Nega JoyBormi mobil bron qilishga urg'u beradi?",
             "answer": "Ko'pchilik bron qarorlari yo'lda qabul qilinadi. Shu sababli JoyBormi foydalanuvchilarga o'z Joyini topish va kerakli joyni istalgan paytda bron qilish uchun tezkor mobil tajriba yaratadi."
+          }
+        ]
+      }
+    },
+    "marketing": {
+      "eyebrow": "O‘sishga tayyor bron tajribasi",
+      "headline": "Qiziqishni <accent>bron</accent>ga aylantiring",
+      "description": "JoyBormi restoranlar, salonlar va xizmat ko‘rsatuvchi brendlarga toza mobil ko‘rinish beradi. Bu foydalanuvchilarga mos joyni tezroq topish va ko‘rishdan bron qilishga silliq o‘tishga yordam beradi.",
+      "primaryCta": "Jamoa bilan bog‘lanish",
+      "secondaryCta": "Yordam sahifasi",
+      "panel": {
+        "label": "Jamoa nimaga ega bo‘ladi",
+        "title": "Yaxshiroq mijoz yo‘li"
+      },
+      "highlights": {
+        "items": [
+          {
+            "title": "Brendni aniqroq ko‘rsatish",
+            "body": "Joy, xizmatlar va bron jarayonini desktop hamda mobil qurilmada premium ko‘rinadigan formatda namoyish eting."
+          },
+          {
+            "title": "Bron qilishga tezroq olib borish",
+            "body": "Kamroq bosqich va tushunarliroq ma’lumot orqali foydalanuvchi yo‘qotilishini kamaytiring."
+          },
+          {
+            "title": "Mahalliy ishonch uchun qurilgan",
+            "body": "Yangi mijozlarga tartibli tafsilotlar, puxta vizual til va aniq aloqa yo‘llari orqali ishonch bering."
+          }
+        ]
+      },
+      "benefits": {
+        "items": [
+          {
+            "title": "Natija beradigan toza sahifalar",
+            "body": "Har bir bo‘lim kontentni oson ko‘rish, muhim ma’lumotni tez topish va bron niyatini kuchaytirish uchun tuzilgan."
+          },
+          {
+            "title": "Haqiqiy qidiruvga mos SEO",
+            "body": "Tuzilgan kontent, aniq matn va kuchli metadata foydalanuvchilar joy va xizmatlarni qanday qidirishiga mos keladi."
+          },
+          {
+            "title": "Birinchi tashrifdayoq ishonch",
+            "body": "Qisqa va ravshan matn, responsive dizayn va aniq keyingi qadamlar brendga ishonchni kuchaytiradi."
+          }
+        ]
+      },
+      "steps": {
+        "eyebrow": "Qanday ishlaydi",
+        "title": "Qidiruvdan bron qilishgacha sodda yo‘l",
+        "description": "Bu sahifalar foydalanuvchini jalb qilish va ishonchni mustahkamlashga xizmat qiladi, shuning uchun tashrif buyuruvchi qiymatni tez tushunadi va ishonch bilan harakat qiladi.",
+        "items": [
+          {
+            "title": "Diqqatni erta ushlang",
+            "body": "Kuchli sarlavha va tartibli bo‘limlar yangi tashrif buyuruvchiga taklifni tez tushuntiradi."
+          },
+          {
+            "title": "Muhim savollarga javob bering",
+            "body": "Qo‘llab-quvvatlovchi kontent tajriba nega qulay, mobilga mos va ishonchli ekanini ko‘rsatadi."
+          },
+          {
+            "title": "Harakatga yo‘naltiring",
+            "body": "Har bir sahifada yordam yoki bron bilan bog‘liq aloqa yo‘liga ravshan o‘tish nuqtasi mavjud."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "Marketing FAQ",
+        "title": "Ishga tushirishdan oldin jamoalar so‘raydigan savollar",
+        "description": "JoyBormi brendlarga onlaynda yaxshiroq ko‘rinishga qanday yordam berishi haqida qisqa javoblar.",
+        "items": [
+          {
+            "question": "JoyBormi marketing sahifalari kimlar uchun?",
+            "answer": "Bu sahifalar restoranlar, salonlar, barberlar va tanilishdan bron qilishgacha tozaroq raqamli tajriba istaydigan mahalliy xizmat bizneslari uchun yaratilgan."
+          },
+          {
+            "question": "Nega mobil tajribaga bunchalik urg‘u berilgan?",
+            "answer": "Bron qarorlarining aksariyati telefonda qabul qilinadi. Shu sabab JoyBormi yo‘lni tez va o‘qilishi oson saqlash uchun mobile-first interfeysni ustuvor qiladi."
+          },
+          {
+            "question": "Bu sahifalar SEOga qanday yordam beradi?",
+            "answer": "Ular fokuslangan sarlavhalar, lokalizatsiyalangan matnlar, metadata va structured schema orqali qidiruv tizimlariga sahifa mazmunini yaxshiroq tushunishga yordam beradi."
+          }
+        ]
+      }
+    },
+    "support": {
+      "eyebrow": "Kerak bo‘lganda yordam",
+      "headline": "Tushunarli va qulay qo‘llab-quvvatlash",
+      "description": "JoyBormi bilan sizga qulay kanal orqali bog‘laning va bron, akkaunt yoki mahsulot bo‘yicha savollarga tez yo‘l-yo‘riq oling.",
+      "channels": {
+        "items": [
+          {
+            "title": "Telegram orqali yordam",
+            "description": "Kun davomida tezkor savollar, aniqlashtirish va umumiy yordam uchun eng qulay kanal.",
+            "cta": "Telegramni ochish"
+          },
+          {
+            "title": "Email orqali yordam",
+            "description": "Batafsil muammolar, akkaunt savollari yoki screenshot va qo‘shimcha kontekst kerak bo‘ladigan holatlar uchun mos.",
+            "cta": "Email yuborish"
+          },
+          {
+            "title": "Telefon orqali yordam",
+            "description": "Tez to‘g‘ridan-to‘g‘ri yordam kerak bo‘lsa yoki shoshilinch bron savolini aniqlashtirish uchun qulay.",
+            "cta": "Qo‘ng‘iroq qilish"
+          }
+        ]
+      },
+      "resources": {
+        "items": [
+          {
+            "title": "Tez birinchi javob",
+            "body": "Birinchi aloqa foydalanuvchiga ortiqcha yozishmalarsiz keyingi qadamni tushunishga yordam berishi uchun ishlaymiz."
+          },
+          {
+            "title": "Muammolarni aniq ko‘rib chiqish",
+            "body": "Bron, aloqa ma’lumotlari yoki akkauntga kirish bo‘lsin, yordam yo‘li sodda va tushunarli qoladi."
+          },
+          {
+            "title": "Insoniy muloqot",
+            "body": "Qo‘llab-quvvatlash sokin, hurmatli va amaliy tarzda qurilgan, shuning uchun foydalanuvchi muammoni ortiqcha qiyinchiliksiz hal qiladi."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "Support FAQ",
+        "title": "Ko‘p so‘raladigan savollar",
+        "description": "Foydalanuvchilar eng ko‘p so‘raydigan mavzular bo‘yicha qisqa javoblar.",
+        "items": [
+          {
+            "question": "Avval qaysi yordam kanalidan foydalanish kerak?",
+            "answer": "Odatda Telegram umumiy savollar uchun eng tezkor kanal. Email batafsil murojaatlar uchun qulay, telefon esa shoshilinch vaziyatlarda foydali."
+          },
+          {
+            "question": "Bron bilan bog‘liq savollar bo‘yicha yordam olsam bo‘ladimi?",
+            "answer": "Ha. JoyBormi qo‘llab-quvvatlash xizmati bron, aloqa ma’lumotlari va vaziyat noaniq bo‘lganda keyingi qadamlar bo‘yicha yo‘l ko‘rsatadi."
+          },
+          {
+            "question": "Bu sahifa turli tillar uchun lokalizatsiya qilinganmi?",
+            "answer": "Ha. Qo‘llab-quvvatlash sahifasi saytning til tizimiga ulangan, shuning uchun foydalanuvchi o‘zi xohlagan locale’da o‘qishi mumkin."
           }
         ]
       }

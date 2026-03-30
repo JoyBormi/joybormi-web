@@ -129,7 +129,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
         </div>
       </section>
 
-      <section className="mx-auto mt-24 max-w-7xl px-6 pb-24 lg:px-8">
+      <section className="mx-auto mt-24 px-6 pb-24 lg:px-8">
         <div className="bg-foreground relative overflow-hidden rounded-3xl px-6 py-24 text-center shadow-2xl sm:px-16">
           <div className="relative z-10">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">{t("cta.title")}</h2>

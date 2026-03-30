@@ -24,6 +24,16 @@ const staticRoutes: Route[] = [
     priority: 0.9,
   },
   {
+    path: "/marketing",
+    changeFrequency: "monthly",
+    priority: 0.85,
+  },
+  {
+    path: "/support",
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
     path: "/privacy",
     changeFrequency: "monthly",
     priority: 0.4,

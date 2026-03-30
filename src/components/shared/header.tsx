@@ -118,11 +118,25 @@ const Header: React.FC<HeaderProps> = ({ app = appConfig.app, showNav = true }) 
 
         <nav className="mt-6 flex flex-col gap-1">
           <Link
+            href="/marketing"
+            className="border-border text-foreground flex items-center justify-between border-b py-3 text-[28px] font-semibold no-underline"
+            onClick={() => setMenuOpen(false)}
+          >
+            {t("nav.marketing")} <ChevronRight size={14} />
+          </Link>
+          <Link
             href="/about"
             className="border-border text-foreground flex items-center justify-between border-b py-3 text-[28px] font-semibold no-underline"
             onClick={() => setMenuOpen(false)}
           >
             {t("nav.about")} <ChevronRight size={14} />
+          </Link>
+          <Link
+            href="/support"
+            className="border-border text-foreground flex items-center justify-between border-b py-3 text-[28px] font-semibold no-underline"
+            onClick={() => setMenuOpen(false)}
+          >
+            {t("nav.support")} <ChevronRight size={14} />
           </Link>
           <Link
             href="/privacy"
