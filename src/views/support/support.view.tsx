@@ -47,29 +47,19 @@ export async function SupportView({ locale }: SupportViewProps) {
     <main className="jb-landing bg-background text-foreground min-h-screen [font-family:var(--font-pretendard),var(--font-sans),sans-serif]">
       <Header />
 
-      <section className="border-border border-b px-6 pt-28 pb-16 sm:pt-36 lg:px-8">
-        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(280px,0.8fr)]">
-          <div>
-            <p className="text-primary text-sm font-semibold tracking-[0.22em] uppercase">{t("eyebrow")}</p>
-            <h1 className="mt-5 max-w-4xl text-[clamp(2.7rem,5vw,4.9rem)] leading-[0.94] font-extrabold tracking-[-0.05em] uppercase">
-              {t("headline")}
-            </h1>
-            <p className="text-muted-foreground mt-6 max-w-2xl text-lg leading-8">{t("description")}</p>
-          </div>
-
-          <div className="border-border lg:border-l lg:pl-8">
-            <p className="text-muted-foreground text-xs font-semibold tracking-[0.24em] uppercase">
-              {t("faq.eyebrow")}
-            </p>
-            <p className="mt-4 text-2xl font-bold tracking-tight">{t("faq.title")}</p>
-            <p className="text-muted-foreground mt-3 text-sm leading-7">{t("faq.description")}</p>
-          </div>
+      <section className="px-6 pt-28 pb-16 sm:pt-36 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-primary text-sm font-semibold tracking-[0.22em] uppercase">{t("eyebrow")}</p>
+          <h1 className="mt-5 max-w-4xl text-[clamp(2.7rem,5vw,4.9rem)] leading-[0.94] font-extrabold tracking-[-0.05em] uppercase">
+            {t("headline")}
+          </h1>
+          <p className="text-muted-foreground mt-6 max-w-2xl text-lg leading-8">{t("description")}</p>
         </div>
       </section>
 
-      <section className="px-6 py-16 lg:px-8">
+      <section className="py-16 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="bg-background border-border/60 rounded-2xl border">
+          <div className="bg-background">
             {channels.map((item, index) => {
               const Icon = channelIcons[index] ?? MessageCircleHeart
               const href = channelLinks[index] ?? telegramHref
@@ -81,7 +71,7 @@ export async function SupportView({ locale }: SupportViewProps) {
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel={href.startsWith("http") ? "noreferrer" : undefined}
                   className={cn(
-                    "group relative flex flex-col gap-4 px-5 py-5 transition-all",
+                    "group relative flex flex-col gap-4 py-5 transition-all",
                     "md:flex-row md:items-center md:gap-6 md:px-6 md:py-6",
                     index !== channels.length - 1 && "border-border/50 border-b"
                   )}
@@ -124,14 +114,14 @@ export async function SupportView({ locale }: SupportViewProps) {
         </div>
       </section>
 
-      <section className="border-border border-t px-6 py-16 lg:px-8">
+      <section className="px-6 py-16 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-10">
           <div>
             <p className="text-primary text-sm font-semibold tracking-[0.22em] uppercase">{t("eyebrow")}</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">{t("faq.title")}</h2>
           </div>
 
-          <div className="border-border divide-border border-y">
+          <div>
             {resources.map((item) => (
               <div key={item.title} className="grid gap-4 py-6 md:grid-cols-[220px_minmax(0,1fr)]">
                 <h3 className="text-lg font-semibold tracking-tight">{item.title}</h3>
@@ -150,7 +140,7 @@ export async function SupportView({ locale }: SupportViewProps) {
             <p className="text-muted-foreground mt-4 text-base leading-7">{t("faq.description")}</p>
           </div>
 
-          <div className="border-border divide-border border-y">
+          <div>
             {faqItems.map((item) => (
               <details key={item.question} className="group py-6">
                 <summary className="cursor-pointer list-none text-left text-lg font-semibold marker:hidden">

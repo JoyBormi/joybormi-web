@@ -9,25 +9,8 @@ import { Header } from "@/components/shared/header"
 import { IPhoneMockup } from "@/components/shared/iphone-mockup"
 import { QrCode } from "@/components/shared/qr-code"
 import { appConfig } from "@/config/app.config"
-import { Link } from "@/i18n/navigation"
 
-type HomeSeoLink = {
-  href: string
-  title: string
-  description: string
-}
-
-type HomeFaqItem = {
-  question: string
-  answer: string
-}
-
-type HomeViewProps = {
-  seoLinks: HomeSeoLink[]
-  seoFaqItems: HomeFaqItem[]
-}
-
-const HomeView = ({ seoLinks, seoFaqItems }: HomeViewProps) => {
+const HomeView = () => {
   const t = useTranslations("landingModern")
 
   const { app } = appConfig
@@ -38,29 +21,29 @@ const HomeView = ({ seoLinks, seoFaqItems }: HomeViewProps) => {
         <section className="flex-1 pt-[72px] pb-12">
           <div className="mx-auto grid min-h-[calc(100dvh-64px)] max-w-[1600px] grid-cols-1 items-center gap-10 px-6 pt-8 max-md:gap-7 max-md:px-4 max-md:pt-2 md:grid-cols-2 lg:gap-11 lg:pb-8 xl:min-h-[calc(100dvh-64px)]">
             <div className="flex max-w-[560px] flex-col gap-[22px]">
-              <div className="jb-fade-up jb-fade-up-1 inline-flex w-fit items-center gap-2 rounded-full border border-[color-mix(in_srgb,var(--primary)_30%,transparent)] bg-[color-mix(in_srgb,var(--primary)_14%,transparent)] px-[14px] py-[6px] pl-2">
+              <div className="inline-flex w-fit animate-(--animate-home-fade-up) items-center gap-2 rounded-full border border-[color-mix(in_srgb,var(--primary)_30%,transparent)] bg-[color-mix(in_srgb,var(--primary)_14%,transparent)] px-[14px] py-[6px] pl-2 [animation-delay:50ms] motion-reduce:animate-none motion-reduce:opacity-100">
                 <div className="bg-primary text-primary-foreground flex h-5 w-5 items-center justify-center rounded-full text-[10px]">
                   <Sparkles size={11} />
                 </div>
                 <span className="text-primary text-[13px] font-semibold">{t("badge")}</span>
               </div>
 
-              <h1 className="jb-fade-up jb-fade-up-2 m-0 text-[clamp(2.6rem,5vw,4.9rem)] leading-[0.98] font-extrabold tracking-[-0.04em] uppercase max-md:text-[clamp(2.2rem,10vw,2.8rem)]">
+              <h1 className="m-0 animate-(--animate-home-fade-up) text-[clamp(2.6rem,5vw,4.9rem)] leading-[0.98] font-extrabold tracking-[-0.04em] uppercase [animation-delay:150ms] motion-reduce:animate-none motion-reduce:opacity-100 max-md:text-[clamp(2.2rem,10vw,2.8rem)]">
                 {t.rich("headline", {
                   accent: () => <em className="text-primary whitespace-nowrap not-italic">{t("headlineAccent")}</em>,
                 })}
               </h1>
 
-              <p className="jb-fade-up jb-fade-up-3 text-muted-foreground m-0 max-w-[560px] text-[clamp(1rem,1.5vw,1.15rem)] leading-[1.72] max-md:max-w-full">
+              <p className="text-muted-foreground m-0 max-w-[560px] animate-(--animate-home-fade-up) text-[clamp(1rem,1.5vw,1.15rem)] leading-[1.72] [animation-delay:250ms] motion-reduce:animate-none motion-reduce:opacity-100 max-md:max-w-full">
                 {t("description")}
               </p>
 
-              <div className="jb-fade-up jb-fade-up-4 mt-[2px] flex items-center gap-2">
+              <div className="mt-[2px] flex animate-(--animate-home-fade-up) items-center gap-2 [animation-delay:350ms] motion-reduce:animate-none motion-reduce:opacity-100">
                 <AppStore href={app.urls.appStore} />
                 <GooglePlay href={app.urls.googlePlay} />
               </div>
 
-              <div className="jb-fade-up jb-fade-up-5 border-border bg-card mt-1 flex w-fit items-center gap-[14px] rounded-2xl border p-4 max-[560px]:w-full max-[560px]:p-[14px]">
+              <div className="border-border bg-card mt-1 flex w-fit animate-(--animate-home-fade-up) items-center gap-[14px] rounded-2xl border p-4 [animation-delay:450ms] motion-reduce:animate-none motion-reduce:opacity-100 max-[560px]:w-full max-[560px]:p-[14px]">
                 <div className="grid h-[92px] w-[92px] place-items-center">
                   <QrCode value={app.urls.site} size={84} />
                 </div>
@@ -71,9 +54,9 @@ const HomeView = ({ seoLinks, seoFaqItems }: HomeViewProps) => {
               </div>
             </div>
 
-            <div className="relative flex h-[clamp(460px,54vw,760px)] items-end justify-center pt-7 pb-10 max-[560px]:h-[clamp(470px,122vw,610px)] max-lg:h-[clamp(480px,82vw,620px)] max-md:h-[clamp(500px,108vw,640px)] xl:h-[clamp(560px,46vw,820px)]">
+            <div className="relative flex h-[clamp(460px,54vw,760px)] items-end justify-center pt-7 pb-10 max-[560px]:h-[clamp(360px,92vw,520px)] max-lg:h-[clamp(480px,82vw,620px)] max-md:h-[clamp(390px,90vw,580px)] max-md:items-center max-md:pt-3 max-md:pb-4 xl:h-[clamp(560px,46vw,820px)]">
               <div className="jb-glow-orb jb-glow-orb-main" />
-              <div className="jb-phone-primary absolute bottom-0 left-1/2 z-2 transform-[translateX(-65%)_rotate(-8deg)] animate-[jb-float-left_5s_ease-in-out_infinite] [--jb-iphone-scale:0.86] max-[560px]:transform-[translateX(-67%)_rotate(-14deg)] max-[560px]:animate-[jb-float-left-mobile-small_5.6s_ease-in-out_infinite] max-[560px]:[--jb-iphone-scale:0.72] max-lg:[--jb-iphone-scale:0.82] max-md:transform-[translateX(-58%)_rotate(-15deg)] max-md:animate-[jb-float-left-mobile_5.4s_ease-in-out_infinite] max-md:[--jb-iphone-scale:0.76] min-[1536px]:[--jb-iphone-scale:1.08] xl:[--jb-iphone-scale:1]">
+              <div className="absolute bottom-0 left-1/3 z-2 transform-[translateX(-65%)_rotate(-8deg)] animate-(--animate-home-float-left) [--jb-iphone-scale:0.86] motion-reduce:transform-none motion-reduce:animate-none max-[560px]:transform-[translateX(-58%)_rotate(-12deg)] max-[560px]:animate-(--animate-home-float-left-mobile-small) max-[560px]:[--jb-iphone-scale:0.58] max-[420px]:transform-[translateX(-60%)_rotate(-13deg)] max-[420px]:[--jb-iphone-scale:0.52] max-lg:[--jb-iphone-scale:0.82] max-md:transform-[translateX(-56%)_rotate(-12deg)] max-md:animate-(--animate-home-float-left-mobile) max-md:[--jb-iphone-scale:0.66] min-[1536px]:[--jb-iphone-scale:1.08] lg:left-1/2 xl:[--jb-iphone-scale:1]">
                 <IPhoneMockup
                   className="origin-[bottom_center] transform-[scale(var(--jb-iphone-scale))]"
                   imageSrc={app.assets.primaryScreen}
@@ -81,62 +64,14 @@ const HomeView = ({ seoLinks, seoFaqItems }: HomeViewProps) => {
                   priority
                 />
               </div>
-              <div className="jb-phone-secondary absolute bottom-0 left-1/2 z-2 transform-[translateX(-10%)_rotate(10deg)] animate-[jb-float-right_5s_ease-in-out_infinite] [--jb-android-scale:0.82] [animation-delay:0.5s] max-[560px]:transform-[translateX(-10%)_rotate(11deg)] max-[560px]:animate-[jb-float-right-mobile-small_5.6s_ease-in-out_infinite] max-[560px]:[--jb-android-scale:0.68] max-[560px]:[animation-delay:0.4s] max-lg:[--jb-android-scale:0.76] max-md:transform-[translateX(-6%)_rotate(12deg)] max-md:animate-[jb-float-right-mobile_5.4s_ease-in-out_infinite] max-md:[--jb-android-scale:0.72] max-md:[animation-delay:0.45s] min-[1536px]:[--jb-android-scale:1.02] xl:[--jb-android-scale:0.95]">
+              <div className="absolute bottom-0 left-1/2 z-2 transform-[translateX(-10%)_rotate(10deg)] animate-(--animate-home-float-right) [--jb-android-scale:0.82] [animation-delay:0.5s] motion-reduce:transform-none motion-reduce:animate-none max-[560px]:transform-[translateX(-6%)_rotate(9deg)] max-[560px]:animate-(--animate-home-float-right-mobile-small) max-[560px]:[--jb-android-scale:0.5] max-[560px]:[animation-delay:0.4s] max-[420px]:transform-[translateX(-7%)_rotate(8deg)] max-[420px]:[--jb-android-scale:0.46] max-lg:[--jb-android-scale:0.76] max-md:transform-[translateX(-4%)_rotate(10deg)] max-md:animate-(--animate-home-float-right-mobile) max-md:[--jb-android-scale:0.58] max-md:[animation-delay:0.45s] min-[1536px]:[--jb-android-scale:1.02] xl:[--jb-android-scale:0.95]">
                 <AndroidMockup
-                  className="transform-origin-[bottom_center] transform-[scale(var(--jb-android-scale))]"
+                  className="origin-[bottom_center] transform-[scale(var(--jb-android-scale))]"
                   imageSrc={app.assets.secondaryScreen}
                   imageAlt={t("phone.secondaryAlt")}
                 />
               </div>
             </div>
-          </div>
-        </section>
-
-        <section className="mx-auto w-full max-w-6xl px-6 pb-20 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <div className="mx-auto mb-8 inline-flex w-fit items-center gap-2 rounded-full border border-[color-mix(in_srgb,var(--primary)_30%,transparent)] bg-[color-mix(in_srgb,var(--primary)_14%,transparent)] px-[14px] py-[6px] pl-2">
-              <div className="bg-primary h-5 w-5 rounded-full" />
-              <span className="text-primary text-[13px] font-semibold">{t("searchSeo.popularBadge")}</span>
-            </div>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{t("searchSeo.popularTitle")}</h2>
-            <p className="text-muted-foreground mt-4 text-lg leading-8">{t("searchSeo.popularDescription")}</p>
-          </div>
-
-          <div className="mt-14 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {seoLinks.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="border-border bg-card hover:border-primary/50 rounded-3xl border p-6 no-underline transition-all hover:-translate-y-1 hover:shadow-lg"
-              >
-                <h3 className="text-foreground text-xl font-semibold tracking-tight">{item.title}</h3>
-                <p className="text-muted-foreground mt-3 text-sm leading-6">{item.description}</p>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <section className="mx-auto w-full max-w-5xl px-6 pb-24 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{t("searchSeo.faqTitle")}</h2>
-            <p className="text-muted-foreground mt-4 text-lg leading-8">{t("searchSeo.faqDescription")}</p>
-          </div>
-
-          <div className="mt-14 grid gap-4">
-            {seoFaqItems.map((item) => (
-              <details
-                key={item.question}
-                className="group border-border rounded-3xl border bg-white/80 p-6 shadow-sm backdrop-blur-sm"
-              >
-                <summary className="cursor-pointer list-none text-left text-lg font-semibold marker:hidden">
-                  <span className="inline-flex items-center gap-3">
-                    <span className="bg-primary h-2.5 w-2.5 rounded-full transition-transform duration-300 group-open:scale-125" />
-                    {item.question}
-                  </span>
-                </summary>
-                <p className="text-muted-foreground pt-4 pl-5 text-base leading-7">{item.answer}</p>
-              </details>
-            ))}
           </div>
         </section>
       </main>
