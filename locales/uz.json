@@ -96,7 +96,11 @@
   "link": {
     "metaTitleBrand": "JoyBormi brendi",
     "metaTitleWorker": "JoyBormi mutaxassisi",
+    "metaTitleService": "JoyBormi xizmati",
     "metaDescription": "JoyBormi ilovasida ochish",
+    "previewBrandLabel": "Brend",
+    "previewWorkerLabel": "Mutaxassis",
+    "previewServiceLabel": "Xizmat",
     "openingTitle": "JoyBormi ochilmoqda...",
     "openingDescription": "Agar ilova ochilmasa, quyidagi havolalardan birini tanlang.",
     "openInApp": "Ilovada ochish",

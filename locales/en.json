@@ -94,7 +94,11 @@
   "link": {
     "metaTitleBrand": "JoyBormi brand",
     "metaTitleWorker": "JoyBormi specialist",
+    "metaTitleService": "JoyBormi service",
     "metaDescription": "Open in JoyBormi",
+    "previewBrandLabel": "Brand",
+    "previewWorkerLabel": "Worker",
+    "previewServiceLabel": "Service",
     "openingTitle": "Opening JoyBormi...",
     "openingDescription": "If the app did not open, continue with one of the links below.",
     "openInApp": "Open in app",

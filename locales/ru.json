@@ -96,7 +96,11 @@
   "link": {
     "metaTitleBrand": "Бренд JoyBormi",
     "metaTitleWorker": "Специалист JoyBormi",
+    "metaTitleService": "Сервис JoyBormi",
     "metaDescription": "Открыть в JoyBormi",
+    "previewBrandLabel": "Бренд",
+    "previewWorkerLabel": "Специалист",
+    "previewServiceLabel": "Сервис",
     "openingTitle": "Открываем JoyBormi...",
     "openingDescription": "Если приложение не открылось, продолжите по одной из ссылок ниже.",
     "openInApp": "Открыть в приложении",

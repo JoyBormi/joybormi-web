@@ -7,14 +7,17 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 
 import { Locale } from "@/i18n/config"
 import { routing } from "@/i18n/routing"
+import {
+  normalizeSharePart,
+  resolveShareLinkType,
+  SHARE_TYPE_SEGMENTS,
+  type ShareLinkType,
+} from "@/lib/share/public-link"
+import { fetchSharePreview } from "@/lib/share/share-preview"
 
 const SITE_URL = "https://joybormiapp.uz"
 const APP_SCHEME = "joy-bormi-app://"
 const FALLBACK_URL = `${SITE_URL}/`
-
-const SUPPORTED_LINK_TYPES = ["brand", "worker"] as const
-
-type LinkType = (typeof SUPPORTED_LINK_TYPES)[number]
 type QueryValue = string | string[] | undefined
 
 type LinkPageParams = {
@@ -30,10 +33,6 @@ interface LinkMetadataProps {
 
 interface LinkPageProps {
   params: Promise<LinkPageParams>
-}
-
-function isLinkType(value: string): value is LinkType {
-  return SUPPORTED_LINK_TYPES.includes(value as LinkType)
 }
 
 function firstQueryValue(value: QueryValue): string {
@@ -59,15 +58,15 @@ function toAbsoluteUrl(pathname: string) {
 }
 
 function normalizeId(id: string) {
-  try {
-    return encodeURIComponent(decodeURIComponent(id))
-  } catch {
-    return encodeURIComponent(id)
-  }
+  return normalizeSharePart(id)
 }
 
-function buildAppUrl(type: LinkType, id: string) {
-  return `${APP_SCHEME}link/${type}/${normalizeId(id)}`
+function resolvePageType(type: string): ShareLinkType | null {
+  return resolveShareLinkType(type)
+}
+
+function buildAppUrl(type: ShareLinkType, id: string) {
+  return `${APP_SCHEME}link/${SHARE_TYPE_SEGMENTS[type]}/${normalizeId(id)}`
 }
 
 function resolveImageUrl(value: string) {
@@ -100,18 +99,21 @@ export async function generateMetadata({ params, searchParams }: LinkMetadataPro
   const safeLocale: Locale = hasLocale(routing.locales, locale) ? (locale as Locale) : routing.defaultLocale
   const t = await getTranslations({ locale: safeLocale })
 
-  const safeType: LinkType = isLinkType(type) ? type : "brand"
-  const defaultTitle =
-    safeType === "brand"
-      ? translateOrFallback(t, "link.metaTitleBrand", "JoyBormi brand")
-      : translateOrFallback(t, "link.metaTitleWorker", "JoyBormi specialist")
-  const title = safeDecode(query.title) || defaultTitle
-  const subtitle = safeDecode(query.subtitle)
+  const safeType: ShareLinkType = resolvePageType(type) ?? "brand"
+  const preview = await fetchSharePreview(safeType, id, safeLocale)
+  const defaultTitleMap: Record<ShareLinkType, string> = {
+    brand: translateOrFallback(t, "link.metaTitleBrand", "JoyBormi brand"),
+    worker: translateOrFallback(t, "link.metaTitleWorker", "JoyBormi specialist"),
+    service: translateOrFallback(t, "link.metaTitleService", "JoyBormi service"),
+  }
+  const fallbackTitle = safeDecode(query.title) || defaultTitleMap[safeType]
+  const title = preview?.title || fallbackTitle
+  const subtitle = preview?.subtitle || safeDecode(query.subtitle)
   const description =
     safeDecode(query.description) || subtitle || translateOrFallback(t, "link.metaDescription", "Open in JoyBormi")
-  const image = resolveImageUrl(safeDecode(query.image))
+  const image = preview?.image || resolveImageUrl(safeDecode(query.image))
 
-  const shareUrl = toAbsoluteUrl(`/link/${safeType}/${normalizeId(id)}`)
+  const shareUrl = toAbsoluteUrl(`/link/${SHARE_TYPE_SEGMENTS[safeType]}/${normalizeId(id)}`)
 
   return {
     metadataBase: new URL(SITE_URL),
@@ -147,22 +149,44 @@ const LinkForwardPage = async ({ params }: LinkPageProps) => {
   setRequestLocale(safeLocale)
   const t = await getTranslations({ locale: safeLocale })
 
-  if (!isLinkType(type)) {
+  const safeType = resolvePageType(type)
+
+  if (!safeType) {
     notFound()
   }
 
-  const appUrl = buildAppUrl(type, id)
+  const preview = await fetchSharePreview(safeType, id, safeLocale)
+  const appUrl = buildAppUrl(safeType, id)
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-lg flex-col items-center justify-center gap-3 p-6 text-center">
-      <h1 className="text-xl font-semibold">{translateOrFallback(t, "link.openingTitle", "Opening JoyBormi...")}</h1>
-      <p className="text-sm text-neutral-600">
-        {translateOrFallback(
-          t,
-          "link.openingDescription",
-          "If the app did not open, continue with one of the links below."
-        )}
-      </p>
+    <main className="mx-auto flex min-h-screen w-full max-w-lg flex-col items-center justify-center gap-4 p-6 text-center">
+      <div className="w-full overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
+        {preview?.image ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={preview.image} alt={preview.title} className="h-56 w-full object-cover" />
+        ) : null}
+        <div className="space-y-2 px-5 py-5">
+          <p className="text-xs font-medium uppercase tracking-[0.24em] text-neutral-500">
+            {safeType === "brand"
+              ? translateOrFallback(t, "link.previewBrandLabel", "Brand")
+              : safeType === "worker"
+                ? translateOrFallback(t, "link.previewWorkerLabel", "Worker")
+                : translateOrFallback(t, "link.previewServiceLabel", "Service")}
+          </p>
+          <h1 className="text-2xl font-semibold text-neutral-950">
+            {preview?.title || translateOrFallback(t, "link.openingTitle", "Opening JoyBormi...")}
+          </h1>
+          <p className="text-sm leading-6 text-neutral-600">
+            {preview?.subtitle ||
+              translateOrFallback(
+                t,
+                "link.openingDescription",
+                "If the app did not open, continue with one of the links below."
+              )}
+          </p>
+        </div>
+      </div>
+
       <div className="mt-2 flex flex-col items-center gap-2">
         <a id="deep-link" href={appUrl} className="text-sm font-medium text-blue-600 underline">
           {translateOrFallback(t, "link.openInApp", "Open in app")}
