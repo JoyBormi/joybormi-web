@@ -16,6 +16,10 @@ const config: NextConfig = {
         protocol: "https",
         hostname: "d2hrn0ujm7w1zq.cloudfront.net",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.joybormiapp.uz",
+      },
     ],
   },
 
