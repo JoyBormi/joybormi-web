@@ -1,5 +1,4 @@
 "use client"
-import { Sparkles } from "lucide-react"
 import { useTranslations } from "next-intl"
 
 import { AndroidMockup } from "@/components/shared/android-mockup"
@@ -21,13 +20,6 @@ const HomeView = () => {
         <section className="flex-1 pt-[72px] pb-12">
           <div className="mx-auto grid min-h-[calc(100dvh-64px)] max-w-[1600px] grid-cols-1 items-center gap-10 px-6 pt-8 max-md:gap-7 max-md:px-4 max-md:pt-2 md:grid-cols-2 lg:gap-11 lg:pb-8 xl:min-h-[calc(100dvh-64px)]">
             <div className="flex max-w-[560px] flex-col gap-[22px]">
-              <div className="inline-flex w-fit animate-(--animate-home-fade-up) items-center gap-2 rounded-full border border-[color-mix(in_srgb,var(--primary)_30%,transparent)] bg-[color-mix(in_srgb,var(--primary)_14%,transparent)] px-[14px] py-[6px] pl-2 [animation-delay:50ms] motion-reduce:animate-none motion-reduce:opacity-100">
-                <div className="bg-primary text-primary-foreground flex h-5 w-5 items-center justify-center rounded-full text-[10px]">
-                  <Sparkles size={11} />
-                </div>
-                <span className="text-primary text-[13px] font-semibold">{t("badge")}</span>
-              </div>
-
               <h1 className="m-0 animate-(--animate-home-fade-up) text-[clamp(2.6rem,5vw,4.9rem)] leading-[0.98] font-extrabold tracking-[-0.04em] uppercase [animation-delay:150ms] motion-reduce:animate-none motion-reduce:opacity-100 max-md:text-[clamp(2.2rem,10vw,2.8rem)]">
                 {t.rich("headline", {
                   accent: () => <em className="text-primary whitespace-nowrap not-italic">{t("headlineAccent")}</em>,

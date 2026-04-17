@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next"
 
+import { appConfig } from "@/config/app.config"
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
@@ -7,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/admin/"],
     },
-    sitemap: "https://joybormiapp.uz/sitemap.xml",
+    sitemap: `${appConfig.app.urls.site}/sitemap.xml`,
   }
 }

@@ -7,7 +7,7 @@ import { Footer } from "@/components/shared/footer"
 import { Locale } from "@/i18n/config"
 import { routing } from "@/i18n/routing"
 
-import { meta } from "@/lib/seo"
+import { generateLocalBusinessSchema, generateOrganizationSchema, generateWebsiteSchema, meta } from "@/lib/seo"
 import { cn } from "@/lib/utils"
 import RootProvider from "@/providers/root"
 import { pretendard } from "../font"
@@ -58,12 +58,28 @@ export default async function RootLayout(props: LayoutProps) {
     notFound()
   }
 
+  const organizationSchema = generateOrganizationSchema(locale)
+  const websiteSchema = generateWebsiteSchema(locale)
+  const localBusinessSchema = generateLocalBusinessSchema(locale)
+
   setRequestLocale(locale)
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={cn(pretendard.variable)}>
         <RootProvider locale={locale}>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+          />
           {children}
           <Footer />
         </RootProvider>

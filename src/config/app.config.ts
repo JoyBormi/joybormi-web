@@ -40,12 +40,12 @@ export const appConfig = {
     name: "JoyBormi",
     version: "1.0.0",
     email: "joybormiapp@gmail.com",
-    phone: ["998 93 455 25 65", "99 566 76 86"],
+    phone: ["+998 91 446 85 00"],
     urls: {
-      site: "https://joybormiapp.uz",
-      appStore: "https://apps.apple.com",
-      googlePlay: "https://play.google.com/store",
-      telegram: "https://t.me/joybormi",
+      site: "https://www.joybormiapp.uz",
+      appStore: "https://apps.apple.com/app/id6759666506",
+      googlePlay: "https://play.google.com/store/apps/details?id=com.joybormi.app",
+      telegram: "https://t.me/joybormiuz",
     },
     assets: {
       logoIcon: "/images/icon.png",
@@ -53,9 +53,8 @@ export const appConfig = {
       secondaryScreen: "/images/mockup-screen-2.png",
     },
     social: {
-      facebook: "https://www.facebook.com/joybormi",
-      instagram: "https://www.instagram.com/joybormi",
-      blog: "https://blog.naver.com/joybormi",
+      facebook: "https://www.facebook.com/joybormiuz",
+      instagram: "https://www.instagram.com/joybormiuz",
     },
   },
 } as const

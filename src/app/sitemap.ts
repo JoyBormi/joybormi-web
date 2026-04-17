@@ -1,7 +1,9 @@
 import { MetadataRoute } from "next"
+
+import { appConfig } from "@/config/app.config"
 import { getAllMarketPages } from "@/lib/market-pages"
 
-const baseUrl = "https://joybormiapp.uz"
+const baseUrl = appConfig.app.urls.site
 
 type Route = {
   path: string
@@ -61,29 +63,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }))
-
-  // // Fetch dynamic works data
-  // let workUrls: MetadataRoute.Sitemap = []
-  // try {
-  //   const worksResponse = await workService.getWorks()
-
-  //   workUrls = worksResponse.list.flatMap((work) =>
-  //     locales.map((locale) => ({
-  //       url: `${baseUrl}/${locale}/work/${work.workNo}`,
-  //       lastModified: new Date(work.updateAt),
-  //       changeFrequency: "monthly" as const,
-  //       priority: 0.7,
-  //       alternates: {
-  //         languages: {
-  //           ko: `${baseUrl}/ko/work/${work.workNo}`,
-  //           en: `${baseUrl}/en/work/${work.workNo}`,
-  //         },
-  //       },
-  //     }))
-  //   )
-  // } catch (error) {
-  //   console.error("Error fetching works for sitemap:", error)
-  // }
 
   return [...staticUrls, ...marketUrls]
 }
