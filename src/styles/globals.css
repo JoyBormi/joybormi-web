@@ -186,10 +186,12 @@
 
 @layer components {
   .jb-landing-shell {
-    background: linear-gradient(165deg,
-        rgba(255, 255, 255, 0.9) 0%,
-        rgba(247, 250, 255, 0.85) 53%,
-        rgba(243, 248, 255, 0.8) 100%);
+    background: linear-gradient(
+      165deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(247, 250, 255, 0.85) 53%,
+      rgba(243, 248, 255, 0.8) 100%
+    );
     box-shadow:
       0 24px 60px -48px rgba(16, 32, 60, 0.68),
       inset 0 1px 0 rgba(255, 255, 255, 0.8);
@@ -219,6 +221,20 @@
     display: flex;
     flex-direction: column;
     font-family: var(--font-pretendard), var(--font-sans), sans-serif;
+  }
+
+  .jb-rich-content,
+  .jb-rich-content * {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .jb-rich-content img,
+  .jb-rich-content video,
+  .jb-rich-content iframe {
+    height: auto;
+    max-width: 100%;
   }
 
   .jb-header {
@@ -529,18 +545,18 @@
   .jb-token-toggle {
     right: 8%;
     top: 12%;
-    width: 146px;
-    height: 72px;
+    width: 118px;
+    height: 58px;
     justify-content: flex-end;
-    padding: 8px;
+    padding: 7px;
     border-radius: 999px;
     background: linear-gradient(135deg, var(--jb-accent), color-mix(in srgb, var(--jb-accent) 64%, var(--jb-surface)));
     animation-delay: 0.35s;
   }
 
   .jb-token-toggle span {
-    width: 54px;
-    height: 54px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     background: var(--jb-surface);
     box-shadow: inset 0 0 0 1px var(--jb-border);
@@ -1217,15 +1233,15 @@
     }
 
     .jb-token-toggle {
-      right: 0px;
+      right: 10px;
       top: -5%;
-      width: 106px;
-      height: 54px;
+      width: 90px;
+      height: 46px;
     }
 
     .jb-token-toggle span {
-      width: 38px;
-      height: 38px;
+      width: 32px;
+      height: 32px;
     }
 
     .jb-token-lock {
@@ -1348,8 +1364,13 @@
 
     .jb-token-toggle {
       right: -8px;
-      width: 88px;
-      height: 48px;
+      width: 76px;
+      height: 40px;
+    }
+
+    .jb-token-toggle span {
+      width: 28px;
+      height: 28px;
     }
 
     .jb-service-card-left {
@@ -1391,7 +1412,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes jb-hero-phone-breathe {
-
   0%,
   100% {
     transform: translateX(-50%) translateY(0);
@@ -1403,7 +1423,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes jb-hero-phone-back {
-
   0%,
   100% {
     transform: translateX(-50%) rotate(7deg) translateY(-4px);
@@ -1415,7 +1434,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes jb-hero-chip-float {
-
   0%,
   100% {
     translate: 0 0;
@@ -1441,7 +1459,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes jb-float {
-
   0%,
   100% {
     transform: translateY(0);
@@ -1463,7 +1480,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   .jb-fade-up,
   .jb-float,
   .jb-service-card,

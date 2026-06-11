@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 
-import { CareersCta } from "@/app/[locale]/about/careers-cta"
 import { Header } from "@/components/shared/header"
 import { Locale } from "@/i18n/config"
 import { meta } from "@/lib/seo"
@@ -13,6 +12,11 @@ type AboutPageProps = {
 type FaqItem = {
   question: string
   answer: string
+}
+
+type ProofItem = {
+  value: string
+  label: string
 }
 
 export async function generateMetadata({ params }: AboutPageProps): Promise<Metadata> {
@@ -36,6 +40,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
 
   const t = await getTranslations({ locale, namespace: "landingModern.about" })
   const faqItems = t.raw("faq.items") as FaqItem[]
+  const proofItems = t.raw("proof.items") as ProofItem[]
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -88,15 +93,14 @@ export default async function AboutPage({ params }: AboutPageProps) {
               </div>
             </div>
           </div>
-          <div className="bg-muted/50 border-border relative aspect-square overflow-hidden rounded-3xl border shadow-2xl sm:aspect-video">
-            <div className="from-primary/20 absolute inset-0 bg-linear-to-br to-transparent" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="flex h-24 w-24 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md">
-                <div className="bg-primary flex h-16 w-16 items-center justify-center rounded-full text-white">
-                  <span className="text-2xl font-bold">JB</span>
-                </div>
+
+          <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+            {proofItems.map((item) => (
+              <div key={item.label} className="border-border bg-card rounded-2xl border p-6 shadow-sm">
+                <p className="text-foreground text-3xl font-extrabold tracking-tight">{item.value}</p>
+                <p className="text-muted-foreground mt-2 text-sm leading-6">{item.label}</p>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -126,20 +130,6 @@ export default async function AboutPage({ params }: AboutPageProps) {
               <p className="text-muted-foreground pt-4 pl-5 text-base leading-7">{item.answer}</p>
             </details>
           ))}
-        </div>
-      </section>
-
-      <section className="mx-auto mt-24 px-6 pb-24 lg:px-8">
-        <div className="bg-foreground relative overflow-hidden rounded-3xl px-6 py-24 text-center shadow-2xl sm:px-16">
-          <div className="relative z-10">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">{t("cta.title")}</h2>
-            <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-white/70">{t("cta.description")}</p>
-            <div className="mt-10 flex justify-center">
-              <CareersCta label={t("cta.button")} description={t("cta.description")} comingSoon={t("cta.comingSoon")} />
-            </div>
-          </div>
-          <div className="bg-primary/20 absolute top-0 right-0 -mt-24 -mr-24 h-96 w-96 rounded-full blur-3xl" />
-          <div className="bg-primary/10 absolute bottom-0 left-0 -mb-24 -ml-24 h-96 w-96 rounded-full blur-3xl" />
         </div>
       </section>
     </main>

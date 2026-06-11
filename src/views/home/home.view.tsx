@@ -128,9 +128,9 @@ const HomeView = () => {
               <div className="jb-float-token jb-token-toggle">
                 <span />
               </div>
-              <div className="jb-float-token jb-token-lock">
-                <Zap size={30} />
+              <div className="jb-float-token jb-token-lock inline-flex gap-4">
                 <LockKeyhole size={34} />
+                <Zap size={30} />
               </div>
             </div>
 
@@ -157,9 +157,6 @@ const HomeView = () => {
               <div>
                 <strong>{t("brand")}</strong>
                 <span>{t("badge")}</span>
-                <small>
-                  <Star size={13} fill="currentColor" /> 4.9
-                </small>
               </div>
             </div>
 
@@ -173,10 +170,9 @@ const HomeView = () => {
               </div>
             </div>
 
-            <div className="jb-rating-chip inline-flex items-center gap-2">
+            <div className="jb-rating-chip inline-flex items-center gap-2 pr-9 justify-center">
               <Star size={18} />
               <span>4.9</span>
-              <small>Rating</small>
             </div>
 
             <div className="jb-qr-row jb-hero-qr">

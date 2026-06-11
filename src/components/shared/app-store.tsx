@@ -11,7 +11,7 @@ const AppStore: React.FC<AppStoreProps> = ({ className, href }) => {
   const content = (
     <div
       className={cn(
-        "bg-foreground text-background border-border/20 flex h-11 w-[162px] items-center justify-center rounded-[9px] border px-2.5",
+        "bg-foreground text-background whitespace-nowrap border-border/20 flex h-11 w-[162px] items-center justify-center rounded-[9px] border px-2.5",
         className
       )}
     >

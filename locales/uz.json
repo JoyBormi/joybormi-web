@@ -260,6 +260,22 @@
         "body": "Bizning maqsadimiz oddiy: to'g'ri joyni to'g'ri paytda topish jarayonidagi ortiqcha qadamlarni kamaytirish. Biz foydalanuvchilarga restoranlar, kafelar, salonlar va boshqa xizmatlarni ishonch bilan topish hamda ularni tez bron qilish imkonini beramiz.",
         "footer": "Kerakli joyni tezroq topishga yordam beramiz"
       },
+      "proof": {
+        "items": [
+          {
+            "value": "01",
+            "label": "Restoran, kafe, salon va xizmatlarni bitta mobil jarayonda toping."
+          },
+          {
+            "value": "02",
+            "label": "Joy va vaqt tanlashdan oldin aniq ma'lumotlarni solishtiring."
+          },
+          {
+            "value": "03",
+            "label": "Ortiqcha qo'ng'iroq va qayta yozishmalarsiz bronni tasdiqlang."
+          }
+        ]
+      },
       "cta": {
         "title": "Bizga qo'shilishni xohlaysizmi?",
         "description": "Biz doimo o'sib borayotgan jamoamizga iqtidorli insonlarni qidiramiz.",
@@ -285,7 +301,7 @@
           },
           {
             "question": "Nega JoyBormi mobil bron qilishga urg'u beradi?",
-            "answer": "Ko'pchilik bron qarorlari yo'lda qabul qilinadi. Shu sababli JoyBormi foydalanuvchilarga o'z Joyini topish va kerakli joyni istalgan paytda bron qilish uchun tezkor mobil tajriba yaratadi."
+            "answer": "Ko'pchilik bron qarorlari yo'lda qabul qilinadi. Shu sababli JoyBormi foydalanuvchilarga kerakli joyni istalgan paytda topish va bron qilish uchun tezkor mobil tajriba yaratadi."
           }
         ]
       }

@@ -258,6 +258,22 @@
         "body": "Our mission is to remove friction from finding the right place at the right time. We help people discover restaurants, cafés, salons, and services they can trust, then book them instantly without unnecessary steps.",
         "footer": "Helping people find the right place faster"
       },
+      "proof": {
+        "items": [
+          {
+            "value": "01",
+            "label": "Find restaurants, cafés, salons, and services in one mobile-first flow."
+          },
+          {
+            "value": "02",
+            "label": "Compare clear details before choosing where and when to book."
+          },
+          {
+            "value": "03",
+            "label": "Confirm bookings without unnecessary calls or repeated messages."
+          }
+        ]
+      },
       "cta": {
         "title": "Want to join us?",
         "description": "We are always looking for talented individuals to join our growing team.",
@@ -283,7 +299,7 @@
           },
           {
             "question": "Why is JoyBormi focused on mobile booking?",
-            "answer": "Most booking decisions happen on the go. JoyBormi is designed for fast mobile discovery so users can find their Joy and reserve the right place anytime."
+            "answer": "Most booking decisions happen on the go. JoyBormi is designed for fast mobile discovery so users can find and reserve the right place anytime."
           }
         ]
       }

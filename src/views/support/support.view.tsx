@@ -47,17 +47,19 @@ export async function SupportView({ locale }: SupportViewProps) {
     <main className="jb-landing bg-background text-foreground min-h-screen [font-family:var(--font-pretendard),var(--font-sans),sans-serif]">
       <Header />
 
-      <section className="px-6 pt-28 pb-16 sm:pt-36 lg:px-8">
+      <section className="px-5 pt-24 pb-12 sm:px-6 sm:pt-36 sm:pb-16 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <p className="text-primary text-sm font-semibold tracking-[0.22em] uppercase">{t("eyebrow")}</p>
-          <h1 className="mt-5 max-w-4xl text-[clamp(2.7rem,5vw,4.9rem)] leading-[0.94] font-extrabold tracking-[-0.05em] uppercase">
+          <h1 className="mt-5 max-w-4xl text-[clamp(2.2rem,12vw,4.9rem)] leading-[0.96] font-extrabold tracking-[-0.04em] break-words uppercase sm:leading-[0.94] sm:tracking-[-0.05em]">
             {t("headline")}
           </h1>
-          <p className="text-muted-foreground mt-6 max-w-2xl text-lg leading-8">{t("description")}</p>
+          <p className="text-muted-foreground mt-5 max-w-2xl text-base leading-7 sm:mt-6 sm:text-lg sm:leading-8">
+            {t("description")}
+          </p>
         </div>
       </section>
 
-      <section className="py-16 lg:px-8">
+      <section className="px-5 py-10 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="bg-background">
             {channels.map((item, index) => {
@@ -71,28 +73,30 @@ export async function SupportView({ locale }: SupportViewProps) {
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel={href.startsWith("http") ? "noreferrer" : undefined}
                   className={cn(
-                    "group relative flex flex-col gap-4 py-5 transition-all",
+                    "group relative flex min-w-0 flex-col gap-4 py-5 transition-all",
                     "md:flex-row md:items-center md:gap-6 md:px-6 md:py-6",
                     index !== channels.length - 1 && "border-border/50 border-b"
                   )}
                 >
                   {/* LEFT */}
-                  <div className="flex min-w-[180px] items-center gap-3">
+                  <div className="flex min-w-0 items-center gap-3 md:min-w-[180px]">
                     <div className="bg-primary/10 text-primary flex size-9 items-center justify-center rounded-xl transition group-hover:scale-105">
                       <Icon size={16} />
                     </div>
 
-                    <p className="text-sm font-semibold tracking-tight">{item.title}</p>
+                    <p className="min-w-0 text-sm font-semibold tracking-tight break-words">{item.title}</p>
                   </div>
 
                   {/* MIDDLE */}
-                  <div className="flex-1">
+                  <div className="min-w-0 flex-1">
                     <p className="text-muted-foreground text-sm leading-6 md:text-base">{item.description}</p>
                   </div>
 
                   {/* RIGHT */}
-                  <div className="flex items-center justify-between gap-4 md:justify-end md:text-right">
-                    <div className="text-muted-foreground text-xs md:text-sm">{contactDetails[index]}</div>
+                  <div className="flex min-w-0 flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4 md:justify-end md:text-right">
+                    <div className="text-muted-foreground min-w-0 text-xs break-all md:text-sm">
+                      {contactDetails[index]}
+                    </div>
 
                     <span className="text-primary inline-flex items-center gap-1 text-sm font-semibold">
                       {item.cta}
@@ -114,7 +118,7 @@ export async function SupportView({ locale }: SupportViewProps) {
         </div>
       </section>
 
-      <section className="px-6 py-16 lg:px-8">
+      <section className="px-5 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-10">
           <div>
             <p className="text-primary text-sm font-semibold tracking-[0.22em] uppercase">{t("eyebrow")}</p>
@@ -123,8 +127,11 @@ export async function SupportView({ locale }: SupportViewProps) {
 
           <div>
             {resources.map((item) => (
-              <div key={item.title} className="grid gap-4 py-6 md:grid-cols-[220px_minmax(0,1fr)]">
-                <h3 className="text-lg font-semibold tracking-tight">{item.title}</h3>
+              <div
+                key={item.title}
+                className="grid min-w-0 gap-3 py-5 sm:gap-4 sm:py-6 md:grid-cols-[220px_minmax(0,1fr)]"
+              >
+                <h3 className="text-lg font-semibold tracking-tight break-words">{item.title}</h3>
                 <p className="text-muted-foreground text-base leading-7">{item.body}</p>
               </div>
             ))}
@@ -132,7 +139,7 @@ export async function SupportView({ locale }: SupportViewProps) {
         </div>
       </section>
 
-      <section className="border-border border-t px-6 py-16 lg:px-8">
+      <section className="border-border border-t px-5 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-10">
           <div>
             <p className="text-primary text-sm font-semibold tracking-[0.22em] uppercase">{t("faq.eyebrow")}</p>
@@ -143,9 +150,9 @@ export async function SupportView({ locale }: SupportViewProps) {
           <div>
             {faqItems.map((item) => (
               <details key={item.question} className="group py-6">
-                <summary className="cursor-pointer list-none text-left text-lg font-semibold marker:hidden">
+                <summary className="cursor-pointer list-none text-left text-base font-semibold marker:hidden sm:text-lg">
                   <span className="flex items-start justify-between gap-6">
-                    <span>{item.question}</span>
+                    <span className="min-w-0 break-words">{item.question}</span>
                     <span className="text-primary text-sm font-medium transition-transform group-open:rotate-45">
                       +
                     </span>
