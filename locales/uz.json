@@ -125,12 +125,7 @@
     "statResponseValue": "< 3 daqiqa",
     "phoneTitle": "Keyingi broningizni rejalang",
     "searchPlaceholder": "Qayerga boramiz?",
-    "quickFilters": [
-      "Restoranlar",
-      "Go‘zallik",
-      "Sog‘liq",
-      "Tadbirlar"
-    ],
+    "quickFilters": ["Restoranlar", "Go‘zallik", "Sog‘liq", "Tadbirlar"],
     "experienceLabel": "Eng yaxshi tajriba",
     "experienceTitle": "Premium mahalliy xizmatlar birgina teginishda",
     "experienceBody": "Minglab foydalanuvchilar JoyBormi orqali beauty, dining va lifestyle xizmatlarini qo‘ng‘iroqsiz bron qilmoqda.",
@@ -198,10 +193,10 @@
       "download": "Yuklab olish"
     },
     "badge": "iOS va Android uchun mavjud",
-    "headlineTop": "Ishonchli",
-    "headlineAccent": "joylarni",
-    "headlineBottom": "soniyalarda band qiling",
-    "description": "Restoran, salon, xizmat va yaqin joylarni bitta ilovada toping. Variantlarni solishtiring, vaqt tanlang va qo‘ng‘iroqsiz bron qiling.",
+    "headlineTop": "Band qilish",
+    "headlineAccent": "bemalol",
+    "headlineBottom": "kechadi",
+    "description": "Kerakli joyni toping, vaqtni tanlang va bir necha bosishda tasdiqlang. JoyBormi joylar va xizmatlarni bron qilishni sodda qiladi.",
     "store": {
       "downloadOn": "Yuklab oling",
       "appStore": "App Store",

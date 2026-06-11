@@ -123,12 +123,7 @@
     "statResponseValue": "< 3 min",
     "phoneTitle": "Plan your next booking",
     "searchPlaceholder": "Where to?",
-    "quickFilters": [
-      "Restaurants",
-      "Beauty",
-      "Health",
-      "Events"
-    ],
+    "quickFilters": ["Restaurants", "Beauty", "Health", "Events"],
     "experienceLabel": "Best experience",
     "experienceTitle": "Premium local experiences, one tap away",
     "experienceBody": "Join people using JoyBormi daily to book beauty, dining, and lifestyle services without calls.",
@@ -196,10 +191,10 @@
       "download": "Download"
     },
     "badge": "Available on iOS & Android",
-    "headlineTop": "Book trusted",
-    "headlineAccent": "places",
-    "headlineBottom": "in seconds",
-    "description": "Find restaurants, salons, services, and nearby venues in one app. Compare options, choose a time, and reserve without calls.",
+    "headlineTop": "Booking that",
+    "headlineAccent": "feels",
+    "headlineBottom": "effortless",
+    "description": "Find the right place, choose your time, and confirm in a few taps. From nearby venues to services, JoyBormi keeps every booking simple.",
     "store": {
       "downloadOn": "Download on the",
       "appStore": "App Store",

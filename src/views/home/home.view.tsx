@@ -1,6 +1,17 @@
 "use client"
 
-import { ChevronRight, Grid2X2, Menu, Star, X } from "lucide-react"
+import {
+  CalendarCheck,
+  ChevronRight,
+  CreditCard,
+  Grid2X2,
+  LockKeyhole,
+  Menu,
+  MousePointer2,
+  Star,
+  X,
+  Zap,
+} from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 import { useEffect, useState } from "react"
@@ -101,6 +112,28 @@ const HomeView = () => {
       <section className="jb-hero">
         <div className="jb-hero-inner">
           <div className="jb-hero-content">
+            <div className="jb-hero-elements" aria-hidden="true">
+              <div className="jb-float-token jb-token-card jb-token-card-pay">
+                <CreditCard size={22} />
+                <span>Pay</span>
+              </div>
+              <div className="jb-float-token jb-token-card jb-token-card-time">
+                <CalendarCheck size={22} />
+                <span>Pick time</span>
+              </div>
+              <div className="jb-float-token jb-token-card jb-token-card-confirm">
+                <MousePointer2 size={24} />
+                <span>Confirm</span>
+              </div>
+              <div className="jb-float-token jb-token-toggle">
+                <span />
+              </div>
+              <div className="jb-float-token jb-token-lock">
+                <Zap size={30} />
+                <LockKeyhole size={34} />
+              </div>
+            </div>
+
             <h1 className="jb-headline jb-fade-up jb-fade-up-2">
               {t("headlineTop")}
               <em className="inline px-2 md:block md:px-0"> {t("headlineAccent")}</em> {t("headlineBottom")}
