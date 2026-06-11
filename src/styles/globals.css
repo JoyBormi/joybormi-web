@@ -186,12 +186,10 @@
 
 @layer components {
   .jb-landing-shell {
-    background: linear-gradient(
-      165deg,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(247, 250, 255, 0.85) 53%,
-      rgba(243, 248, 255, 0.8) 100%
-    );
+    background: linear-gradient(165deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(247, 250, 255, 0.85) 53%,
+        rgba(243, 248, 255, 0.8) 100%);
     box-shadow:
       0 24px 60px -48px rgba(16, 32, 60, 0.68),
       inset 0 1px 0 rgba(255, 255, 255, 0.8);
@@ -420,12 +418,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 28px;
     text-align: center;
     position: relative;
     z-index: 3;
     width: min(100%, 1280px);
-    min-height: clamp(440px, 52vh, 590px);
+    min-height: clamp(390px, 48vh, 540px);
     justify-content: center;
   }
 
@@ -461,8 +459,8 @@
   .jb-headline {
     margin: 0;
     font-weight: 900;
-    font-size: clamp(4rem, 8.2vw, 8.8rem);
-    line-height: 0.88;
+    font-size: clamp(4.4rem, 7.6vw, 8rem);
+    line-height: 0.9;
     letter-spacing: 0;
     text-transform: uppercase;
     max-width: 1100px;
@@ -1066,7 +1064,13 @@
     }
 
     .jb-hero-content {
-      min-height: clamp(430px, 56vh, 540px);
+      min-height: clamp(360px, 48vh, 480px);
+    }
+
+    .jb-headline {
+      font-size: clamp(3.8rem, 9.2vw, 6.4rem);
+      line-height: 0.92;
+      max-width: 900px;
     }
 
     .jb-hero-stage {
@@ -1168,19 +1172,14 @@
     }
 
     .jb-hero-content {
-      min-height: clamp(390px, 59vh, 500px);
-      gap: 16px;
+      min-height: clamp(330px, 50vh, 420px);
+      gap: 22px;
     }
 
     .jb-headline {
-      font-size: clamp(2.55rem, 11.5vw, 4rem);
-      line-height: 0.94;
-    }
-
-    .jb-description {
-      max-width: 520px;
-      font-size: clamp(0.96rem, 3.9vw, 1.08rem);
-      line-height: 1.48;
+      font-size: clamp(2.85rem, 12.2vw, 4.35rem);
+      line-height: 0.93;
+      max-width: 720px;
     }
 
     .jb-hero-stage {
@@ -1305,19 +1304,13 @@
     }
 
     .jb-hero-content {
-      min-height: clamp(380px, 56vh, 460px);
-      gap: 15px;
+      min-height: clamp(310px, 48vh, 380px);
+      gap: 20px;
     }
 
     .jb-headline {
-      font-size: clamp(2.4rem, 11vw, 3.15rem);
-      line-height: 0.96;
-    }
-
-    .jb-description {
-      max-width: 340px;
-      font-size: 0.98rem;
-      line-height: 1.42;
+      font-size: clamp(2.55rem, 11.6vw, 3.35rem);
+      line-height: 0.95;
     }
 
     .jb-hero-stage {
@@ -1412,6 +1405,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes jb-hero-phone-breathe {
+
   0%,
   100% {
     transform: translateX(-50%) translateY(0);
@@ -1423,6 +1417,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes jb-hero-phone-back {
+
   0%,
   100% {
     transform: translateX(-50%) rotate(7deg) translateY(-4px);
@@ -1434,6 +1429,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes jb-hero-chip-float {
+
   0%,
   100% {
     translate: 0 0;
@@ -1459,6 +1455,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes jb-float {
+
   0%,
   100% {
     transform: translateY(0);
@@ -1480,6 +1477,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .jb-fade-up,
   .jb-float,
   .jb-service-card,

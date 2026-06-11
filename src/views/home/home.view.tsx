@@ -128,7 +128,7 @@ const HomeView = () => {
               <div className="jb-float-token jb-token-toggle">
                 <span />
               </div>
-              <div className="jb-float-token jb-token-lock inline-flex gap-4">
+              <div className="jb-float-token jb-token-lock gap-4 hidden lg:inline-flex">
                 <LockKeyhole size={34} />
                 <Zap size={30} />
               </div>
@@ -138,8 +138,6 @@ const HomeView = () => {
               {t("headlineTop")}
               <em className="inline px-2 md:block md:px-0"> {t("headlineAccent")}</em> {t("headlineBottom")}
             </h1>
-
-            <p className="jb-description jb-fade-up jb-fade-up-3">{t("description")}</p>
 
             <div className="jb-download-row jb-fade-up jb-fade-up-4">
               <AppStore href={app.urls.appStore} />
@@ -170,7 +168,7 @@ const HomeView = () => {
               </div>
             </div>
 
-            <div className="jb-rating-chip inline-flex items-center gap-2 pr-9 justify-center">
+            <div className="jb-rating-chip inline-flex items-center justify-center gap-2 pr-9">
               <Star size={18} />
               <span>4.9</span>
             </div>
