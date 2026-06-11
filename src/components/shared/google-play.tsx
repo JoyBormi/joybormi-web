@@ -11,7 +11,7 @@ const GooglePlay: React.FC<GooglePlayProps> = ({ className, href }) => {
   const content = (
     <div
       className={cn(
-        "bg-foreground text-background border-border/20 flex h-11 w-[162px] items-center justify-center rounded-[9px] border px-2.5",
+        "bg-foreground whitespace-nowrap text-background border-border/20 flex h-11 w-[162px] items-center justify-center rounded-[9px] border px-2.5",
         className
       )}
     >

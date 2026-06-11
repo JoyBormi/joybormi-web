@@ -11,32 +11,16 @@
   "meta": {
     "title": "JoyBormi",
     "description": "JoyBormi is an online booking platform where you can easily reserve restaurants, cafés, salons, and other venues.",
-    "keywords": [
-      "booking",
-      "reservation",
-      "restaurants",
-      "cafes",
-      "services"
-    ],
+    "keywords": ["booking", "reservation", "restaurants", "cafes", "services"],
     "home": {
       "title": "Home",
       "description": "Discover and book restaurants, cafés, and services easily with JoyBormi.",
-      "keywords": [
-        "booking",
-        "restaurants",
-        "cafes",
-        "reservation"
-      ]
+      "keywords": ["booking", "restaurants", "cafes", "reservation"]
     },
     "about": {
       "title": "About Us",
       "description": "JoyBormi helps people easily find and reserve the best places. Learn more about our mission and platform.",
-      "keywords": [
-        "about",
-        "company",
-        "platform",
-        "JoyBormi"
-      ]
+      "keywords": ["about", "company", "platform", "JoyBormi"]
     }
   },
   "link": {
@@ -67,12 +51,7 @@
     "statResponseValue": "< 3 min",
     "phoneTitle": "Plan your next booking",
     "searchPlaceholder": "Where to?",
-    "quickFilters": [
-      "Restaurants",
-      "Beauty",
-      "Health",
-      "Events"
-    ],
+    "quickFilters": ["Restaurants", "Beauty", "Health", "Events"],
     "experienceLabel": "Best experience",
     "experienceTitle": "Premium local experiences, one tap away",
     "experienceBody": "Join people using JoyBormi daily to book beauty, dining, and lifestyle services without calls.",
@@ -138,10 +117,10 @@
       "download": "Download"
     },
     "badge": "Available on iOS & Android",
-    "headlineTop": "Find Your",
-    "headlineAccent": "Joy,",
-    "headlineBottom": "Anytime",
-    "description": "JoyBormi brings everything you need into one clean mobile experience. Discover trusted places, reserve faster, and manage plans without friction.",
+    "headlineTop": "Book trusted",
+    "headlineAccent": "places",
+    "headlineBottom": "in seconds",
+    "description": "Find restaurants, salons, services, and nearby venues in one app. Compare options, choose a time, and reserve without calls.",
     "store": {
       "downloadOn": "Download on the",
       "appStore": "App Store",

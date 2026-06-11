@@ -1,11 +1,10 @@
 "use client"
 
-import { ChevronRight, Instagram, Menu, Phone, Send, Sparkles, X } from "lucide-react"
+import { ChevronRight, Grid2X2, Instagram, Menu, Phone, Send, Star, X } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 import { type FormEvent, useEffect, useState } from "react"
 
-import { AndroidMockup } from "@/components/shared/android-mockup"
 import { AppStore } from "@/components/shared/app-store"
 import { GooglePlay } from "@/components/shared/google-play"
 import { IPhoneMockup } from "@/components/shared/iphone-mockup"
@@ -114,18 +113,10 @@ const HomeView = () => {
 
       <section className="jb-hero">
         <div className="jb-hero-inner">
-          <div className="jb-hero-left">
-            <div className="jb-badge jb-fade-up jb-fade-up-1">
-              <div className="jb-badge-dot">
-                <Sparkles size={11} />
-              </div>
-              <span>{t("badge")}</span>
-            </div>
-
+          <div className="jb-hero-content">
             <h1 className="jb-headline jb-fade-up jb-fade-up-2">
               {t("headlineTop")}
-              <em className="inline px-2 md:block md:px-0"> {t("headlineAccent")}</em>
-              {t("headlineBottom")}
+              <em className="inline px-2 md:block md:px-0"> {t("headlineAccent")}</em> {t("headlineBottom")}
             </h1>
 
             <p className="jb-description jb-fade-up jb-fade-up-3">{t("description")}</p>
@@ -134,33 +125,60 @@ const HomeView = () => {
               <AppStore href={app.urls.appStore} />
               <GooglePlay href={app.urls.googlePlay} />
             </div>
-
-            <div className="jb-qr-row jb-fade-up jb-fade-up-5">
-              <div className="jb-qr-code-wrap">
-                <QrCode value={app.urls.site} size={84} />
-              </div>
-              <div className="jb-qr-text">
-                <strong>{t("qr.title")}</strong>
-                {t("qr.description")}
-              </div>
-            </div>
           </div>
 
-          <div className="jb-hero-right">
+          <div className="jb-hero-stage jb-fade-up jb-fade-up-5">
             <div className="jb-glow-orb jb-glow-orb-main" />
+
+            <div className="jb-service-card jb-service-card-left">
+              <div className="jb-service-avatar">
+                <Image src={app.assets.logoIcon} alt="" width={42} height={42} />
+              </div>
+              <div>
+                <strong>{t("brand")}</strong>
+                <span>{t("badge")}</span>
+                <small>
+                  <Star size={13} fill="currentColor" /> 4.9
+                </small>
+              </div>
+            </div>
+
+            <div className="jb-service-card jb-service-card-right">
+              <div className="jb-chip-icon">
+                <Grid2X2 size={18} />
+              </div>
+              <div>
+                <strong>{t("qr.title")}</strong>
+                <span>{t("qr.description")}</span>
+              </div>
+            </div>
+
+            <div className="jb-rating-chip inline-flex items-center gap-2">
+              <Star size={18} />
+              <span>4.9</span>
+              <small>Rating</small>
+            </div>
+
+            <div className="jb-qr-row jb-hero-qr">
+              <div className="jb-qr-code-wrap">
+                <QrCode value={app.urls.site} size={72} />
+              </div>
+            </div>
+
+            <div className="jb-phone-secondary">
+              <IPhoneMockup
+                className="jb-mockup-iphone"
+                imageSrc={app.assets.secondaryScreen}
+                imageAlt={t("phone.secondaryAlt")}
+              />
+            </div>
+
             <div className="jb-phone-primary">
               <IPhoneMockup
                 className="jb-mockup-iphone"
                 imageSrc={app.assets.primaryScreen}
                 imageAlt={t("phone.primaryAlt")}
                 priority
-              />
-            </div>
-            <div className="jb-phone-secondary">
-              <AndroidMockup
-                className="jb-mockup-android"
-                imageSrc={app.assets.secondaryScreen}
-                imageAlt={t("phone.secondaryAlt")}
               />
             </div>
           </div>

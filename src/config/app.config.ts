@@ -45,7 +45,7 @@ export const appConfig = {
       site: "https://joybormiapp.uz",
       appStore: "https://apps.apple.com",
       googlePlay: "https://play.google.com/store",
-      telegram: "https://t.me/joybormi",
+      telegram: "https://t.me/joybormiapp",
     },
     assets: {
       logoIcon: "/images/icon.png",
@@ -53,8 +53,8 @@ export const appConfig = {
       secondaryScreen: "/images/mockup-screen-2.png",
     },
     social: {
-      facebook: "https://www.facebook.com/joybormi",
-      instagram: "https://www.instagram.com/joybormi",
+      facebook: "https://www.facebook.com/joybormiuz",
+      instagram: "https://www.instagram.com/joybormiuz",
       blog: "https://blog.naver.com/joybormi",
     },
   },
