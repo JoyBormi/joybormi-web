@@ -15,7 +15,7 @@ interface MetadataParam {
 
 export async function generateMetadata({ params }: MetadataParam): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations()
+  const t = await getTranslations({ locale })
   const keywords = t.raw("meta.home.keywords") as string[]
 
   return meta({
@@ -33,20 +33,29 @@ const HomePage: NextPage<{ params: Promise<{ locale: string }> }> = async ({ par
   // Enable static rendering
   setRequestLocale(locale)
 
-  // Can be used as SSR fetch
-  // let initialChatHistory: ChatHistoryMessage[] = []
-  // try {
-  //   const cookieStore = await cookies()
-  //   const chatSession = cookieStore.get(COOKIE_KEYS.CHAT_SESSION)
+  const t = await getTranslations({ locale, namespace: "landingModern.searchSeo" })
+  const seoFaqItems = t.raw("faq.items") as Array<{ question: string; answer: string }>
 
-  //   if (chatSession?.value) {
-  //     initialChatHistory = await chatService.getChatHistory(chatSession.value)
-  //   }
-  // } catch (error) {
-  //   console.error("Failed to fetch chat history for SSR:", error)
-  // }
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: locale,
+    mainEntity: seoFaqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  }
 
-  return <HomeView />
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <HomeView />
+    </>
+  )
 }
 
 export default HomePage

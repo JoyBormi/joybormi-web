@@ -11,22 +11,96 @@
   "meta": {
     "title": "JoyBormi",
     "description": "JoyBormi — restoranlar, kafelar, salonlar va boshqa joylarni onlayn bron qilish platformasi.",
-    "keywords": ["bron qilish", "restoran", "kafe", "onlayn bron", "JoyBormi"],
+    "keywords": [
+      "bron qilish",
+      "restoran",
+      "kafe",
+      "onlayn bron",
+      "JoyBormi",
+      "JOYBORMI",
+      "joybormi",
+      "joy bormi",
+      "joybormi uz",
+      "джойборми",
+      "ДжойБорми",
+      "джой борми"
+    ],
     "home": {
-      "title": "Bosh sahifa",
-      "description": "JoyBormi orqali restoranlar, kafelar va xizmatlarni oson toping va bron qiling.",
-      "keywords": ["bron", "restoran", "kafe", "joy band qilish"]
+      "title": "O'zbekistonda restoran, salon va xizmatlarni bron qilish ilovasi",
+      "description": "JoyBormi orqali O'zbekistondagi restoranlar, barberlar, salonlar va mahalliy xizmatlarni toping va tezroq bron qiling.",
+      "keywords": [
+        "booking app uzbekistan",
+        "service booking app uzbekistan",
+        "restoran toshkent",
+        "barbershop toshkent",
+        "salon toshkent",
+        "bron",
+        "restoran",
+        "kafe",
+        "joy band qilish",
+        "JoyBormi",
+        "JOYBORMI",
+        "joybormi",
+        "joy bormi",
+        "joybormi uz",
+        "джойборми",
+        "ДжойБорми",
+        "джой борми"
+      ]
     },
     "about": {
       "title": "Biz haqimizda",
-      "description": "JoyBormi foydalanuvchilarga eng yaxshi joylarni topish va bron qilishni osonlashtiradi.",
-      "keywords": ["kompaniya", "platforma", "JoyBormi", "xizmat"]
+      "description": "JoyBormi foydalanuvchilarga mos joylarni topish, tezroq bron qilish va kundalik rejalari ustidan qulay nazorat qilishga yordam beradi.",
+      "keywords": [
+        "JoyBormi haqida",
+        "bron platformasi",
+        "joy topish ilovasi",
+        "mobil bron qilish",
+        "xizmat bron qilish",
+        "JoyBormi",
+        "JOYBORMI",
+        "joybormi",
+        "joy bormi",
+        "joybormi uz",
+        "джойборми",
+        "ДжойБорми",
+        "джой борми"
+      ]
+    },
+    "marketing": {
+      "title": "Restoranlar, salonlar va mahalliy xizmatlar uchun marketing yechimlari",
+      "description": "JoyBormi mahalliy bizneslarga brendini aniqroq ko‘rsatish, sifatliroq bronlarni jalb qilish va mijozlarga mobile-first tajriba orqali xizmat ko‘rsatishga yordam beradi.",
+      "keywords": [
+        "JoyBormi marketing",
+        "bron platformasi marketingi",
+        "restoran marketingi",
+        "salon marketingi",
+        "mahalliy biznes bron",
+        "mobil bron sahifasi",
+        "JoyBormi"
+      ]
+    },
+    "support": {
+      "title": "JoyBormi qo‘llab-quvvatlash xizmati",
+      "description": "JoyBormi bilan Telegram, email yoki telefon orqali bog‘laning va bron, akkaunt yoki umumiy savollar bo‘yicha tezkor yordam oling.",
+      "keywords": [
+        "JoyBormi support",
+        "bron bo‘yicha yordam",
+        "qo‘llab-quvvatlash",
+        "JoyBormi aloqa",
+        "Telegram support",
+        "JoyBormi contact"
+      ]
     }
   },
   "link": {
     "metaTitleBrand": "JoyBormi brendi",
     "metaTitleWorker": "JoyBormi mutaxassisi",
+    "metaTitleService": "JoyBormi xizmati",
     "metaDescription": "JoyBormi ilovasida ochish",
+    "previewBrandLabel": "Brend",
+    "previewWorkerLabel": "Mutaxassis",
+    "previewServiceLabel": "Xizmat",
     "openingTitle": "JoyBormi ochilmoqda...",
     "openingDescription": "Agar ilova ochilmasa, quyidagi havolalardan birini tanlang.",
     "openInApp": "Ilovada ochish",
@@ -51,7 +125,12 @@
     "statResponseValue": "< 3 daqiqa",
     "phoneTitle": "Keyingi broningizni rejalang",
     "searchPlaceholder": "Qayerga boramiz?",
-    "quickFilters": ["Restoranlar", "Go‘zallik", "Sog‘liq", "Tadbirlar"],
+    "quickFilters": [
+      "Restoranlar",
+      "Go‘zallik",
+      "Sog‘liq",
+      "Tadbirlar"
+    ],
     "experienceLabel": "Eng yaxshi tajriba",
     "experienceTitle": "Premium mahalliy xizmatlar birgina teginishda",
     "experienceBody": "Minglab foydalanuvchilar JoyBormi orqali beauty, dining va lifestyle xizmatlarini qo‘ng‘iroqsiz bron qilmoqda.",
@@ -111,7 +190,9 @@
       "close": "Menyuni yopish"
     },
     "nav": {
+      "marketing": "Marketing",
       "about": "Biz haqimizda",
+      "support": "Yordam",
       "privacy": "Maxfiylik",
       "terms": "Shartlar",
       "download": "Yuklab olish"
@@ -168,6 +249,256 @@
       "joinedMessage": "Siz obuna bo‘ldingiz",
       "copyright": "© {year} JoyBormi. Barcha huquqlar himoyalangan.",
       "contactTelegram": "Telegram"
+    },
+    "legal": {
+      "errorLoading": "Hujjat yuklanmadi.",
+      "lastUpdated": "Oxirgi yangilanish",
+      "retry": "Iltimos, keyinroq qayta urinib ko'ring yoki qo'llab-quvvatlash xizmatiga murojaat qiling."
+    },
+    "about": {
+      "journeyBadge": "Bizning Yo'limiz",
+      "headline": "O'z <accent>Joy</accent>ingizni topish kelajagini quryapmiz",
+      "headlineAccent": "Joy",
+      "description": "JoyBormi foydalanuvchilarga ishonchli joylarni topish, soniyalar ichida bron qilish va kundalik rejalarni bitta mobil tajribada boshqarishning tezroq usulini yaratmoqda.",
+      "mission": {
+        "title": "Bizning Missiyamiz",
+        "body": "Bizning maqsadimiz oddiy: to'g'ri joyni to'g'ri paytda topish jarayonidagi ortiqcha qadamlarni kamaytirish. Biz foydalanuvchilarga restoranlar, kafelar, salonlar va boshqa xizmatlarni ishonch bilan topish hamda ularni tez bron qilish imkonini beramiz.",
+        "footer": "Kerakli joyni tezroq topishga yordam beramiz"
+      },
+      "cta": {
+        "title": "Bizga qo'shilishni xohlaysizmi?",
+        "description": "Biz doimo o'sib borayotgan jamoamizga iqtidorli insonlarni qidiramiz.",
+        "button": "Bo'sh ish o'rinlarini ko'rish",
+        "comingSoon": "Vakansiyalar sahifasi tez orada qo'shiladi"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "JoyBormi haqida ko'p so'raladigan savollar",
+        "description": "JoyBormi foydalanuvchilarga joy topish va ishonch bilan bron qilishda qanday yordam berishi haqida qisqa javoblar.",
+        "items": [
+          {
+            "question": "JoyBormi nima?",
+            "answer": "JoyBormi ishonchli joylarni topish va restoranlar, kafelar, salonlar hamda boshqa xizmatlarni tez bron qilishga yordam beradigan mobil bron platformasidir."
+          },
+          {
+            "question": "JoyBormi foydalanuvchilarning vaqtini qanday tejaydi?",
+            "answer": "JoyBormi qidiruvdan bron qilishgacha bo'lgan yo'lni qisqartiradi. Foydalanuvchilar joylarni ko'rib chiqishi, variantlarni solishtirishi va bronni bitta qulay jarayonda tasdiqlashi mumkin."
+          },
+          {
+            "question": "JoyBormi orqali qanday joylarni topish mumkin?",
+            "answer": "JoyBormi orqali restoranlar, kafelar, go'zallik xizmatlari va bron qilish mumkin bo'lgan boshqa joylarni mobil qurilmaga mos qulay ko'rinishda topish mumkin."
+          },
+          {
+            "question": "Nega JoyBormi mobil bron qilishga urg'u beradi?",
+            "answer": "Ko'pchilik bron qarorlari yo'lda qabul qilinadi. Shu sababli JoyBormi foydalanuvchilarga o'z Joyini topish va kerakli joyni istalgan paytda bron qilish uchun tezkor mobil tajriba yaratadi."
+          }
+        ]
+      }
+    },
+    "marketing": {
+      "eyebrow": "O‘sishga tayyor bron tajribasi",
+      "headline": "Qiziqishni <accent>bron</accent>ga aylantiring",
+      "description": "JoyBormi restoranlar, salonlar va xizmat ko‘rsatuvchi brendlarga toza mobil ko‘rinish beradi. Bu foydalanuvchilarga mos joyni tezroq topish va ko‘rishdan bron qilishga silliq o‘tishga yordam beradi.",
+      "primaryCta": "Jamoa bilan bog‘lanish",
+      "secondaryCta": "Yordam sahifasi",
+      "panel": {
+        "label": "Jamoa nimaga ega bo‘ladi",
+        "title": "Yaxshiroq mijoz yo‘li"
+      },
+      "highlights": {
+        "items": [
+          {
+            "title": "Brendni aniqroq ko‘rsatish",
+            "body": "Joy, xizmatlar va bron jarayonini desktop hamda mobil qurilmada premium ko‘rinadigan formatda namoyish eting."
+          },
+          {
+            "title": "Bron qilishga tezroq olib borish",
+            "body": "Kamroq bosqich va tushunarliroq ma’lumot orqali foydalanuvchi yo‘qotilishini kamaytiring."
+          },
+          {
+            "title": "Mahalliy ishonch uchun qurilgan",
+            "body": "Yangi mijozlarga tartibli tafsilotlar, puxta vizual til va aniq aloqa yo‘llari orqali ishonch bering."
+          }
+        ]
+      },
+      "benefits": {
+        "items": [
+          {
+            "title": "Natija beradigan toza sahifalar",
+            "body": "Har bir bo‘lim kontentni oson ko‘rish, muhim ma’lumotni tez topish va bron niyatini kuchaytirish uchun tuzilgan."
+          },
+          {
+            "title": "Haqiqiy qidiruvga mos SEO",
+            "body": "Tuzilgan kontent, aniq matn va kuchli metadata foydalanuvchilar joy va xizmatlarni qanday qidirishiga mos keladi."
+          },
+          {
+            "title": "Birinchi tashrifdayoq ishonch",
+            "body": "Qisqa va ravshan matn, responsive dizayn va aniq keyingi qadamlar brendga ishonchni kuchaytiradi."
+          }
+        ]
+      },
+      "steps": {
+        "eyebrow": "Qanday ishlaydi",
+        "title": "Qidiruvdan bron qilishgacha sodda yo‘l",
+        "description": "Bu sahifalar foydalanuvchini jalb qilish va ishonchni mustahkamlashga xizmat qiladi, shuning uchun tashrif buyuruvchi qiymatni tez tushunadi va ishonch bilan harakat qiladi.",
+        "items": [
+          {
+            "title": "Diqqatni erta ushlang",
+            "body": "Kuchli sarlavha va tartibli bo‘limlar yangi tashrif buyuruvchiga taklifni tez tushuntiradi."
+          },
+          {
+            "title": "Muhim savollarga javob bering",
+            "body": "Qo‘llab-quvvatlovchi kontent tajriba nega qulay, mobilga mos va ishonchli ekanini ko‘rsatadi."
+          },
+          {
+            "title": "Harakatga yo‘naltiring",
+            "body": "Har bir sahifada yordam yoki bron bilan bog‘liq aloqa yo‘liga ravshan o‘tish nuqtasi mavjud."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "Marketing FAQ",
+        "title": "Ishga tushirishdan oldin jamoalar so‘raydigan savollar",
+        "description": "JoyBormi brendlarga onlaynda yaxshiroq ko‘rinishga qanday yordam berishi haqida qisqa javoblar.",
+        "items": [
+          {
+            "question": "JoyBormi marketing sahifalari kimlar uchun?",
+            "answer": "Bu sahifalar restoranlar, salonlar, barberlar va tanilishdan bron qilishgacha tozaroq raqamli tajriba istaydigan mahalliy xizmat bizneslari uchun yaratilgan."
+          },
+          {
+            "question": "Nega mobil tajribaga bunchalik urg‘u berilgan?",
+            "answer": "Bron qarorlarining aksariyati telefonda qabul qilinadi. Shu sabab JoyBormi yo‘lni tez va o‘qilishi oson saqlash uchun mobile-first interfeysni ustuvor qiladi."
+          },
+          {
+            "question": "Bu sahifalar SEOga qanday yordam beradi?",
+            "answer": "Ular fokuslangan sarlavhalar, lokalizatsiyalangan matnlar, metadata va structured schema orqali qidiruv tizimlariga sahifa mazmunini yaxshiroq tushunishga yordam beradi."
+          }
+        ]
+      }
+    },
+    "support": {
+      "eyebrow": "Kerak bo‘lganda yordam",
+      "headline": "Tushunarli va qulay qo‘llab-quvvatlash",
+      "description": "JoyBormi bilan sizga qulay kanal orqali bog‘laning va bron, akkaunt yoki mahsulot bo‘yicha savollarga tez yo‘l-yo‘riq oling.",
+      "channels": {
+        "items": [
+          {
+            "title": "Telegram orqali yordam",
+            "description": "Kun davomida tezkor savollar, aniqlashtirish va umumiy yordam uchun eng qulay kanal.",
+            "cta": "Telegramni ochish"
+          },
+          {
+            "title": "Email orqali yordam",
+            "description": "Batafsil muammolar, akkaunt savollari yoki screenshot va qo‘shimcha kontekst kerak bo‘ladigan holatlar uchun mos.",
+            "cta": "Email yuborish"
+          },
+          {
+            "title": "Telefon orqali yordam",
+            "description": "Tez to‘g‘ridan-to‘g‘ri yordam kerak bo‘lsa yoki shoshilinch bron savolini aniqlashtirish uchun qulay.",
+            "cta": "Qo‘ng‘iroq qilish"
+          }
+        ]
+      },
+      "resources": {
+        "items": [
+          {
+            "title": "Tez birinchi javob",
+            "body": "Birinchi aloqa foydalanuvchiga ortiqcha yozishmalarsiz keyingi qadamni tushunishga yordam berishi uchun ishlaymiz."
+          },
+          {
+            "title": "Muammolarni aniq ko‘rib chiqish",
+            "body": "Bron, aloqa ma’lumotlari yoki akkauntga kirish bo‘lsin, yordam yo‘li sodda va tushunarli qoladi."
+          },
+          {
+            "title": "Insoniy muloqot",
+            "body": "Qo‘llab-quvvatlash sokin, hurmatli va amaliy tarzda qurilgan, shuning uchun foydalanuvchi muammoni ortiqcha qiyinchiliksiz hal qiladi."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "Support FAQ",
+        "title": "Ko‘p so‘raladigan savollar",
+        "description": "Foydalanuvchilar eng ko‘p so‘raydigan mavzular bo‘yicha qisqa javoblar.",
+        "items": [
+          {
+            "question": "Avval qaysi yordam kanalidan foydalanish kerak?",
+            "answer": "Odatda Telegram umumiy savollar uchun eng tezkor kanal. Email batafsil murojaatlar uchun qulay, telefon esa shoshilinch vaziyatlarda foydali."
+          },
+          {
+            "question": "Bron bilan bog‘liq savollar bo‘yicha yordam olsam bo‘ladimi?",
+            "answer": "Ha. JoyBormi qo‘llab-quvvatlash xizmati bron, aloqa ma’lumotlari va vaziyat noaniq bo‘lganda keyingi qadamlar bo‘yicha yo‘l ko‘rsatadi."
+          },
+          {
+            "question": "Bu sahifa turli tillar uchun lokalizatsiya qilinganmi?",
+            "answer": "Ha. Qo‘llab-quvvatlash sahifasi saytning til tizimiga ulangan, shuning uchun foydalanuvchi o‘zi xohlagan locale’da o‘qishi mumkin."
+          }
+        ]
+      }
+    },
+    "searchSeo": {
+      "popularBadge": "Mashhur qidiruvlar",
+      "popularTitle": "O'zbekistondagi haqiqiy qidiruv odatlariga mos SEO sahifalar",
+      "popularDescription": "Foydalanuvchilar restoran, salon, barbershop va xizmatlarni qanday qidirsa, shunga mos shahar va kategoriya sahifalari.",
+      "popularLinkTitle": "{city}dagi {category}",
+      "popularLinkDescription": "{city}dagi {category}ni toping va JoyBormi bilan tezroq bron qiling.",
+      "faqTitle": "Bron qilish bo'yicha ko'p qidiriladigan savollar",
+      "faqDescription": "Restoran, salon yoki xizmat tanlashdan oldin foydalanuvchilar tez-tez qidiradigan savollarga javoblar.",
+      "faq": {
+        "items": [
+          {
+            "question": "O'zbekistonda restoran va xizmatlarni qanday onlayn bron qilish mumkin?",
+            "answer": "JoyBormi restoranlar, salonlar, barbershoplar va boshqa xizmatlarni topish, variantlarni solishtirish va tezroq onlayn bron qilishga yordam beradi."
+          },
+          {
+            "question": "Toshkent va Samarqand kabi shaharlarda bron qilish variantlarini topsa bo'ladimi?",
+            "answer": "Ha. JoyBormi Toshkent, Samarqand va Buxoro kabi shaharlarda restoranlar va xizmatlarni topishni yengillashtirish uchun shahar va kategoriya sahifalarini kengaytirmoqda."
+          },
+          {
+            "question": "JoyBormi orqali qanday joylar va xizmatlarni topish mumkin?",
+            "answer": "JoyBormi orqali restoranlar, go'zallik salonlari, barbershoplar va boshqa mahalliy xizmatlarni mobil qurilmaga mos qulay tajribada topish mumkin."
+          }
+        ]
+      },
+      "page": {
+        "badge": "{city}dagi {category}",
+        "title": "{city}dagi {category}",
+        "description": "{city}dagi ishonchli {category}ni toping, variantlarni solishtiring va JoyBormi bilan tezroq bron qiling.",
+        "highlights": {
+          "discovery": "Sahifalar O'zbekistondagi shahar va kategoriya bo'yicha qidiruv odatlariga mos tuzilgan.",
+          "booking": "Qidiruvdan bron qilishgacha bo'lgan yo'lni qisqartiradi.",
+          "local": "Faqat brend emas, haqiqiy mahalliy qidiruv intentiga moslashtirilgan."
+        },
+        "whyTitle": "Nega {city}dagi {category}ni JoyBormi orqali qidirish kerak?",
+        "whyDescription": "Bunday sahifalar shahar va kategoriya bo'yicha qidirayotgan foydalanuvchilarga mos variantlarni tezroq topishga yordam beradi. JoyBormi qidiruvni tushunarliroq, taqqoslashni qulayroq va bron jarayonini tezroq qiladi.",
+        "cards": {
+          "one": {
+            "title": "Mahalliy qidiruv intenti",
+            "body": "Foydalanuvchilar ko'pincha shahar va xizmat turi bo'yicha qidiradi. Bu sahifalar aynan shu xulq-atvorga mos."
+          },
+          "two": {
+            "title": "Qulay bron yo'li",
+            "body": "JoyBormi variantlarni tezroq taqqoslash va ortiqcha qadamlarisiz bron qilishga o'tishga yordam beradi."
+          }
+        },
+        "relatedTitle": "O'xshash sahifalar",
+        "relatedLink": "{city}dagi {category}",
+        "faqTitle": "Bron qilishdan oldin foydalanuvchilar nimani so'raydi",
+        "faqDescription": "Mahalliy xizmatlar va bron variantlarini solishtirayotgan foydalanuvchilar uchun foydali javoblar.",
+        "faq": {
+          "one": {
+            "question": "{city}dagi {category}ni qanday topish mumkin?",
+            "answer": "JoyBormi {city}dagi {category}ni ko'rib chiqish, variantlarni solishtirish va bron qilishga tezroq o'tishga yordam beradi."
+          },
+          "two": {
+            "question": "{city}dagi {category}ni onlayn bron qilsa bo'ladimi?",
+            "answer": "JoyBormi shahar va kategoriya sahifalari orqali onlayn bron jarayonini ancha qulay qiladi."
+          },
+          "three": {
+            "question": "Nega {city}dagi {category} uchun JoyBormi ishlatish kerak?",
+            "answer": "JoyBormi mos joyni topish va uni bron qilish orasidagi ortiqcha qadamlarni kamaytiradi, bu esa {city}dagi mahalliy qidiruvlar uchun juda muhim."
+          }
+        }
+      }
     }
   }
 }

@@ -11,22 +11,94 @@
   "meta": {
     "title": "JoyBormi",
     "description": "JoyBormi is an online booking platform where you can easily reserve restaurants, cafés, salons, and other venues.",
-    "keywords": ["booking", "reservation", "restaurants", "cafes", "services"],
+    "keywords": [
+      "booking",
+      "reservation",
+      "restaurants",
+      "cafes",
+      "services",
+      "JOYBORMI",
+      "JoyBormi",
+      "joybormi",
+      "joy bormi",
+      "joybormi uz",
+      "джойборми",
+      "ДжойБорми"
+    ],
     "home": {
-      "title": "Home",
-      "description": "Discover and book restaurants, cafés, and services easily with JoyBormi.",
-      "keywords": ["booking", "restaurants", "cafes", "reservation"]
+      "title": "Booking app for restaurants, salons and services in Uzbekistan",
+      "description": "Book restaurants, barbers, salons and local services in Uzbekistan with JoyBormi. Discover trusted places and reserve faster.",
+      "keywords": [
+        "booking app uzbekistan",
+        "restaurant booking uzbekistan",
+        "service booking app",
+        "salon booking",
+        "barber booking",
+        "booking",
+        "restaurants",
+        "cafes",
+        "reservation",
+        "JOYBORMI",
+        "JoyBormi",
+        "joybormi",
+        "joy bormi",
+        "joybormi uz",
+        "джойборми",
+        "ДжойБорми"
+      ]
     },
     "about": {
       "title": "About Us",
-      "description": "JoyBormi helps people easily find and reserve the best places. Learn more about our mission and platform.",
-      "keywords": ["about", "company", "platform", "JoyBormi"]
+      "description": "Learn how JoyBormi helps people discover places, book faster, and manage reservations with a smoother mobile experience.",
+      "keywords": [
+        "JoyBormi about",
+        "booking platform",
+        "restaurant reservation app",
+        "Uzbekistan booking app",
+        "place discovery",
+        "JOYBORMI",
+        "JoyBormi",
+        "joybormi",
+        "joy bormi",
+        "joybormi uz",
+        "джойборми",
+        "ДжойБорми"
+      ]
+    },
+    "marketing": {
+      "title": "Marketing Solutions for Restaurants, Salons and Local Services",
+      "description": "Explore how JoyBormi helps local businesses present their brand clearly, attract higher-intent bookings, and support customers with a mobile-first experience.",
+      "keywords": [
+        "JoyBormi marketing",
+        "booking platform marketing",
+        "restaurant marketing platform",
+        "salon marketing software",
+        "local business booking",
+        "mobile-first booking page",
+        "JoyBormi"
+      ]
+    },
+    "support": {
+      "title": "Customer Support for JoyBormi",
+      "description": "Get help with JoyBormi through Telegram, email, or phone, and find quick answers about bookings, accounts, and response times.",
+      "keywords": [
+        "JoyBormi support",
+        "booking support",
+        "reservation help",
+        "customer support joybormi",
+        "Telegram support",
+        "JoyBormi contact"
+      ]
     }
   },
   "link": {
     "metaTitleBrand": "JoyBormi brand",
     "metaTitleWorker": "JoyBormi specialist",
+    "metaTitleService": "JoyBormi service",
     "metaDescription": "Open in JoyBormi",
+    "previewBrandLabel": "Brand",
+    "previewWorkerLabel": "Worker",
+    "previewServiceLabel": "Service",
     "openingTitle": "Opening JoyBormi...",
     "openingDescription": "If the app did not open, continue with one of the links below.",
     "openInApp": "Open in app",
@@ -51,7 +123,12 @@
     "statResponseValue": "< 3 min",
     "phoneTitle": "Plan your next booking",
     "searchPlaceholder": "Where to?",
-    "quickFilters": ["Restaurants", "Beauty", "Health", "Events"],
+    "quickFilters": [
+      "Restaurants",
+      "Beauty",
+      "Health",
+      "Events"
+    ],
     "experienceLabel": "Best experience",
     "experienceTitle": "Premium local experiences, one tap away",
     "experienceBody": "Join people using JoyBormi daily to book beauty, dining, and lifestyle services without calls.",
@@ -111,7 +188,9 @@
       "close": "Close menu"
     },
     "nav": {
+      "marketing": "Marketing",
       "about": "About",
+      "support": "Support",
       "privacy": "Privacy",
       "terms": "Terms",
       "download": "Download"
@@ -168,6 +247,256 @@
       "joinedMessage": "You're subscribed",
       "copyright": "© {year} JoyBormi. All rights reserved.",
       "contactTelegram": "Telegram"
+    },
+    "legal": {
+      "lastUpdated": "Last updated",
+      "errorLoading": "Failed to load document.",
+      "retry": "Please try again later or contact support."
+    },
+    "about": {
+      "journeyBadge": "Our Journey",
+      "headline": "Building the future of finding your <accent>Joy</accent>",
+      "headlineAccent": "Joy",
+      "description": "JoyBormi is building a faster way to discover trusted places, book in seconds, and keep everyday plans organized in one mobile experience.",
+      "mission": {
+        "title": "Our Mission",
+        "body": "Our mission is to remove friction from finding the right place at the right time. We help people discover restaurants, cafés, salons, and services they can trust, then book them instantly without unnecessary steps.",
+        "footer": "Helping people find the right place faster"
+      },
+      "cta": {
+        "title": "Want to join us?",
+        "description": "We are always looking for talented individuals to join our growing team.",
+        "button": "View Open Positions",
+        "comingSoon": "Careers page coming soon"
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Frequently asked questions about JoyBormi",
+        "description": "Quick answers about how JoyBormi helps users discover places and book with confidence.",
+        "items": [
+          {
+            "question": "What is JoyBormi?",
+            "answer": "JoyBormi is a mobile booking platform that helps people discover trusted places and reserve restaurants, cafés, salons, and other services quickly."
+          },
+          {
+            "question": "How does JoyBormi help users save time?",
+            "answer": "JoyBormi reduces the steps between discovery and booking. Users can browse places, compare options, and confirm reservations in one flow instead of calling or messaging manually."
+          },
+          {
+            "question": "Which kinds of places can users find on JoyBormi?",
+            "answer": "Users can explore restaurants, cafés, beauty services, and other bookable places that are presented in a clean, mobile-first experience."
+          },
+          {
+            "question": "Why is JoyBormi focused on mobile booking?",
+            "answer": "Most booking decisions happen on the go. JoyBormi is designed for fast mobile discovery so users can find their Joy and reserve the right place anytime."
+          }
+        ]
+      }
+    },
+    "marketing": {
+      "eyebrow": "Growth-ready booking experience",
+      "headline": "Turn discovery into <accent>bookings</accent>",
+      "description": "JoyBormi gives restaurants, salons, and service brands a clean mobile presence that helps people find the right place faster and move from browsing to booking with less friction.",
+      "primaryCta": "Talk to our team",
+      "secondaryCta": "Visit support",
+      "panel": {
+        "label": "What teams get",
+        "title": "A sharper customer journey"
+      },
+      "highlights": {
+        "items": [
+          {
+            "title": "Clearer brand presentation",
+            "body": "Show your venue, services, and booking flow in a format that feels premium on both desktop and mobile."
+          },
+          {
+            "title": "Faster path to reservation",
+            "body": "Reduce drop-off by moving people from discovery to decision with fewer clicks and cleaner information."
+          },
+          {
+            "title": "Built for local trust",
+            "body": "Help new customers feel confident with consistent details, polished visuals, and support-ready contact paths."
+          }
+        ]
+      },
+      "benefits": {
+        "items": [
+          {
+            "title": "Clean pages that convert",
+            "body": "Every section is designed to keep scanning easy, surface the right details, and support stronger booking intent."
+          },
+          {
+            "title": "SEO that matches real searches",
+            "body": "Structured content, focused copy, and strong metadata help pages align with how people search for places and services."
+          },
+          {
+            "title": "Trust signals from the first visit",
+            "body": "Customers see a more credible brand experience through concise messaging, responsive layouts, and clear next steps."
+          }
+        ]
+      },
+      "steps": {
+        "eyebrow": "How it works",
+        "title": "A simpler path from search to booking",
+        "description": "These pages are built to support both acquisition and confidence, so people can understand your value quickly and take action without hesitation.",
+        "items": [
+          {
+            "title": "Capture interest early",
+            "body": "Strong headlines and structured sections explain the offer quickly for first-time visitors."
+          },
+          {
+            "title": "Answer key questions",
+            "body": "Supporting content highlights what makes the experience reliable, mobile-friendly, and easy to trust."
+          },
+          {
+            "title": "Guide people to action",
+            "body": "Each page creates a clear handoff to support or booking-related contact so customers are never left stuck."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "Marketing FAQ",
+        "title": "Questions teams ask before launching",
+        "description": "A few quick answers about how JoyBormi helps brands present themselves better online.",
+        "items": [
+          {
+            "question": "Who are JoyBormi marketing pages for?",
+            "answer": "They are designed for restaurants, salons, barbers, and local service businesses that want a cleaner digital experience around discovery and booking."
+          },
+          {
+            "question": "Why does the layout focus so much on mobile?",
+            "answer": "Most booking decisions happen on phones. JoyBormi prioritizes a mobile-first interface so the path from interest to action stays fast and readable."
+          },
+          {
+            "question": "How do these pages support SEO?",
+            "answer": "They use focused headings, localized copy, metadata, and structured schema so search engines can better understand the page and its intent."
+          }
+        ]
+      }
+    },
+    "support": {
+      "eyebrow": "Help when you need it",
+      "headline": "Support that stays clear and easy",
+      "description": "Reach JoyBormi through the channel that works best for you and get quick direction for booking, account, or general product questions.",
+      "channels": {
+        "items": [
+          {
+            "title": "Telegram support",
+            "description": "Best for fast questions, follow-ups, and general assistance during the day.",
+            "cta": "Open Telegram"
+          },
+          {
+            "title": "Email support",
+            "description": "Useful for detailed issues, account questions, or anything that needs screenshots and context.",
+            "cta": "Send email"
+          },
+          {
+            "title": "Phone support",
+            "description": "Ideal when you need direct help quickly or want to clarify an urgent booking-related issue.",
+            "cta": "Call support"
+          }
+        ]
+      },
+      "resources": {
+        "items": [
+          {
+            "title": "Fast first response",
+            "body": "We aim to keep first-touch support simple so users know what to do next without long back-and-forth."
+          },
+          {
+            "title": "Clear issue handling",
+            "body": "Whether the question is about bookings, contact details, or account access, support paths stay straightforward."
+          },
+          {
+            "title": "Human-centered communication",
+            "body": "Support is designed to feel calm, respectful, and practical so people can solve problems without extra friction."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "Support FAQ",
+        "title": "Common questions",
+        "description": "Quick answers to the topics users ask about most often.",
+        "items": [
+          {
+            "question": "Which support channel should I use first?",
+            "answer": "Telegram is usually the quickest option for general help. Email works best when you need to share more detail, and phone is useful for urgent issues."
+          },
+          {
+            "question": "Can I get help with booking-related questions?",
+            "answer": "Yes. JoyBormi support can guide users with common questions around bookings, contact details, and how to proceed when something feels unclear."
+          },
+          {
+            "question": "Is this page localized for different users?",
+            "answer": "Yes. Support content is available through the site’s language system so people can read the page in the locale they prefer."
+          }
+        ]
+      }
+    },
+    "searchSeo": {
+      "popularBadge": "Popular Searches",
+      "popularTitle": "Search-intent pages for booking in Uzbekistan",
+      "popularDescription": "Browse location and category pages built around how people actually search for restaurants, salons, barbers and services.",
+      "popularLinkTitle": "{category} in {city}",
+      "popularLinkDescription": "Find trusted {category} in {city} and book faster with JoyBormi.",
+      "faqTitle": "Booking FAQ for Uzbekistan users",
+      "faqDescription": "Answers to common booking questions users search for before choosing a restaurant, salon or service.",
+      "faq": {
+        "items": [
+          {
+            "question": "How can I book restaurants and services online in Uzbekistan?",
+            "answer": "JoyBormi helps users discover restaurants, salons, barbers and other services, compare options, and book online faster without unnecessary calls or messaging."
+          },
+          {
+            "question": "Can I find booking options for different cities like Tashkent and Samarkand?",
+            "answer": "Yes. JoyBormi is building city and category pages so users can find relevant restaurants and services in places like Tashkent, Samarkand and Bukhara more easily."
+          },
+          {
+            "question": "What kinds of places can I book with JoyBormi?",
+            "answer": "Users can explore restaurants, beauty salons, barbers and other local services through a mobile-first booking experience."
+          }
+        ]
+      },
+      "page": {
+        "badge": "{category} in {city}",
+        "title": "{category} in {city}",
+        "description": "Discover trusted {category} in {city}, compare options and book faster with JoyBormi.",
+        "highlights": {
+          "discovery": "Search local categories the way people actually look for them in Uzbekistan.",
+          "booking": "Move from discovery to booking in fewer steps.",
+          "local": "Built around city and category intent, not only brand searches."
+        },
+        "whyTitle": "Why search for {category} in {city} with JoyBormi?",
+        "whyDescription": "These pages are designed for city and category intent, helping users who search for local services find relevant options faster. JoyBormi focuses on trusted discovery, clearer comparison and easier booking.",
+        "cards": {
+          "one": {
+            "title": "Built for local intent",
+            "body": "Users often search by city and service type first. These pages match that behavior."
+          },
+          "two": {
+            "title": "Better discovery flow",
+            "body": "JoyBormi makes it easier to compare options, decide faster and complete a booking with less friction."
+          }
+        },
+        "relatedTitle": "Related booking pages",
+        "relatedLink": "{category} in {city}",
+        "faqTitle": "Questions users ask before booking",
+        "faqDescription": "Helpful answers for searchers comparing local services and reservation options.",
+        "faq": {
+          "one": {
+            "question": "How do I find {category} in {city}?",
+            "answer": "JoyBormi helps users browse {category} in {city}, compare options and move toward booking more quickly."
+          },
+          "two": {
+            "question": "Can I book {category} online in {city}?",
+            "answer": "JoyBormi is designed to make online booking easier by organizing local options into clear city and category pages."
+          },
+          "three": {
+            "question": "Why use JoyBormi for {category} in {city}?",
+            "answer": "JoyBormi reduces friction between discovering a place and reserving it, which is especially useful for local service searches in {city}."
+          }
+        }
+      }
     }
   }
 }
