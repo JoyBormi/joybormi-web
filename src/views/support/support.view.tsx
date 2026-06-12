@@ -48,7 +48,7 @@ export async function SupportView({ locale }: SupportViewProps) {
       <Header />
 
       <section className="px-5 pt-24 pb-12 sm:px-6 sm:pt-36 sm:pb-16 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl 2xl:max-w-[92rem]">
           <p className="text-primary text-sm font-semibold tracking-[0.22em] uppercase">{t("eyebrow")}</p>
           <h1 className="mt-5 max-w-4xl text-[clamp(2.2rem,12vw,4.9rem)] leading-[0.96] font-extrabold tracking-[-0.04em] break-words uppercase sm:leading-[0.94] sm:tracking-[-0.05em]">
             {t("headline")}
@@ -60,7 +60,7 @@ export async function SupportView({ locale }: SupportViewProps) {
       </section>
 
       <section className="px-5 py-10 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl 2xl:max-w-[92rem]">
           <div className="bg-background">
             {channels.map((item, index) => {
               const Icon = channelIcons[index] ?? MessageCircleHeart
@@ -75,30 +75,35 @@ export async function SupportView({ locale }: SupportViewProps) {
                   className={cn(
                     "group relative flex min-w-0 flex-col gap-4 py-5 transition-all",
                     "md:flex-row md:items-center md:gap-6 md:px-6 md:py-6",
+                    "xl:gap-10 xl:px-10 xl:py-8 2xl:gap-14 2xl:px-12",
                     index !== channels.length - 1 && "border-border/50 border-b"
                   )}
                 >
                   {/* LEFT */}
-                  <div className="flex min-w-0 items-center gap-3 md:min-w-[180px]">
-                    <div className="bg-primary/10 text-primary flex size-9 items-center justify-center rounded-xl transition group-hover:scale-105">
-                      <Icon size={16} />
+                  <div className="flex min-w-0 items-center gap-3 md:min-w-[180px] xl:min-w-[260px] xl:gap-4 2xl:min-w-[300px]">
+                    <div className="bg-primary/10 text-primary flex size-9 items-center justify-center rounded-xl transition group-hover:scale-105 xl:size-12 xl:rounded-2xl">
+                      <Icon className="size-4 xl:size-5" />
                     </div>
 
-                    <p className="min-w-0 text-sm font-semibold tracking-tight break-words">{item.title}</p>
+                    <p className="min-w-0 text-sm font-semibold tracking-tight break-words xl:text-base">
+                      {item.title}
+                    </p>
                   </div>
 
                   {/* MIDDLE */}
                   <div className="min-w-0 flex-1">
-                    <p className="text-muted-foreground text-sm leading-6 md:text-base">{item.description}</p>
+                    <p className="text-muted-foreground max-w-3xl text-sm leading-6 md:text-base xl:leading-7">
+                      {item.description}
+                    </p>
                   </div>
 
                   {/* RIGHT */}
-                  <div className="flex min-w-0 flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4 md:justify-end md:text-right">
-                    <div className="text-muted-foreground min-w-0 text-xs break-all md:text-sm">
+                  <div className="flex min-w-0 flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4 md:justify-end md:text-right xl:min-w-[280px] xl:gap-6 2xl:min-w-[320px]">
+                    <div className="text-muted-foreground min-w-0 text-xs break-all md:text-sm xl:text-base">
                       {contactDetails[index]}
                     </div>
 
-                    <span className="text-primary inline-flex items-center gap-1 text-sm font-semibold">
+                    <span className="text-primary inline-flex items-center gap-1 text-sm font-semibold whitespace-nowrap xl:text-base">
                       {item.cta}
                       <ArrowUpRight
                         size={14}
@@ -119,7 +124,7 @@ export async function SupportView({ locale }: SupportViewProps) {
       </section>
 
       <section className="px-5 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto grid max-w-7xl gap-10">
+        <div className="mx-auto grid max-w-7xl gap-10 2xl:max-w-[92rem]">
           <div>
             <p className="text-primary text-sm font-semibold tracking-[0.22em] uppercase">{t("eyebrow")}</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">{t("faq.title")}</h2>
@@ -140,7 +145,7 @@ export async function SupportView({ locale }: SupportViewProps) {
       </section>
 
       <section className="border-border border-t px-5 py-12 sm:px-6 sm:py-16 lg:px-8">
-        <div className="mx-auto grid max-w-7xl gap-10">
+        <div className="mx-auto grid max-w-7xl gap-10 2xl:max-w-[92rem]">
           <div>
             <p className="text-primary text-sm font-semibold tracking-[0.22em] uppercase">{t("faq.eyebrow")}</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">{t("faq.title")}</h2>

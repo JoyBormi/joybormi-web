@@ -186,10 +186,12 @@
 
 @layer components {
   .jb-landing-shell {
-    background: linear-gradient(165deg,
-        rgba(255, 255, 255, 0.9) 0%,
-        rgba(247, 250, 255, 0.85) 53%,
-        rgba(243, 248, 255, 0.8) 100%);
+    background: linear-gradient(
+      165deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(247, 250, 255, 0.85) 53%,
+      rgba(243, 248, 255, 0.8) 100%
+    );
     box-shadow:
       0 24px 60px -48px rgba(16, 32, 60, 0.68),
       inset 0 1px 0 rgba(255, 255, 255, 0.8);
@@ -1135,6 +1137,36 @@
   }
 
   @media (min-width: 1280px) {
+    .jb-hero-content {
+      width: min(100%, 1420px);
+      min-height: clamp(410px, 47vh, 560px);
+    }
+
+    .jb-token-card-pay {
+      left: 0;
+      top: 7%;
+    }
+
+    .jb-token-card-time {
+      left: 1%;
+      bottom: 25%;
+    }
+
+    .jb-token-card-confirm {
+      right: 1%;
+      bottom: 15%;
+    }
+
+    .jb-token-toggle {
+      right: 5%;
+      top: 9%;
+    }
+
+    .jb-token-lock {
+      right: -1%;
+      top: 27%;
+    }
+
     .jb-hero-stage {
       height: clamp(340px, 34vw, 500px);
     }
@@ -1149,6 +1181,40 @@
   }
 
   @media (min-width: 1536px) {
+    .jb-hero-inner {
+      max-width: 1800px;
+      padding-inline: 48px;
+    }
+
+    .jb-hero-content {
+      width: min(100%, 1580px);
+    }
+
+    .jb-token-card-pay {
+      left: 2%;
+      top: 8%;
+    }
+
+    .jb-token-card-time {
+      left: 4%;
+      bottom: 24%;
+    }
+
+    .jb-token-card-confirm {
+      right: 4%;
+      bottom: 16%;
+    }
+
+    .jb-token-toggle {
+      right: 8%;
+      top: 10%;
+    }
+
+    .jb-token-lock {
+      right: 1%;
+      top: 29%;
+    }
+
     .jb-phone-primary {
       --jb-iphone-scale: 1.12;
     }
@@ -1405,7 +1471,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes jb-hero-phone-breathe {
-
   0%,
   100% {
     transform: translateX(-50%) translateY(0);
@@ -1417,7 +1482,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes jb-hero-phone-back {
-
   0%,
   100% {
     transform: translateX(-50%) rotate(7deg) translateY(-4px);
@@ -1429,7 +1493,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes jb-hero-chip-float {
-
   0%,
   100% {
     translate: 0 0;
@@ -1455,7 +1518,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes jb-float {
-
   0%,
   100% {
     transform: translateY(0);
@@ -1477,7 +1539,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   .jb-fade-up,
   .jb-float,
   .jb-service-card,
